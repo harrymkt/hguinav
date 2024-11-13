@@ -1,6 +1,8 @@
 baseURL: "https://example.org/"
 languageCode: "en-US"
 title: "HG UI Navigation"
+cleanDestinationDir: true
+publishDir: HTML
 
 menus:
   main:
