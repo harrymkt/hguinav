@@ -1,0 +1,5 @@
+<meta charset="utf-8">
+{{- $titlevar := " - " -}}
+{{- with site.Params.title_sep -}}{{ $titlevar = . }}{{ end -}}
+<meta name="viewport" content="width=device-width">
+<title>{{ .Title }}{{ $titlevar }}{{ site.Title }}</title>

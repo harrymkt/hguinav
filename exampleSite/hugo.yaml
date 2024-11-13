@@ -1,0 +1,6 @@
+baseURL: https://harrymkt.github.io/hguinav
+languageCode: en-us
+title: HG UI Navigation
+cleanDestinationDir: true
+themesDir: ../../
+theme: hguinav
