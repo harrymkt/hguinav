@@ -1,9 +1,7 @@
 {{ define "main" }}
 <h1>{{ .Title }}</h1>
 {{ partial "terms.html" (dict "taxonomy" "categories" "page" .) }}
-{{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05+06:30" }}
-{{ $dateHuman := .Date | time.Format ":date_long" }}
-<time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+<p>Published on <script>document.write(local_datetime_string("{{.Date}}"));</script></p>
 
 {{ .Content }}
 {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}

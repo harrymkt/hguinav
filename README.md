@@ -1,4 +1,8 @@
 # UI Navigation
+UI Navigation, or known as hguinav, is a Hugo theme designed for accessibility rather than visual and made as easy as possible. Since I am a blind developer, I'd like to develop with accessibility as possible so visually impaired users can use them.
+
+## License
+This theme is distributed under the terms of the [MIT License](https://github.com/harrymkt/hguinav/blob/main/LICENSE.md).
 
 ## Features
 
