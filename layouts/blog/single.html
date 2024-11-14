@@ -1,7 +1,9 @@
 {{ define "main" }}
 <h1>{{ .Title }}</h1>
 {{ partial "terms.html" (dict "taxonomy" "categories" "page" .) }}
-<p>Published on <script>document.write(local_datetime_string("{{.Date}}"));</script></p>
+{{- $pon := T "published_on" "<script>document.write(local_datetime_string(\"$d$\"));</script>" -}}
+{{- $pon = $pon | safeHTML -}}
+<p>{{ replace $pon "$d$" .Date | safeHTML }}</p>
 
 {{ .Content }}
 {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}

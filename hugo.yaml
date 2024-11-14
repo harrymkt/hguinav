@@ -1,9 +1,10 @@
 baseURL: "https://example.org/"
+defaultContentLanguage: en
 languageCode: "en-US"
 title: "HG UI Navigation"
 cleanDestinationDir: true
 publishDir: HTML
-
+languageName: English
 menus:
   main:
     - name: "Home"
@@ -16,5 +17,8 @@ menus:
       pageRef: "/tags"
       weight: 30
 
+languages:
+  my:
+    languageName: Myanmar
 params:
   title_sep: " – "
