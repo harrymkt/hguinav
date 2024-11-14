@@ -1,24 +1,29 @@
 baseURL: "https://example.org/"
 defaultContentLanguage: en
-languageCode: "en-US"
 title: "HG UI Navigation"
 cleanDestinationDir: true
 publishDir: HTML
-languageName: English
+
+languages:
+  en:
+    disabled: false
+    languageCode: "en-US"
+    languageName: English
+  my:
+    disabled: false
+    languageCode: my
+    languageName: Myanmar
+
 menus:
   main:
     - name: "Home"
       pageRef: "/"
+      identifier: menu_main_home
       weight: 10
     - name: "Posts"
       pageRef: "/blog"
+      identifier: menu_main_blog
       weight: 20
-    - name: "Tags"
-      pageRef: "/tags"
-      weight: 30
 
-languages:
-  my:
-    languageName: Myanmar
 params:
   title_sep: " – "

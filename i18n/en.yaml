@@ -3,3 +3,5 @@ acc_skip_nav: Skip to navigation
 acc_skip_footer: Skip to footer
 mainmenu: Main Menu
 published_on: Published on {{ . }}
+menu_main_home: Home
+menu_main_blog: Posts
