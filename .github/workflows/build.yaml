@@ -1,10 +1,10 @@
 name: Deploy Hugo site to Pages
 on:
   push:
-    paths: ["archetypes/**", "data/**", "exampleSite/**", "i18n/**", "layouts/**", "static/**", "hugo.yaml"]
+    paths: ["archetypes/**", "data/**", "demo/**", "i18n/**", "layouts/**", "static/**", "hugo.yaml"]
     branches: [main]
   pull_request:
-    paths: ["archetypes/**", "data/**", "exampleSite/**", "i18n/**", "layouts/**", "static/**", "hugo.yaml"]
+    paths: ["archetypes/**", "data/**", "demo/**", "i18n/**", "layouts/**", "static/**", "hugo.yaml"]
   workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
@@ -53,7 +53,7 @@ jobs:
           HUGO_ENVIRONMENT: production
           TZ: Asia/Yangon
         run: |
-          cd exampleSite
+          cd demo
           hugo \
             --gc \
             --minify \
@@ -61,7 +61,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: exampleSite/HTML
+          path: demo/HTML
 
   # Deployment job
   deploy:

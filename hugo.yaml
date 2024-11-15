@@ -1,18 +1,7 @@
 baseURL: "https://example.org/"
-defaultContentLanguage: en
 title: "HG UI Navigation"
 cleanDestinationDir: true
 publishDir: HTML
-
-languages:
-  en:
-    disabled: false
-    languageCode: "en-US"
-    languageName: English
-  my:
-    disabled: false
-    languageCode: my
-    languageName: Myanmar
 
 menus:
   main:

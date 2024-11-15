@@ -5,3 +5,9 @@ mainmenu: Main Menu
 published_on: Published on {{ . }}
 menu_main_home: Home
 menu_main_blog: Posts
+first: First
+last: Last
+previous: Previous
+next: Next
+pagination_title: Pagination
+pagination_num: Page {{ . }}

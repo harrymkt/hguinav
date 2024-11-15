@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="{{site.Language.LanguageCode}}">
 <head>
-{{- partial "head.html" .}}
-{{- partial "extrahead.html" .}}
+{{ partial "head.html" . }}
+{{ partial "extrahead.html" .}}
 </head>
 <body>
-{{- partial "header.html" .}}
+{{ partial "header.html" . }}
+{{- block "extraheader" . }}{{ end }}
 <main id="mainc">
-{{block "main" .}}{{end}}
+{{- block "main" . }}{{ end -}}
 </main>
 <div id="hgfooter">
-{{partial "footer.html" .}}
+{{ partial "footer.html" .}}
 </div>
 {{ partial "extrafoot.html" . }}
 </body>
