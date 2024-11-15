@@ -5,6 +5,7 @@
 {{- $pon = $pon | safeHTML -}}
 <p>{{ replace $pon "$d$" .Date | safeHTML }}</p>
 
-{{ .Content }}
+{{ (partial "content.html" (dict "value" .Content "page" . )) | safeHTML }}
+
 {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
 {{ end }}

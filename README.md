@@ -9,11 +9,12 @@ This theme is distributed under the terms of the [MIT License](https://github.co
 ## Features
 * Multilingual.
 * Customizable extrahead, extrafooter, head, header, footer, with partials, and extrahead, with blocks.
+* Documentation site; build accessible documentation sites by using built-in template specifically designed for documentation. You can set the type of the section you want to document in the section's frontmadder.
+* Content variables during build, such as $title$. See the demo page for documentation
 
 ## Installation
 ```bash
 git submodule add --name hguinav https://github.com/harrymkt/hguinav themes/hguinav
 ```
 ## Configuration
-Params parameters:
-* `title_sep`(string): The title separator to use. " – " is default.
+Please read the [documentation](https://harrymkt.github.io/hguinav) for more information and configuration options.

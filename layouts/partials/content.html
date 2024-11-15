@@ -1,0 +1,5 @@
+{{- $value := .value }}
+{{- $page := .page }}
+{{- $value = replace $value "$title$" $page.Title }}
+{{- $value = replace $value "$/" "$" }}
+{{ return $value }}

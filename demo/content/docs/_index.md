@@ -3,4 +3,4 @@ title: Documentation
 type: doc
 ---
 # Documentation
-Documentations here
+Please note that these documentations are not localize in every language that Hguinav provides.

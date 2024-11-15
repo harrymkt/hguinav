@@ -1,5 +1,5 @@
 {{- define "main" -}}
-{{ .Content }}
+{{ (partial "content.html" (dict "value" .Content "page" . )) | safeHTML }}
 {{- range .Pages }}
 <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
 {{ .Summary }}
