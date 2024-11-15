@@ -17,4 +17,3 @@ languages:
 pagination:
   disableAliases: false
   pagerSize: 1
-  path:

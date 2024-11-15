@@ -1,0 +1,36 @@
+{{- define "extraheader" }}
+{{- $docsect := .FirstSection }}
+{{ if $docsect }}
+<nav role="navigation" aria-label="{{ $docsect.Title }}">
+<h2>{{ $docsect.Title }}</h2>
+<ul style="list-style-type:none;">
+{{- range $docsect.Pages }}
+<li>
+<a href="{{ .Permalink }}" {{ if eq .Permalink $.Permalink }}aria-current="page"{{ end }}>
+{{ .Title }}
+</a>
+</li>
+{{- end }}
+</ul>
+
+{{ if $docsect.Sections }}
+{{ range $subsect := $docsect.Sections }}
+<h3>{{ $subsect.Title }}</h3>
+{{ if $subsect.Content }}{{ .Content }}{{ end }}
+<ul style="list-style-type:none;">
+{{- range $subsect.Pages }}
+<li>
+<a href="{{ .Permalink }}" {{ if eq .Permalink $.Permalink }}aria-current="page"{{ end }}>
+{{ .Title }}
+</a>
+</li>
+{{- end }}
+</ul>
+{{- end }}
+{{ end }}
+</nav>
+{{ end }}
+{{ end }}
+{{- define "main" }}
+{{ .Content }}
+{{- end }}
