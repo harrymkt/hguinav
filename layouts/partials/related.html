@@ -1,10 +1,10 @@
 {{- $text := "You might also like" }}
 {{ $related := .Site.RegularPages.Related . | first 5 }}
 {{ with $related }}
-  <h4>{{ $text }}</h4>
-  <ul>
-  {{ range . }}
-    <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
-  {{ end }}
-  </ul>
+<h4>{{ $text }}</h4>
+<ul>
+{{ range . }}
+<li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+{{ end }}
+</ul>
 {{ end }}

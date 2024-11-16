@@ -1,8 +1,8 @@
 <h1>Select Language</h1>
 <nav aria-label="Language Selector">
 <ul>
-{{ range .Site.Home.AllTranslations }}
+{{- range .Site.Home.AllTranslations }}
 <li><a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a></li>
-{{ end }}
+{{- end }}
 </ul>
 </nav>
