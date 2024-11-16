@@ -14,3 +14,6 @@ next: "နောက်တစ်ခု"
 pagination_title: "Pagination"
 pagination_num: "စာမျက်နှာ {{ . }}"
 lchange: "ဘာသာစကားပြောင်းပါ။"
+totalpages:
+  one: "{{ . }} စာမျက်နှာ ပါရှိသည်။"
+  other: "စာမျက်နှာ {{ . }} ပါရှိသည်။"

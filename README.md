@@ -13,6 +13,7 @@ This theme is distributed under the terms of the [MIT License](https://github.co
 * Content variables during build, such as `$title$`. See the demo page for documentation
 * Copy code blocks; add code blocks which can then be copied using buttons and display the code language if available, helped by JavaScript.
 * Local date display; display dates in user's local timezone, no madder what timezone the date is set.
+* Taxonomies support.
 
 ## Installation
 Using git:

@@ -10,8 +10,8 @@ homepage = "https://github.com/harrymkt/hguinav"
 demosite = "https://harrymkt.github.io/hguinav"
 
 # Taxonomy terms
-tags = ["blog", "company"]
-features = ["some", "awesome", "features"]
+tags = ["blog", "company", "multilingual", "accessible", "accessibility", "blind"]
+features = ["Multilingual", "Documentation", "Variables", "Local Date Display", "More"]
 
 [author]
 name = "Harry Min Khant"

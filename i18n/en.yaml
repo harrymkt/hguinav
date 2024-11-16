@@ -14,3 +14,6 @@ next: "Next"
 pagination_title: "Pagination"
 pagination_num: "Page {{ . }}"
 lchange: "Change Language"
+totalpages:
+  one: "Contains {{ . }} page"
+  other: "Contains {{ . }} pages"

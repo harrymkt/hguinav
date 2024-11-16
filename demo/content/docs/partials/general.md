@@ -11,3 +11,4 @@ The following are partials that do not necessary to document each page.
 * footer.html: Main footer.
 * head.html: Main head meta.
 * header.html: Header, such as navigation.
+* listpost.html: Use to list pages in pagination. Add the partial pagination.html after this partial to add pagination buttons.

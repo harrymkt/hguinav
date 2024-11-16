@@ -1,0 +1,5 @@
+{{- range $page := (.Paginate .Pages.ByLastmod.Reverse).Pages }}
+<h2><a href="{{ $page.RelPermalink }}">{{ $page.LinkTitle }}</a></h2>
+{{- $upd := slice "<script>document.write(ts_to_readable_time(get_timestamp(\"" $page.Lastmod "\"), false, \"\", false));</script>" }}
+<p>{{ T "lastmod_short" (delimit $upd "") | safeHTML }}</p>
+{{- end }}

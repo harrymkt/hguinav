@@ -1,5 +1,5 @@
 baseURL: "https://example.org/"
-title: "HG UI Navigation"
+title: "UI Navigation"
 cleanDestinationDir: true
 publishDir: HTML
 
