@@ -1,6 +1,6 @@
 ---
 title: Test post 2
-date: 2024-11-15T12:00:00+06:30
+date: 2024-11-15T13:00:00+06:30
 categories: ["News"]
 ---
 Hello

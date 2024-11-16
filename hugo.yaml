@@ -13,7 +13,3 @@ menus:
       pageRef: "/blog"
       identifier: menu_main_blog
       weight: 20
-
-params:
-  title_sep: " – "
-

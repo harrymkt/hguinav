@@ -2,7 +2,7 @@
 title: General Partials
 type: doc
 weight: 10
-keywords: [writing, config, doc, params, content]
+keywords: [writing, config, doc, params, content,base,related]
 ---
 # General Partials
 The following are partials that do not necessary to document each page.

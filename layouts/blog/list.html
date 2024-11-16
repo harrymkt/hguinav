@@ -1,8 +1,9 @@
-{{- define "main" -}}
+{{- define "main" }}
 {{ (partial "content.html" (dict "value" .Content "page" . )) | safeHTML }}
-{{- range .Paginator.Pages }}
-<h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-{{ .Summary }}
+{{- range $page := (.Paginate .Pages.ByLastmod.Reverse).Pages }}
+<h2><a href="{{ $page.RelPermalink }}">{{ $page.LinkTitle }}</a></h2>
+{{- $upd := slice "<script>document.write(ts_to_readable_time(get_timestamp(\"" $page.Lastmod "\"), false, \"\", false));</script>" }}
+<p>{{ T "lastmod_short" (delimit $upd "") | safeHTML }}</p>
 {{- end }}
 {{ partial "pagination.html" . }}
 {{- end -}}
