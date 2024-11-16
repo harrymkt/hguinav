@@ -1,6 +1,6 @@
 {{- define "main" -}}
 {{ (partial "content.html" (dict "value" .Content "page" . )) | safeHTML }}
-{{- range .Pages }}
+{{- range .Paginator.Pages }}
 <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
 {{ .Summary }}
 {{- end }}

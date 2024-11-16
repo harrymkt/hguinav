@@ -2,6 +2,7 @@
 title: Params
 type: doc
 weight: 50
+keywords: [doc,documentation,variable,writing,partial]
 ---
 # Params
 You can use the following param parameters to configure the theme in your site config.

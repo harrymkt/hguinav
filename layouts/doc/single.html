@@ -5,8 +5,7 @@
 <nav role="navigation" aria-label="{{ $docsect.Title }}">
 <h2>{{ $docsect.Title }}</h2>
 <ul style="list-style-type:none;">
-{{- range $docsect.Pages.ByWeight }}
-{{- if .IsSection }}{{ continue }}{{ end }}
+{{- range $docsect.RegularPages.ByWeight }}
 <li><a href="{{ .RelPermalink }}" {{ if eq .RelPermalink $current.RelPermalink }}aria-current="page"{{ end }}>{{ .Title }}</a></li>
 {{- end }}
 </ul>
@@ -16,11 +15,8 @@
 <h3>{{ $subsect.Title }}</h3>
 {{ if $subsect.Content }}{{ (partial "content.html" (dict "value" $subsect.Content "page" $subsect )) | safeHTML }}{{ end }}
 <ul style="list-style-type:none;">
-{{- range $subsect.Pages.ByWeight }}
-<li>
-<a href="{{ .RelPermalink }}" {{ if eq .RelPermalink $.RelPermalink }}aria-current="page"{{ end }}>
-{{ .Title }}
-</a>
+{{- range $subsect.RegularPages.ByWeight }}
+<li><a href="{{ .RelPermalink }}" {{ if eq .RelPermalink $current.RelPermalink }}aria-current="page"{{ end }}>{{ .Title }}</a>
 </li>
 {{- end }}
 </ul>
@@ -31,4 +27,6 @@
 {{ end }}
 {{- define "main" }}
 {{ (partial "content.html" (dict "value" .Content "page" . )) | safeHTML }}
+
+{{ partial "related.html" . }}
 {{- end }}

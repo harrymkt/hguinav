@@ -4,6 +4,7 @@
 {{- $ftitles := slice .Title}}
 {{- $ftitles = $ftitles | append site.Title }}
 {{- $ftitle := delimit $ftitles $titlevar }}
-<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{{ $ftitle }}</title>
 <script src="{{absURL "scripts/theme.js"}}"></script>
+<link href="{{ absURL "css/theme.css" }}">

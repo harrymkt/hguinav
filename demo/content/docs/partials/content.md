@@ -1,6 +1,8 @@
 ---
 title: Content Partial
-weight: 10
+type: doc
+weight: 100
+keywords: [variable,config,content,write,params]
 ---
 # Content Partial (content.html)
 You can use this partial to display content instead of using `{{ .Content }}` etc. The advantage of using this partial is that it allows you to add content variables. See [writing]({{% relref "/docs/writing" %}}) to see how variables work.
@@ -9,5 +11,5 @@ You can use this partial to display content instead of using `{{ .Content }}` et
 
 ## Example
 ```go-html-template
-{{ partial "content.html" (dict "value" .Content "page" . }}
+{{ (partial "content.html" (dict "value" .Content "page" . )) | safeHTML }}
 ```
