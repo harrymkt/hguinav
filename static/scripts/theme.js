@@ -64,7 +64,7 @@ function ts_to_readable_time(timestamp, showsecond = false, ltext = "", show_ful
 			output += ", ";
 		}
 	}//
-	output = output.trim().replace(/,\s*$/, '');
+	if (show_full) output = output.trim().replace(/,\s*$/, '');
 	if (output.includes(',')) {
 		var lastCommaPos = output.lastIndexOf(',');
 		output = output.slice(0, lastCommaPos) + ' and' + output.slice(lastCommaPos + 1);
