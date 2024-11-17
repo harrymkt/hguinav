@@ -1,7 +1,7 @@
 /*
 JS functions
 */
-function ts_to_readable_time(timestamp, showsecond = false, ltext = '', show_full=true) {
+function ts_to_readable_time(timestamp, showsecond = false, ltext = "", show_full=true) {
 	/*
 	This function converts a given timestamp to human readable format.
 	Options:
@@ -17,7 +17,7 @@ function ts_to_readable_time(timestamp, showsecond = false, ltext = '', show_ful
 	var months = Math.floor(days / 30);
 	var years = Math.floor(months / 12);
 	var output = '';
-if(!show_full) {
+	if(!show_full) {
 		if (years > 0) {
 			output = years + " year";
 			if (years > 1) output += "s";

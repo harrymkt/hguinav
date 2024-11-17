@@ -1,3 +1,10 @@
+{{- define "title" -}}
+{{ $titles := slice .Title -}}
+{{- if and .Paginator (gt .Paginator.PageNumber 1) -}}
+{{- $titles = $titles | append (delimit (slice " (page " .Paginator.PageNumber ")") "") -}}
+{{- end -}}
+{{- partial "title.html" (dict "titles" $titles) -}}
+{{- end -}}
 {{- define "main" }}
 {{ (partial "content.html" (dict "value" .Content "page" . )) | safeHTML }}
 {{- partial "listpost.html" . }}

@@ -3,6 +3,7 @@
 <head>
 {{ partial "head.html" . }}
 {{ partial "extrahead.html" .}}
+<title>{{- block "title" . -}}{{- partial "title.html" (dict "titles" (slice .Title) ) -}}{{- end -}}</title>
 </head>
 <body>
 {{ partial "header.html" . }}

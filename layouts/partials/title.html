@@ -1,0 +1,9 @@
+{{- $titlevar := " - " -}}
+{{- with site.Params.title_sep -}}{{ $titlevar = . }}{{ end -}}
+{{- $titles := slice }}
+{{- with .titles }}
+{{- $titles = . }}
+{{- end }}
+{{- $titles = $titles | append site.Title }}
+{{- $ftitle := delimit $titles $titlevar }}
+{{- return $ftitle }}
