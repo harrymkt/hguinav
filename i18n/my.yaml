@@ -7,6 +7,7 @@ lastmod: "အပ်ဒိတ်လုပ်ထားသည်: {{ . }}"
 lastmod_short: "နောက်ဆုံးပြင်ဆင်ထားသည်: {{ . }} လွန်ခဲ့သော"
 menu_main_home: ပင်မစာမျက်နှာ
 menu_main_blog: စာတိုက်
+menu_main_doc: "Documentation"
 first: "ပထမ"
 last: "နောက်ဆုံး"
 previous: "အရင်"

@@ -13,3 +13,7 @@ menus:
       pageRef: "/blog"
       identifier: menu_main_blog
       weight: 20
+    - name: "Documentation"
+      pageRef: "/docs"
+      identifier: menu_main_doc
+      weight: 30
