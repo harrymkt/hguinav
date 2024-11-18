@@ -1,5 +1,5 @@
-{{- if hugo.IsMultilingual }}<a href="{{ absURL "lang" }}">{{T "lchange" }}</a>{{ end }}
-<a href="#mainc" class="skip-link">{{ T "acc_skip_main" }}</a>
-<a href="#navigation" class="skip-link">{{ T "acc_skip_nav" }}</a>
-<a href="#hgfooter" class="skip-link">{{ T "acc_skip_footer" }}</a>
+{{- if hugo.IsMultilingual }}<p><a href="{{ absURL "lang" }}">{{T "lchange" }}</a></p>{{ end }}
+<p><a href="#mainc" class="skip-link">{{ T "acc_skip_main" }}</a></p>
+<p><a href="#navigation" class="skip-link">{{ T "acc_skip_nav" }}</a></p>
+<p><a href="#hgfooter" class="skip-link">{{ T "acc_skip_footer" }}</a></p>
 {{ partial "menu.html" (dict "menuID" "main" "page" .) }}

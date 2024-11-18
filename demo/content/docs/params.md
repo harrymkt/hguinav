@@ -1,7 +1,7 @@
 ---
 title: Params
 type: doc
-weight: 50
+weight: 100
 keywords: [doc,documentation,variable,writing,partial]
 ---
 # Params

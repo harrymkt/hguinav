@@ -1,6 +1,15 @@
+{{- define "title" -}}
+{{- $docsect := .FirstSection -}}
+{{- $current := . -}}
+{{- $titles := slice $current.Title -}}
+{{- if and $docsect (not ($docsect.Eq $current) ) -}}
+{{- $titles = $titles | append $docsect.Title -}}
+{{- end -}}
+{{- partial "title.html" (dict "titles" $titles) -}}
+{{- end -}}
 {{- define "extraheader" }}
-{{- $docsect := .FirstSection }}
-{{- $current := . }}
+{{- $docsect := .FirstSection -}}
+{{- $current := . -}}
 {{ if $docsect }}
 <nav role="navigation" aria-label="{{ $docsect.Title }}">
 <h2>{{ $docsect.Title }}</h2>

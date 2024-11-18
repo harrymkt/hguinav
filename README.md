@@ -7,13 +7,15 @@ UI Navigation, or known as hguinav, is a Hugo theme designed for accessibility r
 This theme is distributed under the terms of the [MIT License](https://github.com/harrymkt/hguinav/blob/main/LICENSE.md).
 
 ## Features
-* Multilingual.
+* Multilingual support with i18n; Hugo supports built-in advance multilingual feature, this theme only adds templates for it.
 * Customizable extrahead, extrafooter, head, header, footer, with partials, and extrahead, with blocks.
 * Documentation site; build accessible documentation sites by using built-in template specifically designed for documentation. You can set the type of the section you want to document in the section's frontmadder.
 * Content variables during build, such as `$title$`. See the demo page for documentation
 * Copy code blocks; add code blocks which can then be copied using buttons and display the code language if available, helped by JavaScript.
 * Local date display; display dates in user's local timezone, no madder what timezone the date is set.
 * Taxonomies support.
+* Use blocks to easily modify without having to copy some files to your layouts.
+* Use partials and shortcodes to make your content and/or templates shorten.
 
 ## Installation
 Using git:

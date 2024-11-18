@@ -1,7 +1,7 @@
 ---
 title: General Partials
 type: doc
-weight: 10
+weight: 1
 keywords: [writing, config, doc, params, content,base,related]
 ---
 # General Partials

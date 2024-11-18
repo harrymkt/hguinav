@@ -6,6 +6,7 @@
 <title>{{- block "title" . -}}{{- partial "title.html" (dict "titles" (slice .Title) ) -}}{{- end -}}</title>
 </head>
 <body>
+{{- block "beforeheader" . }}{{ end }}
 {{ partial "header.html" . }}
 {{- block "extraheader" . }}{{ end }}
 <main id="mainc">

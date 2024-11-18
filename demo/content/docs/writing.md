@@ -1,7 +1,7 @@
 ---
 title: Writing
 type: doc
-weight: 10
+weight: 200
 keywords: [content,variable,writing,config]
 ---
 # Writing
