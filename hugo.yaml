@@ -16,3 +16,7 @@ menus:
       pageRef: "/docs"
       identifier: menu_main_doc
       weight: 30
+    - name: "Authors"
+      pageRef: "/authors"
+      identifier: menu_main_author
+      weight: 40

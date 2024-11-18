@@ -4,6 +4,7 @@ lastmod: 2024-11-16T11:00:00+06:30
 date: 2024-11-11T12:00:00+06:30
 categories: ["News"]
 description: "ဒါက စမ်းသပ်ပို့စ်ပါ။"
+authors: [Harry Min Khant]
 ---
 မင်္ဂလာပါ
 <!--more-->

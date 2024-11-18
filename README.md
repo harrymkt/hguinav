@@ -14,6 +14,7 @@ This theme is distributed under the terms of the [MIT License](https://github.co
 * Copy code blocks; add code blocks which can then be copied using buttons and display the code language if available, helped by JavaScript.
 * Local date display; display dates in user's local timezone, no madder what timezone the date is set.
 * Taxonomies support.
+* Taxonomy based author / user management, provided in demo.
 * Use blocks to easily modify without having to copy some files to your layouts.
 * Use partials and shortcodes to make your content and/or templates shorten.
 

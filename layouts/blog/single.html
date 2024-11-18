@@ -3,12 +3,13 @@
 {{- end -}}
 {{ define "main" }}
 <h1>{{ .Title }}</h1>
-{{ partial "terms.html" (dict "taxonomy" "categories" "page" .) }}
+{{ partial "terms.html" (dict "taxonomy" "authors" "page" .) }}
 {{- $upd := slice "<script>document.write(local_datetime_string(\"" .Lastmod "\"));</script>" }}
 {{- if ne .Lastmod .Date }}<p>{{ T "lastmod" (delimit $upd "") | safeHTML }}</p>{{ end }}
 {{- $pon := T "published_on" "<script>document.write(local_datetime_string(\"$d$\"));</script>" -}}
 {{- $pon = $pon | safeHTML -}}
 <p>{{ replace $pon "$d$" .Date | safeHTML }}</p>
+{{ partial "terms.html" (dict "taxonomy" "categories" "page" .) }}
 
 {{ (partial "content.html" (dict "value" .Content "page" . )) | safeHTML }}
 

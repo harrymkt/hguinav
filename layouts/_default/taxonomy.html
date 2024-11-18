@@ -1,3 +1,6 @@
+{{- define "title" -}}
+{{- partial "title.html" (dict "titles" (slice .Title) ) -}}
+{{- end -}}
 {{ define "main" }}
 <h1>{{ .Title }}</h1>
 {{ partial "content.html" (dict "value" .Content "page" . ) }}
