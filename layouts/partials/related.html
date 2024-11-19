@@ -1,7 +1,28 @@
+{{- /*
+Render related content.
+
+page page the object pointing streight to a page.
+hlevel int the heading level (optional)
+text string the text for the heading (optional)
+
+*/ -}}
 {{- $text := "You might also like" }}
-{{ $related := .Site.RegularPages.Related . | first 5 }}
+{{- $hlevel := 4 }}
+{{- $page := dict }}
+{{- with .page }}
+{{- $page = . }}
+{{- else }}
+{{- errorf "Missing page argument" }}
+{{- end }}
+{{- with .text }}
+{{- $text = . }}
+{{- end }}
+{{- with .hlevel }}
+{{- $hlevel = . }}
+{{- end }}
+{{ $related := $page.Site.RegularPages.Related . | first 5 }}
 {{ with $related }}
-<h4>{{ $text }}</h4>
+<h{{ $hlevel }}>{{ $text }}</h{{ $hlevel }}>
 <ul>
 {{ range . }}
 <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>

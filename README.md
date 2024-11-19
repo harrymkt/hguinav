@@ -1,6 +1,8 @@
 # UI Navigation
 UI Navigation, or known as hguinav, is a Hugo theme designed for accessibility rather than visual and made as easy as possible. Since I am a blind developer, I'd like to develop with accessibility as possible so visually impaired users can use them.
 
+This theme uses blocks as possible because as far as I know Hugo does not allow extend and super functions like other static site generators.
+
 [Theme demo](https://harrymkt.github.io/hguinav)
 
 ## License
@@ -9,7 +11,7 @@ This theme is distributed under the terms of the [MIT License](https://github.co
 ## Features
 * Multilingual support with i18n; Hugo supports built-in advance multilingual feature, this theme only adds templates for it.
 * Customizable extrahead, extrafooter, head, header, footer, with partials, and extrahead, with blocks.
-* Documentation site; build accessible documentation sites by using built-in template specifically designed for documentation. You can set the type of the section you want to document in the section's frontmadder.
+* Documentation site; build accessible documentation sites by using built-in template specifically designed for documentation. You can set the type of the section you want to document in the section's frontmadder as well as in each post.
 * Content variables during build, such as `%title%`. See the demo page for documentation
 * Copy code blocks; add code blocks which can then be copied using buttons and display the code language if available, helped by JavaScript.
 * Local date display; display dates in user's local timezone, no madder what timezone the date is set.

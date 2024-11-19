@@ -8,7 +8,7 @@ authors: [Harry Min Khant]
 ---
 Hello
 <!--more-->
-Updated on $updated$
+Updated on %updated%
 # H1
 ###### H6
 ### H3{#i}

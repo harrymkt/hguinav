@@ -10,7 +10,9 @@
 {{- $pon = $pon | safeHTML -}}
 <p>{{ replace $pon "$d$" .Date | safeHTML }}</p>
 {{ partial "terms.html" (dict "taxonomy" "categories" "page" .) }}
-
+<p>{{ T "totalwords" .WordCount }}</p>
+<p>{{ T "totaltime" .ReadingTime }}</p>
+<br>
 {{ (partial "content.html" (dict "value" .Content "page" . )) | safeHTML }}
 
 {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
