@@ -2,6 +2,7 @@
 title: "Documentation Site"
 weight: 1000
 keywords: [doc, params, writing, content, misc, title]
+type: doc
 ---
 # Documentation Site
 Hguinav supports built-in documentation template that allows you to create list base documentation pages. Each section, starting at content/, you can create a subsection documentation. You can also look the docs folder of this theme demo.

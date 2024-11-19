@@ -1,10 +1,10 @@
 ---
-title: Params
+title: Config Params
 type: doc
 weight: 100
 keywords: [doc,documentation,variable,writing,partial]
 ---
-# Params
+# Config Params
 You can use the following param parameters to configure the theme in your site config.
 
 ## title_sep
