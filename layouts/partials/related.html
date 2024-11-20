@@ -8,7 +8,7 @@ text string the text for the heading (optional)
 */ -}}
 {{- $text := "You might also like" }}
 {{- $hlevel := 4 }}
-{{- $page := dict }}
+{{- $page := "" }}
 {{- with .page }}
 {{- $page = . }}
 {{- else }}
@@ -20,7 +20,7 @@ text string the text for the heading (optional)
 {{- with .hlevel }}
 {{- $hlevel = . }}
 {{- end }}
-{{ $related := $page.Site.RegularPages.Related . | first 5 }}
+{{ $related := $page.Site.RegularPages.Related $page | first 5 }}
 {{ with $related }}
 <h{{ $hlevel }}>{{ $text }}</h{{ $hlevel }}>
 <ul>
