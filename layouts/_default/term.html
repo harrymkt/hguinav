@@ -1,9 +1,9 @@
 {{- define "title" -}}
-{{- partial "title.html" (dict "titles" (slice .Title .Data.Singular) ) -}}
+  {{- partial "title.html" (dict "titles" (slice .Title .Data.Singular) ) -}}
 {{- end -}}
-{{ define "main" }}
+{{- define "main" }}
 <h1>{{ .Title }}</h1>
 {{ partial "content.html" (dict "value" .Content "page" . ) }}
 {{- partial "listpost.html" . }}
 {{ partial "pagination.html" . }}
-{{ end }}
+{{- end }}

@@ -1,8 +1,8 @@
 {{- range $page := (.Paginate .Pages.ByLastmod.Reverse).Pages }}
 <h2><a href="{{ $page.RelPermalink }}">{{ $page.LinkTitle }}</a>{{ $page.Description }}</h2>
-{{- $lmd := printf "<script>document.write(ts_to_readable_time(get_timestamp(%q), false, %q, false));</script>" .Lastmod "" }}
+  {{- $lmd := printf "<script>document.write(ts_to_readable_time(get_timestamp(%q), false, %q, false));</script>" .Lastmod "" }}
 <p>{{ T "lastmod_short" $lmd | safeHTML }}</p>
-{{- with $page.Summary }}
+  {{- with $page.Summary }}
 <p>{{ . }}</p>
-{{- end }}
+  {{- end }}
 {{- end }}

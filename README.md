@@ -1,6 +1,8 @@
 # UI Navigation
 UI Navigation, or known as hguinav, is a Hugo theme designed for accessibility rather than visual and made as easy as possible. Since I am a blind developer, I'd like to develop with accessibility as possible so visually impaired users can use them.
 
+This theme is also available for Zola at [Zluinav](https://github.com/harrymkt/zluinav).
+
 This theme uses blocks as possible because as far as I know Hugo does not allow extend and super functions like other static site generators.
 
 [Theme demo](https://harrymkt.github.io/hguinav)

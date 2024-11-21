@@ -1,10 +1,10 @@
 {{- define "title" -}}
-{{- partial "title.html" (dict "titles" (slice .Title) ) -}}
+  {{- partial "title.html" (dict "titles" (slice .Title) ) -}}
 {{- end -}}
 {{ define "main" }}
 <h1>{{ .Title }}</h1>
 {{ partial "content.html" (dict "value" .Content "page" . ) }}
-{{ range .Pages }}
+{{- range .Pages }}
 <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{T "totalpages" .RegularPages.Len }}</h2>
-{{ end }}
-{{ end }}
+{{- end }}
+{{- end }}

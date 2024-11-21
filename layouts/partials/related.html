@@ -20,6 +20,9 @@ text string the text for the heading (optional)
 {{- with .hlevel }}
 {{- $hlevel = . }}
 {{- end }}
+{{- if or (lt $hlevel 1) (gt $hlevel 6) }}
+{{- errorf "Heading level must be in range of 1 - 6, got %v" $hlevel }}
+{{- end }}
 {{ $related := $page.Site.RegularPages.Related $page | first 5 }}
 {{ with $related }}
 <h{{ $hlevel }}>{{ $text }}</h{{ $hlevel }}>
