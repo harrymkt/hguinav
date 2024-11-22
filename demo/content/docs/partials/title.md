@@ -13,7 +13,7 @@ You can use this partial to customize the title of any page. The site title will
 {{- define "title" -}}
 {{ $titles := slice .Title -}}
 {{- if and .Paginator (gt .Paginator.PageNumber 1) -}}
-{{- $titles = $titles | append (delimit (slice " (page " .Paginator.PageNumber ")") "") -}}
+{{- $titles = $titles | append (printf " (page %v)" .Paginator.PageNumber) -}}
 {{- end -}}
 {{- partial "title.html" (dict "titles" $titles) -}}
 {{- end -}}
