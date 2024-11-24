@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Documentation on HG UI Navigation</title>
+    <link>https://harrymkt.github.io/hguinav/docs/</link>
+    <description>Recent content in Documentation on HG UI Navigation</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="https://harrymkt.github.io/hguinav/docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Writing</title>
+      <link>https://harrymkt.github.io/hguinav/docs/writing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://harrymkt.github.io/hguinav/docs/writing/</guid>
+      <description>&lt;h1 id=&#34;writing&#34;&gt;Writing&lt;/h1&gt;&#xA;&lt;p&gt;You can use the following variables to replace with something else. Variables are enclosed by &lt;code&gt;%variable_name%&lt;/code&gt; where variable_name is the name of available variables you want. This feature can be used in content files where the content partial is used, such as documentation sections, home page, blog, etc.&lt;/p&gt;&#xA;&lt;p&gt;To display the raw of the variable name itself, prefix with &lt;code&gt;/&lt;/code&gt;. For example, %//title%&lt;/p&gt;&#xA;&lt;p&gt;Available variables:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;title&lt;/code&gt;: The title of the page.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;date&lt;/code&gt;: The published date in the local format, similar to post page.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;updated&lt;/code&gt;: The updated date, similar to above format.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;description&lt;/code&gt;: The description.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;title: Test&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;This page is titled %/title%&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Blocks</title>
+      <link>https://harrymkt.github.io/hguinav/docs/blocks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://harrymkt.github.io/hguinav/docs/blocks/</guid>
+      <description>&lt;h1 id=&#34;blocks&#34;&gt;Blocks&lt;/h1&gt;&#xA;&lt;p&gt;Sometimes partial files are not enough. Or will they be cluttered. Blocks come in. You can define blocks to display content in position the block is defined in the base template. Here are available blocks that you can use:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;title&lt;/code&gt;: The title block. This should be completely optional anyway.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;beforeheader&lt;/code&gt;: Content before header, or another word, content immediately following the body tag.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;extraheader&lt;/code&gt;: Content after the header defined in header.html (partial).&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;nav&lt;/code&gt;: Navigation / menu block.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;main&lt;/code&gt;: The main content.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Author Management Via Taxonomy</title>
+      <link>https://harrymkt.github.io/hguinav/docs/author-taxonomy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://harrymkt.github.io/hguinav/docs/author-taxonomy/</guid>
+      <description>&lt;h1 id=&#34;title&#34;&gt;%title%&lt;/h1&gt;&#xA;&lt;p&gt;You can have taxonomy based author management system. Create each author section in content/authors/author_name/_index.md, and looks like this:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;title&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Author name&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;role&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;admin&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;I&amp;#39;m the maintainer of this site (optional byo)&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Please note that you do not need to create section for that author if you are not adding custom metadata for them.&lt;/p&gt;&#xA;&lt;h2 id=&#34;setting-author-taxonomy&#34;&gt;Setting Author Taxonomy&lt;/h2&gt;&#xA;&lt;p&gt;In your site configuration:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;taxonomies&lt;/span&gt;:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;author&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;authors&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;# Custom taxonomies go here&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;frontmadder&#34;&gt;Frontmadder&lt;/h2&gt;&#xA;&lt;p&gt;By default, Hguinav provides the following optional frontmadder variables:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Documentation Site</title>
+      <link>https://harrymkt.github.io/hguinav/docs/documentation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://harrymkt.github.io/hguinav/docs/documentation/</guid>
+      <description>&lt;h1 id=&#34;documentation-site&#34;&gt;Documentation Site&lt;/h1&gt;&#xA;&lt;p&gt;Hguinav supports built-in documentation template that allows you to create list base documentation pages. Each section, starting at content/, you can create a subsection documentation. You can also look the docs folder of this theme demo.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: documentations can be sorted by the method you like. Hguinav documentation uses weight sort style. Please note that when using weight, you also need to set for subsections.&lt;/p&gt;&#xA;&lt;h2 id=&#34;setup&#34;&gt;Setup&lt;/h2&gt;&#xA;&lt;p&gt;First, create first documentation section in content folder, and add _index.md to it containing the following frontmadder. For this documentation, we will create docs folder and use YAML for frontmadder.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

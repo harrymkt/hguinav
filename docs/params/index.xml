@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Params on HG UI Navigation</title>
+    <link>https://harrymkt.github.io/hguinav/docs/params/</link>
+    <description>Recent content in Params on HG UI Navigation</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="https://harrymkt.github.io/hguinav/docs/params/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Config Params</title>
+      <link>https://harrymkt.github.io/hguinav/docs/params/config/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://harrymkt.github.io/hguinav/docs/params/config/</guid>
+      <description>&lt;h1 id=&#34;config-params&#34;&gt;Config Params&lt;/h1&gt;&#xA;&lt;p&gt;You can use the following param parameters to configure the theme in your site config.&lt;/p&gt;&#xA;&lt;h2 id=&#34;title_sep&#34;&gt;title_sep&lt;/h2&gt;&#xA;&lt;p&gt;The title&#39;s seperator to use. Default is &amp;quot; – &amp;quot;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

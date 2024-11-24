@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shortcodes on HG UI Navigation</title>
+    <link>https://harrymkt.github.io/hguinav/docs/shortcodes/</link>
+    <description>Recent content in Shortcodes on HG UI Navigation</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="https://harrymkt.github.io/hguinav/docs/shortcodes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Audio Shortcode</title>
+      <link>https://harrymkt.github.io/hguinav/docs/shortcodes/audio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://harrymkt.github.io/hguinav/docs/shortcodes/audio/</guid>
+      <description>&lt;h1 id=&#34;audio-shortcode-audiohtml&#34;&gt;Audio Shortcode (audio.html)&lt;/h1&gt;&#xA;&lt;p&gt;This shortcode allows you to play audio files via URL. This makes it easy without having to add manual HTML audio tag. When using this shortcode, use the &amp;lt; and &amp;gt; signs.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;source&lt;/code&gt;(string) required: The path or URL to the file you want to play.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;unsupported&lt;/code&gt;(string) optional: The text to display if the file cannot be loaded, either do to error or the file does not exist or even the browser does not support playing files.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on HG UI Navigation</title>
+    <link>https://harrymkt.github.io/hguinav/my/tags/</link>
+    <description>Recent content in Tags on HG UI Navigation</description>
+    <generator>Hugo</generator>
+    <language>my</language>
+    <atom:link href="https://harrymkt.github.io/hguinav/my/tags/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://harrymkt.github.io/hguinav/scripts/theme.js"></script>
+<link href="https://harrymkt.github.io/hguinav/css/theme.css">
+
+<title>Title Partial – Documentation – HG UI Navigation</title>
+</head>
+<body>
+<p><a href="https://harrymkt.github.io/hguinav/lang">Change Language</a></p>
+<p><a href="#mainc" class="skip-link">Skip to main content</a></p>
+<p><a href="#navigation" class="skip-link">Skip to navigation</a></p>
+<p><a href="#hgfooter" class="skip-link">Skip to footer</a></p>
+
+<nav id="navigation" role="navigation" aria-label="Main Menu">
+<h2>Main Menu</h2>
+<ul style="list-style-type:none;">
+<li><a href="/hguinav/">Home</a>
+</li>
+<li><a href="/hguinav/blog/">Posts</a>
+</li>
+<li><a aria-current="true" class="ancestor" href="/hguinav/docs/">Documentation</a>
+</li>
+<li><a href="/hguinav/authors/">Authors</a>
+</li>
+</ul>
+</nav>
+<nav role="navigation" aria-label="Documentation">
+<h2>Documentation</h2>
+<ul style="list-style-type:none;">
+<li><a href="/hguinav/docs/writing/" >Writing</a></li>
+<li><a href="/hguinav/docs/blocks/" >Blocks</a></li>
+<li><a href="/hguinav/docs/author-taxonomy/" >Author Management Via Taxonomy</a></li>
+<li><a href="/hguinav/docs/documentation/" >Documentation Site</a></li>
+</ul>
+<h3>Params</h3>
+<p>Control your site or page by these custom variables and frontmadders.</p>
+
+<ul style="list-style-type:none;">
+<li><a href="/hguinav/docs/params/config/" >Config Params</a></li>
+</ul>
+<h3>Partials</h3>
+<p>Partials live in the layouts/partials and are so called custom functions. To modify any of them you can copy to your layouts/partials directory.</p>
+
+<ul style="list-style-type:none;">
+<li><a href="/hguinav/docs/partials/general/" >General Partials</a></li>
+<li><a href="/hguinav/docs/partials/content/" >Content Partial</a></li>
+<li><a href="/hguinav/docs/partials/title/" aria-current="page">Title Partial</a></li>
+<li><a href="/hguinav/docs/partials/related/" >Related Partial</a></li>
+</ul>
+<h3>Shortcodes</h3>
+<p>Shortcodes live in the layouts/shortcodes and are so called custom functions that you can use in your content file. To modify any of them you can copy to your layouts/partials directory.</p>
+
+<ul style="list-style-type:none;">
+<li><a href="/hguinav/docs/shortcodes/audio/" >Audio Shortcode</a></li>
+</ul>
+
+</nav>
+
+
+<main id="mainc">
+<h1 id="title-partial-titlehtml">Title Partial (title.html)</h1>
+<p>You can use this partial to customize the title of any page. The site title will be appended after them. Use the <code>title</code> block to customize.</p>
+<ul>
+<li><code>titles</code>(slice): The titles made out of slice.</li>
+</ul>
+<h2 id="example">Example</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go-html-template" data-lang="go-html-template"><span style="display:flex;"><span><span style="color:#75715e">{{-</span> <span style="color:#66d9ef">define</span> <span style="color:#e6db74">&#34;title&#34;</span> <span style="color:#75715e">-}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$titles</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">slice</span> <span style="color:#a6e22e">.Title</span> <span style="color:#75715e">-}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">{{-</span> <span style="color:#66d9ef">if</span> <span style="color:#66d9ef">and</span> <span style="color:#a6e22e">.Paginator</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">gt</span> <span style="color:#a6e22e">.Paginator.PageNumber</span> <span style="color:#a6e22e">1</span><span style="color:#f92672">)</span> <span style="color:#75715e">-}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">{{-</span> <span style="color:#a6e22e">$titles</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">$titles</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">append</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">printf</span> <span style="color:#e6db74">&#34; (page %v)&#34;</span> <span style="color:#a6e22e">.Paginator.PageNumber</span><span style="color:#f92672">)</span> <span style="color:#75715e">-}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">{{-</span> <span style="color:#66d9ef">end</span> <span style="color:#75715e">-}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">{{-</span> <span style="color:#a6e22e">partial</span> <span style="color:#e6db74">&#34;title.html&#34;</span> <span style="color:#f92672">(</span><span style="color:#a6e22e">dict</span> <span style="color:#e6db74">&#34;titles&#34;</span> <span style="color:#a6e22e">$titles</span><span style="color:#f92672">)</span> <span style="color:#75715e">-}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">{{-</span> <span style="color:#66d9ef">end</span> <span style="color:#75715e">-}}</span>
+</span></span></code></pre></div>
+
+
+
+
+<h4>You might also like</h4>
+<ul>
+
+<li><a href="/hguinav/docs/writing/">Writing</a></li>
+
+<li><a href="/hguinav/docs/partials/content/">Content Partial</a></li>
+
+<li><a href="/hguinav/docs/partials/general/">General Partials</a></li>
+
+<li><a href="/hguinav/docs/author-taxonomy/">Author Management Via Taxonomy</a></li>
+
+<li><a href="/hguinav/docs/params/config/">Config Params</a></li>
+
+</ul>
+</main>
+<div id="hgfooter">
+<footer>
+<p>Powered by <a href="https://github.com/harrymkt/hguinav">UI Navigation Theme</a> Created by <a href="https://harrymkt.github.io">Harry Min Khant</a></p>
+</footer>
+</div>
+
+<script src="https://harrymkt.github.io/hguinav/scripts/copy.js"></script>
+</body>
+</html>

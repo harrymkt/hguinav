@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://harrymkt.github.io/hguinav/scripts/theme.js"></script>
+<link href="https://harrymkt.github.io/hguinav/css/theme.css">
+
+<title>Content Partial – Documentation – HG UI Navigation</title>
+</head>
+<body>
+<p><a href="https://harrymkt.github.io/hguinav/lang">Change Language</a></p>
+<p><a href="#mainc" class="skip-link">Skip to main content</a></p>
+<p><a href="#navigation" class="skip-link">Skip to navigation</a></p>
+<p><a href="#hgfooter" class="skip-link">Skip to footer</a></p>
+
+<nav id="navigation" role="navigation" aria-label="Main Menu">
+<h2>Main Menu</h2>
+<ul style="list-style-type:none;">
+<li><a href="/hguinav/">Home</a>
+</li>
+<li><a href="/hguinav/blog/">Posts</a>
+</li>
+<li><a aria-current="true" class="ancestor" href="/hguinav/docs/">Documentation</a>
+</li>
+<li><a href="/hguinav/authors/">Authors</a>
+</li>
+</ul>
+</nav>
+<nav role="navigation" aria-label="Documentation">
+<h2>Documentation</h2>
+<ul style="list-style-type:none;">
+<li><a href="/hguinav/docs/writing/" >Writing</a></li>
+<li><a href="/hguinav/docs/blocks/" >Blocks</a></li>
+<li><a href="/hguinav/docs/author-taxonomy/" >Author Management Via Taxonomy</a></li>
+<li><a href="/hguinav/docs/documentation/" >Documentation Site</a></li>
+</ul>
+<h3>Params</h3>
+<p>Control your site or page by these custom variables and frontmadders.</p>
+
+<ul style="list-style-type:none;">
+<li><a href="/hguinav/docs/params/config/" >Config Params</a></li>
+</ul>
+<h3>Partials</h3>
+<p>Partials live in the layouts/partials and are so called custom functions. To modify any of them you can copy to your layouts/partials directory.</p>
+
+<ul style="list-style-type:none;">
+<li><a href="/hguinav/docs/partials/general/" >General Partials</a></li>
+<li><a href="/hguinav/docs/partials/content/" aria-current="page">Content Partial</a></li>
+<li><a href="/hguinav/docs/partials/title/" >Title Partial</a></li>
+<li><a href="/hguinav/docs/partials/related/" >Related Partial</a></li>
+</ul>
+<h3>Shortcodes</h3>
+<p>Shortcodes live in the layouts/shortcodes and are so called custom functions that you can use in your content file. To modify any of them you can copy to your layouts/partials directory.</p>
+
+<ul style="list-style-type:none;">
+<li><a href="/hguinav/docs/shortcodes/audio/" >Audio Shortcode</a></li>
+</ul>
+
+</nav>
+
+
+<main id="mainc">
+<h1 id="content-partial-contenthtml">Content Partial (content.html)</h1>
+<p>You can use this partial to display content instead of using <code>{{ .Content }}</code> etc. The advantage of using this partial is that it allows you to add content variables. See <a href="/hguinav/docs/writing/">writing</a> to see how variables work.</p>
+<ul>
+<li><code>value</code>(string) required: The value to display.</li>
+<li><code>page</code>(object) required: The page object where the content partial should retrieve necessary variables to replace.</li>
+</ul>
+<h2 id="example">Example</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go-html-template" data-lang="go-html-template"><span style="display:flex;"><span><span style="color:#75715e">{{</span> <span style="color:#f92672">(</span><span style="color:#a6e22e">partial</span> <span style="color:#e6db74">&#34;content.html&#34;</span> <span style="color:#f92672">(</span><span style="color:#a6e22e">dict</span> <span style="color:#e6db74">&#34;value&#34;</span> <span style="color:#a6e22e">.Content</span> <span style="color:#e6db74">&#34;page&#34;</span> <span style="color:#a6e22e">.</span> <span style="color:#f92672">))</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">safeHTML</span> <span style="color:#75715e">}}</span>
+</span></span></code></pre></div>
+
+
+
+
+<h4>You might also like</h4>
+<ul>
+
+<li><a href="/hguinav/docs/partials/general/">General Partials</a></li>
+
+<li><a href="/hguinav/docs/partials/title/">Title Partial</a></li>
+
+<li><a href="/hguinav/docs/writing/">Writing</a></li>
+
+<li><a href="/hguinav/docs/documentation/">Documentation Site</a></li>
+
+<li><a href="/hguinav/docs/shortcodes/audio/">Audio Shortcode</a></li>
+
+</ul>
+</main>
+<div id="hgfooter">
+<footer>
+<p>Powered by <a href="https://github.com/harrymkt/hguinav">UI Navigation Theme</a> Created by <a href="https://harrymkt.github.io">Harry Min Khant</a></p>
+</footer>
+</div>
+
+<script src="https://harrymkt.github.io/hguinav/scripts/copy.js"></script>
+</body>
+</html>

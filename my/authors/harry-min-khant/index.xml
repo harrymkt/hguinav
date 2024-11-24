@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Harry Min Khant on HG UI Navigation</title>
+    <link>https://harrymkt.github.io/hguinav/my/authors/harry-min-khant/</link>
+    <description>Recent content in Harry Min Khant on HG UI Navigation</description>
+    <generator>Hugo</generator>
+    <language>my</language>
+    <lastBuildDate>Tue, 19 Nov 2024 22:06:27 +0630</lastBuildDate>
+    <atom:link href="https://harrymkt.github.io/hguinav/my/authors/harry-min-khant/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>စမ်းတင်ထားတာ 2</title>
+      <link>https://harrymkt.github.io/hguinav/my/blog/test2/</link>
+      <pubDate>Fri, 15 Nov 2024 13:00:00 +0630</pubDate>
+      <guid>https://harrymkt.github.io/hguinav/my/blog/test2/</guid>
+      <description>&lt;p&gt;မင်္ဂလာပါ&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>စမ်းတင်ထားတာ</title>
+      <link>https://harrymkt.github.io/hguinav/my/blog/test/</link>
+      <pubDate>Mon, 11 Nov 2024 12:00:00 +0630</pubDate>
+      <guid>https://harrymkt.github.io/hguinav/my/blog/test/</guid>
+      <description>&lt;p&gt;မင်္ဂလာပါ&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors on HG UI Navigation</title>
+    <link>https://harrymkt.github.io/hguinav/authors/</link>
+    <description>Recent content in Authors on HG UI Navigation</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 18 Nov 2024 20:26:38 +0630</lastBuildDate>
+    <atom:link href="https://harrymkt.github.io/hguinav/authors/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Harry Min Khant</title>
+      <link>https://harrymkt.github.io/hguinav/authors/harry-min-khant/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://harrymkt.github.io/hguinav/authors/harry-min-khant/</guid>
+      <description>&lt;p&gt;I&#39;m the maintainer of this site.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

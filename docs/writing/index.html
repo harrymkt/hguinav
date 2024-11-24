@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://harrymkt.github.io/hguinav/scripts/theme.js"></script>
+<link href="https://harrymkt.github.io/hguinav/css/theme.css">
+
+<title>Writing – Documentation – HG UI Navigation</title>
+</head>
+<body>
+<p><a href="https://harrymkt.github.io/hguinav/lang">Change Language</a></p>
+<p><a href="#mainc" class="skip-link">Skip to main content</a></p>
+<p><a href="#navigation" class="skip-link">Skip to navigation</a></p>
+<p><a href="#hgfooter" class="skip-link">Skip to footer</a></p>
+
+<nav id="navigation" role="navigation" aria-label="Main Menu">
+<h2>Main Menu</h2>
+<ul style="list-style-type:none;">
+<li><a href="/hguinav/">Home</a>
+</li>
+<li><a href="/hguinav/blog/">Posts</a>
+</li>
+<li><a aria-current="true" class="ancestor" href="/hguinav/docs/">Documentation</a>
+</li>
+<li><a href="/hguinav/authors/">Authors</a>
+</li>
+</ul>
+</nav>
+<nav role="navigation" aria-label="Documentation">
+<h2>Documentation</h2>
+<ul style="list-style-type:none;">
+<li><a href="/hguinav/docs/writing/" aria-current="page">Writing</a></li>
+<li><a href="/hguinav/docs/blocks/" >Blocks</a></li>
+<li><a href="/hguinav/docs/author-taxonomy/" >Author Management Via Taxonomy</a></li>
+<li><a href="/hguinav/docs/documentation/" >Documentation Site</a></li>
+</ul>
+<h3>Params</h3>
+<p>Control your site or page by these custom variables and frontmadders.</p>
+
+<ul style="list-style-type:none;">
+<li><a href="/hguinav/docs/params/config/" >Config Params</a></li>
+</ul>
+<h3>Partials</h3>
+<p>Partials live in the layouts/partials and are so called custom functions. To modify any of them you can copy to your layouts/partials directory.</p>
+
+<ul style="list-style-type:none;">
+<li><a href="/hguinav/docs/partials/general/" >General Partials</a></li>
+<li><a href="/hguinav/docs/partials/content/" >Content Partial</a></li>
+<li><a href="/hguinav/docs/partials/title/" >Title Partial</a></li>
+<li><a href="/hguinav/docs/partials/related/" >Related Partial</a></li>
+</ul>
+<h3>Shortcodes</h3>
+<p>Shortcodes live in the layouts/shortcodes and are so called custom functions that you can use in your content file. To modify any of them you can copy to your layouts/partials directory.</p>
+
+<ul style="list-style-type:none;">
+<li><a href="/hguinav/docs/shortcodes/audio/" >Audio Shortcode</a></li>
+</ul>
+
+</nav>
+
+
+<main id="mainc">
+<h1 id="writing">Writing</h1>
+<p>You can use the following variables to replace with something else. Variables are enclosed by <code>%variable_name%</code> where variable_name is the name of available variables you want. This feature can be used in content files where the content partial is used, such as documentation sections, home page, blog, etc.</p>
+<p>To display the raw of the variable name itself, prefix with <code>/</code>. For example, %/title%</p>
+<p>Available variables:</p>
+<ul>
+<li><code>title</code>: The title of the page.</li>
+<li><code>date</code>: The published date in the local format, similar to post page.</li>
+<li><code>updated</code>: The updated date, similar to above format.</li>
+<li><code>description</code>: The description.</li>
+</ul>
+<h2 id="example">Example</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>title: Test
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>This page is titled %title%
+</span></span></code></pre></div>
+
+
+
+
+<h4>You might also like</h4>
+<ul>
+
+<li><a href="/hguinav/docs/partials/title/">Title Partial</a></li>
+
+<li><a href="/hguinav/docs/partials/content/">Content Partial</a></li>
+
+<li><a href="/hguinav/docs/partials/general/">General Partials</a></li>
+
+<li><a href="/hguinav/docs/author-taxonomy/">Author Management Via Taxonomy</a></li>
+
+<li><a href="/hguinav/docs/params/config/">Config Params</a></li>
+
+</ul>
+</main>
+<div id="hgfooter">
+<footer>
+<p>Powered by <a href="https://github.com/harrymkt/hguinav">UI Navigation Theme</a> Created by <a href="https://harrymkt.github.io">Harry Min Khant</a></p>
+</footer>
+</div>
+
+<script src="https://harrymkt.github.io/hguinav/scripts/copy.js"></script>
+</body>
+</html>
