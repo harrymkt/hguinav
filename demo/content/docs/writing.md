@@ -10,10 +10,10 @@ You can use the following variables to replace with something else. Variables ar
 To display the raw of the variable name itself, prefix with `/`. For example, %//title%
 
 Available variables:
-* `title`: The title of the page.
-* `date`: The published date in the local format, similar to post page.
-* `updated`: The updated date, similar to above format.
-* `description`: The description.
+- `title`: The title of the page.
+- `date`: The published date in the local format, similar to post page.
+- `updated`: The updated date, similar to above format.
+- `description`: The description.
 
 ## Example
 ```markdown

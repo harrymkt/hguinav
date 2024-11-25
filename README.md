@@ -11,16 +11,17 @@ This theme uses blocks as possible because as far as I know Hugo does not allow 
 This theme is distributed under the terms of the [MIT License](https://github.com/harrymkt/hguinav/blob/main/LICENSE.md).
 
 ## Features
-* Multilingual support with i18n; Hugo supports built-in advance multilingual feature, this theme only adds templates for it.
-* Customizable extrahead, extrafooter, head, header, footer, with partials, and extrahead, with blocks.
-* Documentation site; build accessible documentation sites by using built-in template specifically designed for documentation. You can set the type of the section you want to document in the section's frontmadder as well as in each post.
-* Content variables during build, such as `%title%`. See the demo page for documentation
-* Copy code blocks; add code blocks which can then be copied using buttons and display the code language if available, helped by JavaScript.
-* Local date display; display dates in user's local timezone, no madder what timezone the date is set.
-* Taxonomies support.
-* Taxonomy based author / user management, provided in demo.
-* Use blocks to easily modify without having to copy some files to your layouts.
-* Use partials and shortcodes to make your content and/or templates shorten.
+- Multilingual support with i18n; Hugo supports built-in advance multilingual feature, this theme only adds templates for it.
+- Customizable extrahead, extrafooter, head, header, footer, with partials, and extrahead, with blocks.
+- Documentation site; build accessible documentation sites by using built-in template specifically designed for documentation. You can set the type of the section you want to document in the section's frontmadder as well as in each post.
+- Content variables during build, such as `%title%`. See the demo page for documentation
+- Copy code blocks; add code blocks which can then be copied using buttons and display the code language if available, helped by JavaScript.
+- Local date display; display dates in user's local timezone, no madder what timezone the date is set.
+- Taxonomies support.
+- Taxonomy based author / user management, provided in demo.
+- Use blocks to easily modify without having to copy some files to your layouts.
+- Use partials and shortcodes to make your content and/or templates shorten.
+- Comprehensive documentation; Hguinav provides a full Comprehensive documentation including possible layouts, templates, shortcodes, blocks, configurable parameters, and more, everything as it updates.
 
 ## Installation
 Using git:
@@ -43,8 +44,8 @@ Please read the [documentation](https://harrymkt.github.io/hguinav) for more inf
 
 ## Contribution
 Contributions to this theme are welcome, provided that the following requirements are met:
-* Use 2 level space indentation for HTML. Use 1 tab level indentation for CSS and JavaScript. If Markdown files need indentation, use 1 tab.
-* Be the templates accessible for visually impaired and/or blind and prefer readability. Don't worry, I will process in case accessibility issues before pull requests are merged.
-* Photos are not required in this theme. You may design with CSS for visual if you so wish.
+- Use 2 level space indentation for HTML. Use 1 tab level indentation for CSS and JavaScript. If Markdown files need indentation, use 1 tab.
+- Be the templates accessible for visually impaired and/or blind and prefer readability. Don't worry, I will process in case accessibility issues before pull requests are merged.
+- Photos are not required in this theme. You may design with CSS for visual if you so wish.
 
 Thank you!

@@ -26,5 +26,5 @@ taxonomies:
 
 ## Frontmadder
 By default, Hguinav provides the following optional frontmadder variables:
-* `role`(string): The role of this author, eg admin, for informational purposes.
-* `website`(string: Personal website.
+- `role`(string): The role of this author, eg admin, for informational purposes.
+- `website`(string: Personal website.
