@@ -2,21 +2,3 @@ baseURL: "https://example.org/"
 title: "UI Navigation"
 cleanDestinationDir: true
 publishDir: HTML
-menus:
-  main:
-    - name: "Home"
-      pageRef: "/"
-      identifier: menu_main_home
-      weight: 10
-    - name: "Posts"
-      pageRef: "/blog"
-      identifier: menu_main_blog
-      weight: 20
-    - name: "Documentation"
-      pageRef: "/docs"
-      identifier: menu_main_doc
-      weight: 30
-    - name: "Authors"
-      pageRef: "/authors"
-      identifier: menu_main_author
-      weight: 40

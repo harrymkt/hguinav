@@ -3,18 +3,39 @@ Renders a menu for the given menu ID.
 
 @context {page} page The current page.
 @context {string} menuID The menu ID.
+@context {string} format the format to use. Default is default.
 
 @example: {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
 */ -}}
+{{- $formats := slice "default" "noheading" }}
+{{- $format := "default" }}
+{{- with .format }}
+{{- $format = lower . }}
+{{- end }}
+{{- if not (in $formats $format) }}
+{{- errorf "Invalid menu format %s. Valid formats are %s" $format (delimit $formats " ") }}
+{{- end }}
 {{- $page := .page }}
 {{- $menuID := .menuID }}
 {{- with index site.Menus $menuID }}
+{{- partial (printf "partials/inline/menu/format/%s" $format) (dict "page" $page "menuEntries" .) }}
+{{- end }}
+
+{{- define "partials/inline/menu/format/default" }}
+{{- $page := .page }}
 <nav id="navigation" role="navigation" aria-label="{{ T "mainmenu" }}">
 <h2>{{ T "mainmenu" }}</h2>
 <ul style="list-style-type:none;">
-{{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+{{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .menuEntries) }}
 </ul>
 </nav>
+{{- end }}
+
+{{- define "partials/inline/menu/format/noheading" }}
+{{- $page := .page }}
+<ul style="list-style-type:none;">
+{{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .menuEntries) }}
+</ul>
 {{- end }}
 
 {{- define "partials/inline/menu/walk.html" }}
