@@ -35,5 +35,12 @@
       <guid>https://harrymkt.github.io/hguinav/docs/partials/related/</guid>
       <description>&lt;h1 id=&#34;related-partial-relatedhtml&#34;&gt;Related Partial (related.html)&lt;/h1&gt;&#xA;&lt;p&gt;Use this partial to display related content.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;page&lt;/code&gt;(object) required: The object pointing to the page you want to process, specifically the pages.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;text&lt;/code&gt;(string) optional: The text to display on heading.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;hlevel&lt;/code&gt;(int) optional: The level of the heading, default is 4.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
+    <item>
+      <title>Menu Partial</title>
+      <link>https://harrymkt.github.io/hguinav/docs/partials/menu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://harrymkt.github.io/hguinav/docs/partials/menu/</guid>
+      <description>&lt;h1 id=&#34;menu-partial-menuhtml&#34;&gt;Menu Partial (menu.html)&lt;/h1&gt;&#xA;&lt;p&gt;Use this partial to display menus.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;page&lt;/code&gt;(object) required: The object pointing to the page you want to process, specifically the current page.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;menuID&lt;/code&gt;(string) required: The menu to process.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;format&lt;/code&gt;(string) optional: The format you want to use. Using an invalid format will fail the build. Valid formats are:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;default&lt;/code&gt;: Default format, with heading and navigation tag.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;noheading&lt;/code&gt;: No heading format, only list. This is useful for other menus such as footer.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
   </channel>
 </rss>

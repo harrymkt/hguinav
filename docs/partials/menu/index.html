@@ -6,7 +6,7 @@
 <script src="https://harrymkt.github.io/hguinav/scripts/theme.js"></script>
 <link href="https://harrymkt.github.io/hguinav/css/theme.css">
 
-<title>Params – Documentation – HG UI Navigation</title>
+<title>Menu Partial – Documentation – HG UI Navigation</title>
 </head>
 <body>
 <p><a href="https://harrymkt.github.io/hguinav/lang">Change Language</a></p>
@@ -49,7 +49,7 @@
 <li><a href="/hguinav/docs/partials/content/" >Content Partial</a></li>
 <li><a href="/hguinav/docs/partials/title/" >Title Partial</a></li>
 <li><a href="/hguinav/docs/partials/related/" >Related Partial</a></li>
-<li><a href="/hguinav/docs/partials/menu/" >Menu Partial</a></li>
+<li><a href="/hguinav/docs/partials/menu/" aria-current="page">Menu Partial</a></li>
 </ul>
 <h3>Shortcodes</h3>
 <p>Shortcodes live in the layouts/shortcodes and are so called custom functions that you can use in your content file. To modify any of them you can copy to your layouts/partials directory.</p>
@@ -62,11 +62,35 @@
 
 
 <main id="mainc">
-<p>Control your site or page by these custom variables and frontmadders.</p>
+<h1 id="menu-partial-menuhtml">Menu Partial (menu.html)</h1>
+<p>Use this partial to display menus.</p>
+<ul>
+<li><code>page</code>(object) required: The object pointing to the page you want to process, specifically the current page.</li>
+<li><code>menuID</code>(string) required: The menu to process.</li>
+<li><code>format</code>(string) optional: The format you want to use. Using an invalid format will fail the build. Valid formats are:
+<ul>
+<li><code>default</code>: Default format, with heading and navigation tag.</li>
+<li><code>noheading</code>: No heading format, only list. This is useful for other menus such as footer.</li>
+</ul>
+</li>
+</ul>
 
 
 
 
+
+<h4>You might also like</h4>
+<ul>
+
+<li><a href="/hguinav/docs/author-taxonomy/">Author Management Via Taxonomy</a></li>
+
+<li><a href="/hguinav/docs/blocks/">Blocks</a></li>
+
+<li><a href="/hguinav/docs/params/config/">Config Params</a></li>
+
+<li><a href="/hguinav/docs/partials/related/">Related Partial</a></li>
+
+</ul>
 </main>
 <div id="hgfooter">
 <footer>
