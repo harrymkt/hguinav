@@ -1,0 +1,1 @@
+<button class="tab" data-tab-id="{{ .Get "id" }}" onclick="switchTab('{{ .Get "id" }}')">{{ .Get "name" }}</button>{{ with .Get "visible" }}{{ if eq . true }}<script>switchTab("{{ .Get "id" }}");</script>{{ end }}{{ end }}
