@@ -10,7 +10,7 @@ title: "Example"
 {{< tab name="Tab 2" id="2" >}}
 {{< tab name="Tab 3" id="3" >}}
 
-{{% tabcontent id="1" %}}
+{{% tabcontent id="1" visible=true %}}
 ## Content for Tab 1
 This is the content for the first tab.
 {{% /tabcontent %}}
