@@ -13,7 +13,7 @@ Renders a menu for the given menu ID.
 {{- $format = lower . }}
 {{- end }}
 {{- if not (in $formats $format) }}
-{{- errorf "Invalid menu format %s. Valid formats are %s" $format (delimit $formats " ") }}
+{{- errorf "Invalid menu format %s. Valid formats are %s" $format (delimit $formats ", ") }}
 {{- end }}
 {{- $page := .page }}
 {{- $menuID := .menuID }}

@@ -6,6 +6,5 @@
 {{- $value = replace $value "%date%" (delimit $pd "" ) }}
 {{- $pd = slice "<script>document.write(local_datetime_string(\"" $page.Lastmod "\"));</script>" }}
 {{- $value = replace $value "%updated%" (delimit $pd "" ) }}
-
 {{- $value = replace $value "%/" "%" }}
 {{ return $value }}
