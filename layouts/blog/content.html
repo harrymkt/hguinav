@@ -1,0 +1,3 @@
+{{ (partial "content.html" (dict "value" .Content "page" . )) | safeHTML }}
+
+{{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}

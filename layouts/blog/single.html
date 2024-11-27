@@ -14,7 +14,5 @@
 <p>{{ T "totalwords" .WordCount }}</p>
 <p>{{ T "totaltime" .ReadingTime }}</p>
 <br>
-{{ (partial "content.html" (dict "value" .Content "page" . )) | safeHTML }}
-
-{{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+{{ .Render "content" }}
 {{ end }}
