@@ -12,3 +12,4 @@ The following are partials that do not necessary to document each page.
 - head.html: Main head meta immediately following the head tag. Note: title is only used by title block, which allows you to customize the title from within any section / page.
 - header.html: Header, such as navigation.
 - listpost.html: Use to list pages in pagination. Add the partial pagination.html after this partial to add pagination buttons.
+- nav.html: Use to add navigation. This is made to be easy as possible to overwrite since Hugo's templating is restricted.

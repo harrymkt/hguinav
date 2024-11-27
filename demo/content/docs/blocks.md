@@ -9,5 +9,4 @@ Sometimes partial files are not enough. Or will they be cluttered. Blocks come i
 - `title`: The title block. This should be completely optional anyway.
 - `beforeheader`: Content before header, or another word, content immediately following the body tag.
 - `extraheader`: Content after the header defined in header.html (partial).
-- `nav`: Navigation / menu block.
 - `main`: The main content.

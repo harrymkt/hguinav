@@ -20,7 +20,6 @@ Renders a menu for the given menu ID.
 {{- with index site.Menus $menuID }}
 {{- partial (printf "partials/inline/menu/format/%s" $format) (dict "page" $page "menuEntries" .) }}
 {{- end }}
-
 {{- define "partials/inline/menu/format/default" }}
 {{- $page := .page }}
 <nav id="navigation" role="navigation" aria-label="{{ T "mainmenu" }}">
