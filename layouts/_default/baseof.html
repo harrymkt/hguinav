@@ -9,6 +9,9 @@
 {{- block "beforeheader" . }}
 {{- end }}
 {{ partial "header.html" . }}
+{{- block "nav" . }}
+{{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+{{- end }}
 {{- block "extraheader" . }}
 {{- end }}
 <main id="mainc">
