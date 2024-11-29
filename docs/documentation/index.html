@@ -60,7 +60,7 @@
 <main id="mainc">
 <h1 id="documentation-site">Documentation Site</h1>
 <p>Hguinav supports built-in documentation template that allows you to create list base documentation pages. Each section, starting at content/, you can create a subsection documentation. You can also look the docs folder of this theme demo.</p>
-<p><strong>Note</strong>: documentations can be sorted by the method you like. Hguinav documentation uses weight sort style. Please note that when using weight, you also need to set for subsections.</p>
+<p><strong>Note</strong>: documentation uses weight sort style by default. Please note that when using weight, you also need to set for subsections.</p>
 <h2 id="setup">Setup</h2>
 <p>First, create first documentation section in content folder, and add _index.md to it containing the following frontmadder. For this documentation, we will create docs folder and use YAML for frontmadder.</p>
 <pre><code class="language-yaml">---
@@ -78,7 +78,7 @@ type: doc
 ---
 Hello!
 </code></pre>
-<p>Note that you also need to set type to doc on every page.</p>
+<p>Note that you also need to set type to <code>doc</code> on every page.</p>
 <h2 id="sections">Sections</h2>
 <p>You can also have subsections inside the main one.</p>
 <p>Lets create a subfolder name test inside the main documentation section (docs) in this case.</p>
@@ -107,7 +107,8 @@ I am a test section, so you know displaying in first.
 <li><a href="/hguinav/docs/shortcodes/audio/">Audio Shortcode</a></li>
 <li><a href="/hguinav/docs/author-taxonomy/">Author Management Via Taxonomy</a></li>
 <li><a href="/hguinav/docs/params/config/">Config Params</a></li>
-</ul></main>
+</ul>
+</main>
 <div id="hgfooter">
 <footer>
 <p>Powered by <a href="https://github.com/harrymkt/hguinav">UI Navigation Theme</a> Created by <a href="https://harrymkt.github.io">Harry Min Khant</a></p>
