@@ -3,16 +3,16 @@
 {{- end -}}
 {{ define "main" }}
 <h1>{{ .Title }}</h1>
-{{ partial "terms.html" (dict "taxonomy" "authors" "page" .) }}
+{{- partial "terms.html" (dict "taxonomy" "authors" "page" .) }}
 {{- $upd := printf "<script>document.write(local_datetime_string(%q));</script>" .Lastmod }}
 {{- if ne .Lastmod .Date }}
 <p>{{ T "lastmod" $upd | safeHTML }}</p>
-{{- end }}
+{{- end -}}
 {{- $pon := T "published_on" (printf "<script>document.write(local_datetime_string(%q));</script>" .Date) }}
 <p>{{ $pon | safeHTML }}</p>
-{{ partial "terms.html" (dict "taxonomy" "categories" "page" .) }}
+{{- partial "terms.html" (dict "taxonomy" "categories" "page" .) }}
 <p>{{ T "totalwords" .WordCount }}</p>
 <p>{{ T "totaltime" .ReadingTime }}</p>
 <br>
 {{ .Render "content" }}
-{{ end }}
+{{- end }}

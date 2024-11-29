@@ -21,19 +21,21 @@
 {{- if $docsect.Sections }}
 {{- range $subsect := $docsect.Sections.ByWeight }}
 <h3>{{ $subsect.Title }}</h3>
-{{ if $subsect.Content }}{{ (partial "content.html" (dict "value" $subsect.Content "page" $subsect )) | safeHTML }}{{ end }}
+{{- if $subsect.Content }}
+{{ (partial "content.html" (dict "value" $subsect.Content "page" $subsect )) | safeHTML }}
+{{- end }}
 <ul style="list-style-type:none;">
 {{- range $subsect.RegularPages.ByWeight }}
 <li><a href="{{ .RelPermalink }}" {{ if eq .RelPermalink $current.RelPermalink }}aria-current="page"{{ end }}>{{ .Title }}</a></li>
 {{- end }}
 </ul>
 {{- end }}
-{{ end }}
+{{- end }}
 </nav>
-{{ end }}
-{{ end }}
+{{- end }}
+{{- end }}
 {{- define "main" }}
 {{ (partial "content.html" (dict "value" .Content "page" . )) | safeHTML }}
 
-{{ partial "related.html" (dict "page" .) }}
+{{- partial "related.html" (dict "page" .) }}
 {{- end }}

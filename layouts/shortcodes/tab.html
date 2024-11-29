@@ -1,1 +1,1 @@
-<button class="tab" data-tab-id="{{ .Get "id" }}" onclick="switchTab('{{ .Get "id" }}')">{{ .Get "name" }}</button>
+<div role="tab" class="tab" data-tab-id="{{ .Get "id" }}" aria-selected="false" onclick="switchTab('{{ .Get "id" }}')">{{ .Get "name" }}</div>

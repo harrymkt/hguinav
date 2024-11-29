@@ -4,3 +4,5 @@ goldmark:
       disable: true
   renderer:
     unsafe: true
+highlight:
+  codeFences: false

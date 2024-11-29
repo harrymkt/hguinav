@@ -7,7 +7,7 @@
 {{- $source = . }}
 {{- else }}
 {{- errorf "%q shortcode requires source argument. %s" .Name .Position }}
-{{- end }}
+{{- end -}}
 <div>
 <audio controls="controls">
 <source src="{{ $source | safeURL }}">

@@ -1,7 +1,7 @@
 {{- $visible := false }}
 {{- with .Get "visible" }}
 {{- $visible = . }}
-{{- end }}
+{{- end -}}
 <div class="tab-content" id="tab-content-{{ .Get "id" }}" style="display: none;">
 
 {{ .Inner }}
