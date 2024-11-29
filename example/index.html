@@ -9,11 +9,9 @@
 <title>Example – HG UI Navigation</title>
 </head>
 <body>
-<p><a href="https://harrymkt.github.io/hguinav/lang">Change Language</a></p>
-<p><a href="#mainc" class="skip-link">Skip to main content</a></p>
+<p><a href="https://harrymkt.github.io/hguinav/lang">Change Language</a></p><p><a href="#mainc" class="skip-link">Skip to main content</a></p>
 <p><a href="#navigation" class="skip-link">Skip to navigation</a></p>
 <p><a href="#hgfooter" class="skip-link">Skip to footer</a></p>
-
 <nav id="navigation" role="navigation" aria-label="Main Menu">
 <h2>Main Menu</h2>
 <ul style="list-style-type:none;">
@@ -30,7 +28,6 @@
 <main id="mainc">
 <h1 id="examples">Examples</h1>
 <h2 id="audio-shortcode">Audio shortcode</h2>
-
 <div>
 <audio controls="controls">
 <source src="https://www.kozco.com/tech/piano2.wav">
@@ -38,9 +35,9 @@
 <p>Your browser does not support the audio element.</p>
 </div>
 <h2 id="tab">Tab</h2>
-<p><button class="tab" data-tab-id="1" onclick="switchTab('1')">Tab 1</button>
-<button class="tab" data-tab-id="2" onclick="switchTab('2')">Tab 2</button>
-<button class="tab" data-tab-id="3" onclick="switchTab('3')">Tab 3</button></p>
+<p><div role="tab" class="tab" data-tab-id="1" aria-selected="false" onclick="switchTab('1')">Tab 1</div>
+<div role="tab" class="tab" data-tab-id="2" aria-selected="false" onclick="switchTab('2')">Tab 2</div>
+<div role="tab" class="tab" data-tab-id="3" aria-selected="false" onclick="switchTab('3')">Tab 3</div></p>
 <div class="tab-content" id="tab-content-1" style="display: none;">
 <h2 id="content-for-tab-1">Content for Tab 1</h2>
 <p>This is the content for the first tab.</p>

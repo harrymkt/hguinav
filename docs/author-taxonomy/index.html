@@ -9,11 +9,9 @@
 <title>Author Management Via Taxonomy – Documentation – HG UI Navigation</title>
 </head>
 <body>
-<p><a href="https://harrymkt.github.io/hguinav/lang">Change Language</a></p>
-<p><a href="#mainc" class="skip-link">Skip to main content</a></p>
+<p><a href="https://harrymkt.github.io/hguinav/lang">Change Language</a></p><p><a href="#mainc" class="skip-link">Skip to main content</a></p>
 <p><a href="#navigation" class="skip-link">Skip to navigation</a></p>
 <p><a href="#hgfooter" class="skip-link">Skip to footer</a></p>
-
 <nav id="navigation" role="navigation" aria-label="Main Menu">
 <h2>Main Menu</h2>
 <ul style="list-style-type:none;">
@@ -58,50 +56,38 @@
 <li><a href="/hguinav/docs/shortcodes/audio/" >Audio Shortcode</a></li>
 <li><a href="/hguinav/docs/shortcodes/tab/" >Tab Shortcode</a></li>
 </ul>
-
 </nav>
-
-
 <main id="mainc">
 <h1 id="title">Author Management Via Taxonomy</h1>
 <p>You can have taxonomy based author management system. Create each author section in content/authors/author_name/_index.md, and looks like this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
-</span></span><span style="display:flex;"><span><span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;Author name&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">role</span>: <span style="color:#ae81ff">admin</span>
-</span></span><span style="display:flex;"><span>---
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">I&#39;m the maintainer of this site (optional byo)</span>
-</span></span></code></pre></div><p>Please note that you do not need to create section for that author if you are not adding custom metadata for them.</p>
+<pre><code class="language-yaml">---
+title: &quot;Author name&quot;
+role: admin
+---
+I'm the maintainer of this site (optional byo)
+</code></pre>
+<p>Please note that you do not need to create section for that author if you are not adding custom metadata for them.</p>
 <h2 id="setting-author-taxonomy">Setting Author Taxonomy</h2>
 <p>In your site configuration:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">taxonomies</span>:
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">author</span>: <span style="color:#ae81ff">authors</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># Custom taxonomies go here</span>
-</span></span></code></pre></div><h2 id="frontmadder">Frontmadder</h2>
+<pre><code class="language-yaml">taxonomies:
+  author: authors
+  # Custom taxonomies go here
+</code></pre>
+<h2 id="frontmadder">Frontmadder</h2>
 <p>By default, Hguinav provides the following optional frontmadder variables:</p>
 <ul>
 <li><code>role</code>(string): The role of this author, eg admin, for informational purposes.</li>
 <li><code>website</code>(string: Personal website.</li>
 </ul>
 
-
-
-
-
 <h4>You might also like</h4>
 <ul>
-
 <li><a href="/hguinav/docs/params/config/">Config Params</a></li>
-
 <li><a href="/hguinav/docs/partials/related/">Related Partial</a></li>
-
 <li><a href="/hguinav/docs/blocks/">Blocks</a></li>
-
 <li><a href="/hguinav/docs/documentation/">Documentation Site</a></li>
-
 <li><a href="/hguinav/docs/partials/general/">General Partials</a></li>
-
-</ul>
-</main>
+</ul></main>
 <div id="hgfooter">
 <footer>
 <p>Powered by <a href="https://github.com/harrymkt/hguinav">UI Navigation Theme</a> Created by <a href="https://harrymkt.github.io">Harry Min Khant</a></p>
