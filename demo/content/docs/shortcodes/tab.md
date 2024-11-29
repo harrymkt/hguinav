@@ -1,7 +1,7 @@
 ---
 title: Tab Shortcode
 type: doc
-weight: 20
+weight: 200
 keywords: [doc,content,shortcode,tab]
 ---
 # Tab Shortcode

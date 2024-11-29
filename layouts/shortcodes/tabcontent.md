@@ -6,4 +6,4 @@
 
 {{ .Inner }}
 
-</div>{{ if (eq $visible true) }}<script>switchTab("{{ .Get "id" }}");</script>{{ end }}
+</div>{{ if (eq $visible true) }}<script>switch_tab("{{ .Get "id" }}");</script>{{ end }}

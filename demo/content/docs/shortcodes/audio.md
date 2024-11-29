@@ -1,7 +1,7 @@
 ---
 title: Audio Shortcode
 type: doc
-weight: 20
+weight: 100
 keywords: [doc,content,shortcode,audio]
 ---
 # Audio Shortcode (audio.html)
