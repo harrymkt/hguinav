@@ -7,23 +7,27 @@ on:
     paths: ["archetypes/**", "data/**", "demo/**", "i18n/**", "layouts/**", "static/**", "hugo.yaml"]
   workflow_dispatch:
 
+# Default to bash
+defaults:
+  run:
+    shell: bash
+
 jobs:
   # Build job
   build:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
+    env:
+      HUGO_VERSION: 0.139.3
     steps:
-      - name: Install Hugo CLI
-        run: |
-          $url = "https://github.com/gohugoio/hugo/releases/latest/download/hugo_extended_0.139.3_windows-amd64.zip"
-          Invoke-WebRequest -Uri $url -OutFile "hugo.zip"
-          Expand-Archive hugo.zip -DestinationPath "hugo"
-          echo "$PWD\hugo" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8
-        shell: pwsh
       - name: Checkout
         uses: actions/checkout@v4
         with:
           submodules: recursive
           fetch-depth: 0
+      - name: Install Hugo CLI
+        run: |
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb          
       - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
