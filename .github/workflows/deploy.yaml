@@ -7,11 +7,6 @@ on:
     paths: ["archetypes/**", "data/**", "demo/**", "i18n/**", "layouts/**", "static/**", "hugo.yaml"]
   workflow_dispatch:
 
-# Default to bash
-defaults:
-  run:
-    shell: bash
-
 jobs:
   # Build job
   build:
@@ -23,6 +18,7 @@ jobs:
           Invoke-WebRequest -Uri $url -OutFile "hugo.zip"
           Expand-Archive hugo.zip -DestinationPath "hugo"
           echo "$PWD\hugo" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8
+        shell: pwsh
       - name: Checkout
         uses: actions/checkout@v4
         with:
