@@ -6,7 +6,7 @@
 {{- with .Get "source" }}
 {{- $source = . }}
 {{- else }}
-{{- errorf "%q shortcode requires source argument. %s" .Name .Position }}
+{{- errorf "%q shortcode requires the source argument. %s" .Name .Position }}
 {{- end -}}
 <div>
 <audio controls="controls">

@@ -19,7 +19,10 @@ jobs:
     steps:
       - name: Install Hugo CLI
         run: |
-          choco install hugo-extended
+          $url = "https://github.com/gohugoio/hugo/releases/latest/download/hugo_extended_0.139.3_windows-amd64.zip"
+          Invoke-WebRequest -Uri $url -OutFile "hugo.zip"
+          Expand-Archive hugo.zip -DestinationPath "hugo"
+          echo "$PWD\hugo" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8
       - name: Checkout
         uses: actions/checkout@v4
         with:
