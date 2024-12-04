@@ -1,0 +1,12 @@
+{{- $sorts := "" }}
+{{- with .sorts }}
+{{- $sorts = . }}
+{{- else }}
+{{- errorf "Sort partial requires the sorts parameter" }}
+{{- end }}
+{{- $sortby := or .sort_by "" }}
+{{- $pages := $sorts }}
+{{- if $sortby }}
+{{- $pages = sort $sorts $sortby }}
+{{- end }}
+{{- return $pages }}

@@ -15,6 +15,7 @@ This theme is distributed under the terms of the [MIT License](https://github.co
 - Customizable extrahead, extrafooter, head, header, footer, with partials, and extrahead, with blocks.
 - Documentation site; build accessible documentation sites by using built-in template specifically designed for documentation. You can set the type of the section you want to document in the section's frontmadder as well as in each post.
 - Content variables during build, such as `%title%`. See the demo page for documentation
+- Sort pages by the way you like and for specific sections, which is by default not supported. This uses the sort partial.
 - Copy code blocks; add code blocks which can then be copied using buttons and display the code language if available, helped by JavaScript.
 - Local date display; display dates in user's local timezone, no madder what timezone the date is set.
 - Taxonomies support.
