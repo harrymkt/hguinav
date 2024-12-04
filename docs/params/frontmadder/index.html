@@ -6,7 +6,7 @@
 <script src="https://harrymkt.github.io/hguinav/scripts/theme.js"></script>
 <link href="https://harrymkt.github.io/hguinav/css/theme.css">
 
-<title>Documentation Site – Documentation – HG UI Navigation</title>
+<title>Frontmadder Params – Documentation – HG UI Navigation</title>
 </head>
 <body>
 <p><a href="https://harrymkt.github.io/hguinav/lang">Change Language</a></p><p><a href="#mainc" class="skip-link">Skip to main content</a></p>
@@ -31,14 +31,14 @@
 <li><a href="/hguinav/docs/writing/" >Writing</a></li>
 <li><a href="/hguinav/docs/blocks/" >Blocks</a></li>
 <li><a href="/hguinav/docs/author-taxonomy/" >Author Management Via Taxonomy</a></li>
-<li><a href="/hguinav/docs/documentation/" aria-current="page">Documentation Site</a></li>
+<li><a href="/hguinav/docs/documentation/" >Documentation Site</a></li>
 </ul>
 <h3>Params</h3>
 <p>Control your site or page by these custom variables and frontmadders.</p>
 
 <ul style="list-style-type:none;">
 <li><a href="/hguinav/docs/params/config/" >Config Params</a></li>
-<li><a href="/hguinav/docs/params/frontmadder/" >Frontmadder Params</a></li>
+<li><a href="/hguinav/docs/params/frontmadder/" aria-current="page">Frontmadder Params</a></li>
 </ul>
 <h3>Partials</h3>
 <p>Partials live in the layouts/partials and are so called custom functions. To modify any of them you can copy to your layouts/partials directory.</p>
@@ -59,55 +59,18 @@
 </ul>
 </nav>
 <main id="mainc">
-<h1 id="documentation-site">Documentation Site</h1>
-<p>Hguinav supports built-in documentation template that allows you to create list base documentation pages. Each section, starting at content/, you can create a subsection documentation. You can also look the docs folder of this theme demo.</p>
-<p><strong>Note</strong>: documentation uses weight sort style by default. Please note that when using weight, you also need to set for subsections.</p>
-<h2 id="setup">Setup</h2>
-<p>First, create first documentation section in content folder, and add _index.md to it containing the following frontmadder. For this documentation, we will create docs folder and use YAML for frontmadder.</p>
-<pre><code class="language-yaml">---
-title: &quot;Your Documentation Main Section's Title&quot;
-type: doc
----
-Further content for the main documentation section goes here
-</code></pre>
-<p>Now, you can create pages with md extention in your documentation folder. Any page within the first section (docs) in this case, is a part of the first section.</p>
-<p>You can write documentation as you normally would do, for example:</p>
-<pre><code class="language-yaml">---
-title: &quot;Page1&quot;
-weight: 1
-type: doc
----
-Hello!
-</code></pre>
-<p>Note that you also need to set type to <code>doc</code> on every page.</p>
-<h2 id="sections">Sections</h2>
-<p>You can also have subsections inside the main one.</p>
-<p>Lets create a subfolder name test inside the main documentation section (docs) in this case.</p>
-<p>In the test folder, we will add _index.md with the following content.</p>
-<pre><code class="language-yaml">---
-title: &quot;Testing&quot;
-type: doc
-weight: 1
----
-</code></pre>
-<p>We set weight to 1 because we want to display test section first after main documentation section.</p>
-<p>After that, you can write a short description related to that subsection. Do not write long texts in this file, because this will display at the top of the list containing pages related to this section.</p>
-<pre><code class="language-yaml">---
-title: &quot;Testing&quot;
-type: doc
-weight: 1
----
-I am a test section, so you know displaying in first.
-</code></pre>
-<p>You may then create pages in the test section usually as pages in the main documentation section.</p>
+<h1 id="frontmadder-params">Frontmadder Params</h1>
+<p>You can use the following param parameters to configure your pages.</p>
+<h2 id="sort_by">sort_by</h2>
+<p>Controls the sort, even for each section.</p>
 
 <h4>You might also like</h4>
 <ul>
-<li><a href="/hguinav/docs/partials/general/">General Partials</a></li>
-<li><a href="/hguinav/docs/blocks/">Blocks</a></li>
-<li><a href="/hguinav/docs/shortcodes/audio/">Audio Shortcode</a></li>
-<li><a href="/hguinav/docs/author-taxonomy/">Author Management Via Taxonomy</a></li>
 <li><a href="/hguinav/docs/params/config/">Config Params</a></li>
+<li><a href="/hguinav/docs/author-taxonomy/">Author Management Via Taxonomy</a></li>
+<li><a href="/hguinav/docs/blocks/">Blocks</a></li>
+<li><a href="/hguinav/docs/partials/related/">Related Partial</a></li>
+<li><a href="/hguinav/docs/documentation/">Documentation Site</a></li>
 </ul>
 </main>
 <div id="hgfooter">

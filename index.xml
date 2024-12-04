@@ -36,6 +36,13 @@
       <description>&lt;h1 id=&#34;content-partial-contenthtml&#34;&gt;Content Partial (content.html)&lt;/h1&gt;&#xA;&lt;p&gt;You can use this partial to display content instead of using &lt;code&gt;{{ .Content }}&lt;/code&gt; etc. The advantage of using this partial is that it allows you to add content variables. See &lt;a href=&#34;https://harrymkt.github.io/hguinav/hguinav/docs/writing/&#34;&gt;writing&lt;/a&gt; to see how variables work.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;value&lt;/code&gt;(string) required: The value to display.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;page&lt;/code&gt;(object) required: The page object where the content partial should retrieve necessary variables to replace.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code class=&#34;language-go-html-template&#34;&gt;{{ (partial &amp;quot;content.html&amp;quot; (dict &amp;quot;value&amp;quot; .Content &amp;quot;page&amp;quot; . )) | safeHTML }}&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
+      <title>Frontmadder Params</title>
+      <link>https://harrymkt.github.io/hguinav/docs/params/frontmadder/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://harrymkt.github.io/hguinav/docs/params/frontmadder/</guid>
+      <description>&lt;h1 id=&#34;frontmadder-params&#34;&gt;Frontmadder Params&lt;/h1&gt;&#xA;&lt;p&gt;You can use the following param parameters to configure your pages.&lt;/p&gt;&#xA;&lt;h2 id=&#34;sort_by&#34;&gt;sort_by&lt;/h2&gt;&#xA;&lt;p&gt;Controls the sort, even for each section.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Tab Shortcode</title>
       <link>https://harrymkt.github.io/hguinav/docs/shortcodes/tab/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
