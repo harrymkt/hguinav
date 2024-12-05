@@ -44,11 +44,12 @@
 <p>Partials live in the layouts/partials and are so called custom functions. To modify any of them you can copy to your layouts/partials directory.</p>
 
 <ul style="list-style-type:none;">
-<li><a href="/hguinav/docs/partials/general/" >General Partials</a></li>
 <li><a href="/hguinav/docs/partials/content/" >Content Partial</a></li>
-<li><a href="/hguinav/docs/partials/title/" >Title Partial</a></li>
-<li><a href="/hguinav/docs/partials/related/" >Related Partial</a></li>
+<li><a href="/hguinav/docs/partials/general/" >General Partials</a></li>
 <li><a href="/hguinav/docs/partials/menu/" >Menu Partial</a></li>
+<li><a href="/hguinav/docs/partials/related/" >Related Partial</a></li>
+<li><a href="/hguinav/docs/partials/sort/" >Sort Partial</a></li>
+<li><a href="/hguinav/docs/partials/title/" >Title Partial</a></li>
 </ul>
 <h3>Shortcodes</h3>
 <p>Shortcodes live in the layouts/shortcodes and are so called custom functions that you can use in your content file. To modify any of them you can copy to your layouts/partials directory.</p>
@@ -61,7 +62,7 @@
 <main id="mainc">
 <h1 id="documentation-site">Documentation Site</h1>
 <p>Hguinav supports built-in documentation template that allows you to create list base documentation pages. Each section, starting at content/, you can create a subsection documentation. You can also look the docs folder of this theme demo.</p>
-<p><strong>Note</strong>: documentation uses weight sort style by default. Please note that when using weight, you also need to set for subsections.</p>
+<p><strong>Note</strong>: documentation uses both Weight and Title sort styles by default. Please note that when using weight, you also need to set for subsections.</p>
 <h2 id="setup">Setup</h2>
 <p>First, create first documentation section in content folder, and add _index.md to it containing the following frontmadder. For this documentation, we will create docs folder and use YAML for frontmadder.</p>
 <pre><code class="language-yaml">---
@@ -105,9 +106,9 @@ I am a test section, so you know displaying in first.
 <ul>
 <li><a href="/hguinav/docs/partials/general/">General Partials</a></li>
 <li><a href="/hguinav/docs/blocks/">Blocks</a></li>
+<li><a href="/hguinav/docs/partials/sort/">Sort Partial</a></li>
 <li><a href="/hguinav/docs/shortcodes/audio/">Audio Shortcode</a></li>
 <li><a href="/hguinav/docs/author-taxonomy/">Author Management Via Taxonomy</a></li>
-<li><a href="/hguinav/docs/params/config/">Config Params</a></li>
 </ul>
 </main>
 <div id="hgfooter">

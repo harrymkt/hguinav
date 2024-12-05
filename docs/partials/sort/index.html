@@ -6,7 +6,7 @@
 <script src="https://harrymkt.github.io/hguinav/scripts/theme.js"></script>
 <link href="https://harrymkt.github.io/hguinav/css/theme.css">
 
-<title>Shortcodes – Documentation – HG UI Navigation</title>
+<title>Sort Partial – Documentation – HG UI Navigation</title>
 </head>
 <body>
 <p><a href="https://harrymkt.github.io/hguinav/lang">Change Language</a></p><p><a href="#mainc" class="skip-link">Skip to main content</a></p>
@@ -48,7 +48,7 @@
 <li><a href="/hguinav/docs/partials/general/" >General Partials</a></li>
 <li><a href="/hguinav/docs/partials/menu/" >Menu Partial</a></li>
 <li><a href="/hguinav/docs/partials/related/" >Related Partial</a></li>
-<li><a href="/hguinav/docs/partials/sort/" >Sort Partial</a></li>
+<li><a href="/hguinav/docs/partials/sort/" aria-current="page">Sort Partial</a></li>
 <li><a href="/hguinav/docs/partials/title/" >Title Partial</a></li>
 </ul>
 <h3>Shortcodes</h3>
@@ -60,8 +60,24 @@
 </ul>
 </nav>
 <main id="mainc">
-<p>Shortcodes live in the layouts/shortcodes and are so called custom functions that you can use in your content file. To modify any of them you can copy to your layouts/partials directory.</p>
+<h1 id="sort-partial-sorthtml">Sort Partial (sort.html)</h1>
+<p>You can use this partial to sort specific sections the way you want. See <a href="/hguinav/docs/params/frontmadder/">frontmadder variables</a>.</p>
+<ul>
+<li><code>sorts</code>(collection) required: The pages collection.</li>
+<li><code>sortby</code>(string) optional: Which way would you like to the pages to be sorted? Eg, Title, Weight, Date</li>
+</ul>
+<h2 id="example">Example</h2>
+<pre><code class="language-go-html-template">{{- $pages := partial &quot;sort.html&quot; (dict &quot;sorts&quot; .RegularPages &quot;sortby&quot; &quot;Title&quot;) }}
+</code></pre>
 
+<h4>You might also like</h4>
+<ul>
+<li><a href="/hguinav/docs/partials/general/">General Partials</a></li>
+<li><a href="/hguinav/docs/author-taxonomy/">Author Management Via Taxonomy</a></li>
+<li><a href="/hguinav/docs/params/config/">Config Params</a></li>
+<li><a href="/hguinav/docs/documentation/">Documentation Site</a></li>
+<li><a href="/hguinav/docs/params/frontmadder/">Frontmadder Params</a></li>
+</ul>
 </main>
 <div id="hgfooter">
 <footer>

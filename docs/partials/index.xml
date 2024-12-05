@@ -42,5 +42,12 @@
       <guid>https://harrymkt.github.io/hguinav/docs/partials/menu/</guid>
       <description>&lt;h1 id=&#34;menu-partial-menuhtml&#34;&gt;Menu Partial (menu.html)&lt;/h1&gt;&#xA;&lt;p&gt;Use this partial to display menus.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;page&lt;/code&gt;(object) required: The object pointing to the page you want to process, specifically the current page.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;menuID&lt;/code&gt;(string) required: The menu to process.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;format&lt;/code&gt;(string) optional: The format you want to use. Using an invalid format will fail the build. Valid formats are:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;default&lt;/code&gt;: Default format, with heading and navigation tag.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;noheading&lt;/code&gt;: No heading format, only list. This is useful for other menus such as footer.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
+    <item>
+      <title>Sort Partial</title>
+      <link>https://harrymkt.github.io/hguinav/docs/partials/sort/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://harrymkt.github.io/hguinav/docs/partials/sort/</guid>
+      <description>&lt;h1 id=&#34;sort-partial-sorthtml&#34;&gt;Sort Partial (sort.html)&lt;/h1&gt;&#xA;&lt;p&gt;You can use this partial to sort specific sections the way you want. See &lt;a href=&#34;https://harrymkt.github.io/hguinav/hguinav/docs/params/frontmadder/&#34;&gt;frontmadder variables&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;sorts&lt;/code&gt;(collection) required: The pages collection.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;sortby&lt;/code&gt;(string) optional: Which way would you like to the pages to be sorted? Eg, Title, Weight, Date&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code class=&#34;language-go-html-template&#34;&gt;{{- $pages := partial &amp;quot;sort.html&amp;quot; (dict &amp;quot;sorts&amp;quot; .RegularPages &amp;quot;sortby&amp;quot; &amp;quot;Title&amp;quot;) }}&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
   </channel>
 </rss>
