@@ -66,7 +66,7 @@
 <p>First, create first documentation section in content folder, and add _index.md to it containing the following frontmadder. For this documentation, we will create docs folder and use YAML for frontmadder.</p>
 <pre><code class="language-yaml">---
 title: &quot;Your Documentation Main Section's Title&quot;
-type: doc
+layout: doc
 ---
 Further content for the main documentation section goes here
 </code></pre>
@@ -75,18 +75,18 @@ Further content for the main documentation section goes here
 <pre><code class="language-yaml">---
 title: &quot;Page1&quot;
 weight: 1
-type: doc
+layout: doc
 ---
 Hello!
 </code></pre>
-<p>Note that you also need to set type to <code>doc</code> on every page.</p>
+<p>Note that you also need to set <code>layout</code> to <code>doc</code> on every page.</p>
 <h2 id="sections">Sections</h2>
 <p>You can also have subsections inside the main one.</p>
 <p>Lets create a subfolder name test inside the main documentation section (docs) in this case.</p>
 <p>In the test folder, we will add _index.md with the following content.</p>
 <pre><code class="language-yaml">---
 title: &quot;Testing&quot;
-type: doc
+layout: doc
 weight: 1
 ---
 </code></pre>
@@ -94,7 +94,7 @@ weight: 1
 <p>After that, you can write a short description related to that subsection. Do not write long texts in this file, because this will display at the top of the list containing pages related to this section.</p>
 <pre><code class="language-yaml">---
 title: &quot;Testing&quot;
-type: doc
+layout: doc
 weight: 1
 ---
 I am a test section, so you know displaying in first.
