@@ -1,6 +1,6 @@
 ---
 title: Writing
-type: doc
+layout: doc
 weight: 200
 keywords: [content,variable,writing,config]
 ---

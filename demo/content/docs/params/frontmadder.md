@@ -1,6 +1,6 @@
 ---
 title: Frontmadder Params
-type: doc
+layout: doc
 weight: 200
 keywords: [documentation,variable,writing,partial,audio,general,title]
 ---

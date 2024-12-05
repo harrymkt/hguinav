@@ -1,6 +1,6 @@
 ---
 title: Menu Partial
-type: doc
+layout: doc
 weight: 400
 keywords: [documentation,menu]
 ---

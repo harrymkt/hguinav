@@ -1,6 +1,6 @@
 ---
 title: General Partials
-type: doc
+layout: doc
 weight: 1
 keywords: [writing, config, doc, params, content,base,related]
 ---

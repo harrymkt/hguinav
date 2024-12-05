@@ -1,6 +1,6 @@
 ---
 title: Config Params
-type: doc
+layout: doc
 weight: 100
 keywords: [doc,documentation,variable,writing,partial]
 ---

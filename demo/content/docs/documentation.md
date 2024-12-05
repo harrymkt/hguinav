@@ -2,7 +2,7 @@
 title: "Documentation Site"
 weight: 1000
 keywords: [doc, params, writing, content, misc, title]
-type: doc
+layout: doc
 ---
 # Documentation Site
 Hguinav supports built-in documentation template that allows you to create list base documentation pages. Each section, starting at content/, you can create a subsection documentation. You can also look the docs folder of this theme demo.
@@ -14,7 +14,7 @@ First, create first documentation section in content folder, and add _index.md t
 ```yaml
 ---
 title: "Your Documentation Main Section's Title"
-type: doc
+layout: doc
 ---
 Further content for the main documentation section goes here
 ```
@@ -26,12 +26,12 @@ You can write documentation as you normally would do, for example:
 ---
 title: "Page1"
 weight: 1
-type: doc
+layout: doc
 ---
 Hello!
 ```
 
-Note that you also need to set type to `doc` on every page.
+Note that you also need to set `layout` to `doc` on every page.
 
 ## Sections
 You can also have subsections inside the main one.
@@ -42,7 +42,7 @@ In the test folder, we will add _index.md with the following content.
 ```yaml
 ---
 title: "Testing"
-type: doc
+layout: doc
 weight: 1
 ---
 ```
@@ -53,7 +53,7 @@ After that, you can write a short description related to that subsection. Do not
 ```yaml
 ---
 title: "Testing"
-type: doc
+layout: doc
 weight: 1
 ---
 I am a test section, so you know displaying in first.

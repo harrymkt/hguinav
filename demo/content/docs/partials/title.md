@@ -1,6 +1,6 @@
 ---
 title: Title Partial
-type: doc
+layout: doc
 weight: 200
 keywords: [variable,config,content,writing]
 ---

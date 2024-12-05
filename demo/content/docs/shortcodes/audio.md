@@ -1,6 +1,6 @@
 ---
 title: Audio Shortcode
-type: doc
+layout: doc
 weight: 100
 keywords: [doc,content,shortcode,audio]
 ---

@@ -1,6 +1,6 @@
 ---
 title: Related Partial
-type: doc
+layout: doc
 weight: 300
 keywords: [documentation,config,writing,partial]
 ---
