@@ -7,7 +7,7 @@ layout: doc
 # Documentation Site
 Hguinav supports built-in documentation template that allows you to create list base documentation pages. Each section, starting at content/, you can create a subsection documentation. You can also look the docs folder of this theme demo.
 
-**Note**: documentation uses weight sort style by default. Please note that when using weight, you also need to set for subsections.
+**Note**: documentation uses both Weight and Title sort styles by default. Please note that when using weight, you also need to set for subsections.
 
 ## Setup
 First, create first documentation section in content folder, and add _index.md to it containing the following frontmadder. For this documentation, we will create docs folder and use YAML for frontmadder.
