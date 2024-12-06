@@ -8,32 +8,18 @@
     <language>en-US</language>
     <atom:link href="https://harrymkt.github.io/hguinav/docs/partials/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>General Partials</title>
-      <link>https://harrymkt.github.io/hguinav/docs/partials/general/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://harrymkt.github.io/hguinav/docs/partials/general/</guid>
-      <description>&lt;h1 id=&#34;general-partials&#34;&gt;General Partials&lt;/h1&gt;&#xA;&lt;p&gt;The following are partials that do not necessary to document each page.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;extrafoot.html: Extra footer, such as JS scripts to add to the end of but before closing body.&lt;/li&gt;&#xA;&lt;li&gt;extrahead.html: Extra head meta information put before the end of title block.&lt;/li&gt;&#xA;&lt;li&gt;footer.html: Main footer.&lt;/li&gt;&#xA;&lt;li&gt;head.html: Main head meta immediately following the head tag. Note: title is only used by title block, which allows you to customize the title from within any section / page.&lt;/li&gt;&#xA;&lt;li&gt;header.html: Header, before navigation.&lt;/li&gt;&#xA;&lt;li&gt;listpost.html: Use to list pages in pagination. Add the partial pagination.html after this partial to add pagination buttons.&lt;/li&gt;&#xA;&lt;li&gt;nav.html: Use to add navigation. This is made to be easy as possible to overwrite since Hugo&#39;s templating is restricted.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-    <item>
       <title>Content Partial</title>
       <link>https://harrymkt.github.io/hguinav/docs/partials/content/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://harrymkt.github.io/hguinav/docs/partials/content/</guid>
-      <description>&lt;h1 id=&#34;content-partial-contenthtml&#34;&gt;Content Partial (content.html)&lt;/h1&gt;&#xA;&lt;p&gt;You can use this partial to display content instead of using &lt;code&gt;{{ .Content }}&lt;/code&gt; etc. The advantage of using this partial is that it allows you to add content variables. See &lt;a href=&#34;https://harrymkt.github.io/hguinav/hguinav/docs/writing/&#34;&gt;writing&lt;/a&gt; to see how variables work.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;value&lt;/code&gt;(string) required: The value to display.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;page&lt;/code&gt;(object) required: The page object where the content partial should retrieve necessary variables to replace.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code class=&#34;language-go-html-template&#34;&gt;{{ (partial &amp;quot;content.html&amp;quot; (dict &amp;quot;value&amp;quot; .Content &amp;quot;page&amp;quot; . )) | safeHTML }}&#xD;&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+      <description>&lt;h1 id=&#34;content-partial-contenthtml&#34;&gt;Content Partial (content.html)&lt;/h1&gt;&#xA;&lt;p&gt;You can use this partial to display content instead of using &lt;code&gt;{{ .Content }}&lt;/code&gt; etc. The advantage of using this partial is that it allows you to add content variables. See &lt;a href=&#34;https://harrymkt.github.io/hguinav/hguinav/docs/writing/&#34;&gt;writing&lt;/a&gt; to see how variables work.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;value&lt;/code&gt;(string) required: The value to display.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;page&lt;/code&gt;(object) required: The page object where the content partial should retrieve necessary variables to replace.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code class=&#34;language-go-html-template&#34;&gt;{{ (partial &amp;quot;content.html&amp;quot; (dict &amp;quot;value&amp;quot; .Content &amp;quot;page&amp;quot; . )) | safeHTML }}&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
-      <title>Title Partial</title>
-      <link>https://harrymkt.github.io/hguinav/docs/partials/title/</link>
+      <title>General Partials</title>
+      <link>https://harrymkt.github.io/hguinav/docs/partials/general/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://harrymkt.github.io/hguinav/docs/partials/title/</guid>
-      <description>&lt;h1 id=&#34;title-partial-titlehtml&#34;&gt;Title Partial (title.html)&lt;/h1&gt;&#xA;&lt;p&gt;You can use this partial to customize the title of any page. The site title will be appended after it. Use the &lt;code&gt;title&lt;/code&gt; block to customize.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;titles&lt;/code&gt;(slice): The titles made out of slice.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code class=&#34;language-go-html-template&#34;&gt;{{- define &amp;quot;title&amp;quot; -}}&#xD;&#xA;{{ $titles := slice .Title -}}&#xD;&#xA;{{- if and .Paginator (gt .Paginator.PageNumber 1) -}}&#xD;&#xA;{{- $titles = $titles | append (printf &amp;quot; (page %v)&amp;quot; .Paginator.PageNumber) -}}&#xD;&#xA;{{- end -}}&#xD;&#xA;{{- partial &amp;quot;title.html&amp;quot; (dict &amp;quot;titles&amp;quot; $titles) -}}&#xD;&#xA;{{- end -}}&#xD;&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
-    </item>
-    <item>
-      <title>Related Partial</title>
-      <link>https://harrymkt.github.io/hguinav/docs/partials/related/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://harrymkt.github.io/hguinav/docs/partials/related/</guid>
-      <description>&lt;h1 id=&#34;related-partial-relatedhtml&#34;&gt;Related Partial (related.html)&lt;/h1&gt;&#xA;&lt;p&gt;Use this partial to display related content.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;page&lt;/code&gt;(object) required: The object pointing to the page you want to process, specifically the pages.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;text&lt;/code&gt;(string) optional: The text to display on heading.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;hlevel&lt;/code&gt;(int) optional: The level of the heading, default is 4.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <guid>https://harrymkt.github.io/hguinav/docs/partials/general/</guid>
+      <description>&lt;h1 id=&#34;general-partials&#34;&gt;General Partials&lt;/h1&gt;&#xA;&lt;p&gt;The following are partials that do not necessary to document each page.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;extrafoot.html: Extra footer, such as JS scripts to add to the end of but before closing body.&lt;/li&gt;&#xA;&lt;li&gt;extrahead.html: Extra head meta information put before the title block.&lt;/li&gt;&#xA;&lt;li&gt;footer.html: Main footer.&lt;/li&gt;&#xA;&lt;li&gt;head.html: Main head meta immediately following the head tag. Note: title is only used by title block, which allows you to customize the title from within any section / page using &lt;a href=&#34;https://harrymkt.github.io/hguinav/hguinav/docs/partials/title/&#34;&gt;title partial&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;header.html: Header, before navigation.&lt;/li&gt;&#xA;&lt;li&gt;listpost.html: Use to list pages in pagination. Add the partial pagination.html after this partial to add pagination buttons.&lt;/li&gt;&#xA;&lt;li&gt;nav.html: Use to add navigation. This is made to be easy as possible to overwrite since Hugo&#39;s templating is restricted.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Menu Partial</title>
@@ -43,11 +29,25 @@
       <description>&lt;h1 id=&#34;menu-partial-menuhtml&#34;&gt;Menu Partial (menu.html)&lt;/h1&gt;&#xA;&lt;p&gt;Use this partial to display menus.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;page&lt;/code&gt;(object) required: The object pointing to the page you want to process, specifically the current page.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;menuID&lt;/code&gt;(string) required: The menu to process.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;format&lt;/code&gt;(string) optional: The format you want to use. Using an invalid format will fail the build. Valid formats are:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;default&lt;/code&gt;: Default format, with heading and navigation tag.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;noheading&lt;/code&gt;: No heading format, only list. This is useful for other menus such as footer.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
+      <title>Related Partial</title>
+      <link>https://harrymkt.github.io/hguinav/docs/partials/related/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://harrymkt.github.io/hguinav/docs/partials/related/</guid>
+      <description>&lt;h1 id=&#34;related-partial-relatedhtml&#34;&gt;Related Partial (related.html)&lt;/h1&gt;&#xA;&lt;p&gt;Use this partial to display related content.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;page&lt;/code&gt;(object) required: The object pointing to the page you want to process, specifically the pages.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;text&lt;/code&gt;(string) optional: The text to display on heading.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;hlevel&lt;/code&gt;(int) optional: The level of the heading, default is 4.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
       <title>Sort Partial</title>
       <link>https://harrymkt.github.io/hguinav/docs/partials/sort/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://harrymkt.github.io/hguinav/docs/partials/sort/</guid>
-      <description>&lt;h1 id=&#34;sort-partial-sorthtml&#34;&gt;Sort Partial (sort.html)&lt;/h1&gt;&#xA;&lt;p&gt;You can use this partial to sort specific sections the way you want. See &lt;a href=&#34;https://harrymkt.github.io/hguinav/hguinav/docs/params/frontmadder/&#34;&gt;frontmadder variables&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;sorts&lt;/code&gt;(collection) required: The pages collection.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;sortby&lt;/code&gt;(string) optional: Which way would you like to the pages to be sorted? Eg, Title, Weight, Date&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code class=&#34;language-go-html-template&#34;&gt;{{- $pages := partial &amp;quot;sort.html&amp;quot; (dict &amp;quot;sorts&amp;quot; .RegularPages &amp;quot;sortby&amp;quot; &amp;quot;Title&amp;quot;) }}&#xD;&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+      <description>&lt;h1 id=&#34;sort-partial-sorthtml&#34;&gt;Sort Partial (sort.html)&lt;/h1&gt;&#xA;&lt;p&gt;You can use this partial to sort specific sections the way you want. See &lt;a href=&#34;https://harrymkt.github.io/hguinav/hguinav/docs/params/frontmadder/&#34;&gt;frontmadder variables&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;sorts&lt;/code&gt;(collection) required: The pages collection.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;sortby&lt;/code&gt;(string) optional: Which way would you like to the pages to be sorted? Eg, Title, Weight, Date&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code class=&#34;language-go-html-template&#34;&gt;{{- $pages := partial &amp;quot;sort.html&amp;quot; (dict &amp;quot;sorts&amp;quot; .RegularPages &amp;quot;sortby&amp;quot; &amp;quot;Title&amp;quot;) }}&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>Title Partial</title>
+      <link>https://harrymkt.github.io/hguinav/docs/partials/title/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://harrymkt.github.io/hguinav/docs/partials/title/</guid>
+      <description>&lt;h1 id=&#34;title-partial-titlehtml&#34;&gt;Title Partial (title.html)&lt;/h1&gt;&#xA;&lt;p&gt;You can use this partial to customize the title of any page. The site title will be appended after it. Use the &lt;code&gt;title&lt;/code&gt; block to customize.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;titles&lt;/code&gt;(slice): The titles made out of slice.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code class=&#34;language-go-html-template&#34;&gt;{{- define &amp;quot;title&amp;quot; -}}&#xA;{{ $titles := slice .Title -}}&#xA;{{- if and .Paginator (gt .Paginator.PageNumber 1) -}}&#xA;{{- $titles = $titles | append (printf &amp;quot; (page %v)&amp;quot; .Paginator.PageNumber) -}}&#xA;{{- end -}}&#xA;{{- partial &amp;quot;title.html&amp;quot; (dict &amp;quot;titles&amp;quot; $titles) -}}&#xA;{{- end -}}&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
   </channel>
 </rss>
