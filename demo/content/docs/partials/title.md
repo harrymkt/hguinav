@@ -1,7 +1,6 @@
 ---
 title: Title Partial
 layout: doc
-weight: 200
 keywords: [variable,config,content,writing]
 ---
 # Title Partial (title.html)

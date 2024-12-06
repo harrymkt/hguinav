@@ -1,7 +1,6 @@
 ---
 title: Content Partial
 layout: doc
-weight: 100
 keywords: [variable,config,content,write,params]
 ---
 # Content Partial (content.html)

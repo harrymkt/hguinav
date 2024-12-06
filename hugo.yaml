@@ -1,4 +1,2 @@
 baseURL: "https://example.org/"
 title: "UI Navigation"
-cleanDestinationDir: true
-publishDir: "HTML"

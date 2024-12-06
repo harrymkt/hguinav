@@ -1,7 +1,6 @@
 ---
 title: Audio Shortcode
 layout: doc
-weight: 100
 keywords: [doc,content,shortcode,audio]
 ---
 # Audio Shortcode (audio.html)

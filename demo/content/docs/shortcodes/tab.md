@@ -1,7 +1,6 @@
 ---
 title: Tab Shortcode
 layout: doc
-weight: 200
 keywords: [doc,content,shortcode,tab]
 ---
 # Tab Shortcode

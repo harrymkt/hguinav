@@ -1,7 +1,6 @@
 ---
 title: Menu Partial
 layout: doc
-weight: 400
 keywords: [documentation,menu]
 ---
 # Menu Partial (menu.html)

@@ -1,7 +1,6 @@
 ---
 title: Related Partial
 layout: doc
-weight: 300
 keywords: [documentation,config,writing,partial]
 ---
 # Related Partial (related.html)
