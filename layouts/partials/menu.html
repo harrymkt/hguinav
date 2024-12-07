@@ -50,7 +50,14 @@ Renders a menu for the given menu ID.
 {{- with $fpage }}
 {{- $url = .RelPermalink }}
 {{- end }}
-{{- $attrs := dict "href" $url }}
+{{- $attrs := dict }}
+{{- if .Params.attributes }}
+{{- /*
+{{- range $ak, av := .Params.attributes }}
+*/ -}}
+{{- $attrs = merge $attrs .Params.attributes }}
+{{- end }}
+{{- $attrs = merge $attrs (dict "href" $url) }}
 {{- if $page.IsMenuCurrent .Menu . }}
 {{- $attrs = merge $attrs (dict "class" "active" "aria-current" "page") }}
 {{- else if $page.HasMenuCurrent .Menu .}}
