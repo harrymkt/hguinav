@@ -40,3 +40,5 @@ menus:
       pageRef: "/authors"
       identifier: menu_main_author
       weight: 40
+    - name: Gone
+      url: https://c.com

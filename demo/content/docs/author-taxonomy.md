@@ -14,6 +14,8 @@ role: admin
 I'm the maintainer of this site (optional byo)
 ```
 
+Content processing here - is also done by the [content partial]({{% relref "partials/content.md" %}}) which as support for [variable replacements]({{% relref "writing.md" %}}).
+
 Please note that you do not need to create section for that author if you are not adding custom metadata for them.
 
 ## Setting Author Taxonomy

@@ -16,6 +16,7 @@ This theme is distributed under the terms of the [MIT License](https://github.co
 - Documentation site; build accessible documentation sites by using built-in template specifically designed for documentation. You set the layout of the section you want to document as well as in each page of that related document.
 - Content variables during build, such as `%title%`. See the demo page for documentation
 - Sort pages by the way you like and for specific sections, which is by default not supported. This uses the sort partial.
+- Define menu pages that check for multilingual with the special menu partial.
 - Copy code blocks; add code blocks which can then be copied using buttons and display the code language if available, helped by JavaScript.
 - Local date display; display dates in user's local timezone, no madder what timezone the date is set.
 - Taxonomies support.

@@ -8,4 +8,4 @@ keywords: [documentation,variable,writing,partial,audio,general,title]
 You can use the following param parameters to configure your pages.
 
 ## sort_by
-A string which controls the sort, even for each section.
+A string which controls the sort, even for each section. Sorting is controled by [sort partial]({{% relref "../partials/sort.md" %}}).

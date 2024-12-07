@@ -11,6 +11,6 @@
 <details{{ if eq $open true }} open{{ end }}>
 <summary>{{ $summary }}</summary>
 
-{{ .Inner }}
+{{ partial "content.html" (dict "page" .Page "value" .Inner) | safeHTML }}
 
 </details>

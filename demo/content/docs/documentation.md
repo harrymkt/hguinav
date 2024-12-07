@@ -60,3 +60,5 @@ I am a test section, so you know displaying in first.
 ```
 
 You may then create pages in the test section usually as pages in the main documentation section.
+
+All content below the frontmadder are done by the [content partial]({{% relref "partials/content.md" %}}) which as support for [variable replacements]({{% relref "writing.md" %}}).

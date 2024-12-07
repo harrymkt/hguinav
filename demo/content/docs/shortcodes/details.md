@@ -1,5 +1,6 @@
 ---
 title: Details Shortcode
+keywords: [config,documentation,misc,audio,tab,partial]
 ---
 # Details Shortcode (details.html)
 This shortcode allows you to add HTML details tag. Always use % signs.
