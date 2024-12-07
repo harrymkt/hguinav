@@ -36,6 +36,13 @@
       <description>&lt;h1 id=&#34;blocks&#34;&gt;Blocks&lt;/h1&gt;&#xA;&lt;p&gt;Sometimes partial files are not enough. Or will they be cluttered? Blocks come in. You can define blocks to display content in position the block is defined in the base template. Here are available blocks that you can use to customize further:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;title&lt;/code&gt;: The title block. This should be completely optional anyway. For example you can use this block combined with &lt;a href=&#34;https://harrymkt.github.io/hguinav/hguinav/docs/partials/title/&#34;&gt;title partial&lt;/a&gt; to ease the management of the page title which asumes the site title should be appended after it.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;beforeheader&lt;/code&gt;: Content before header, or another word, content immediately following the body tag.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;extraheader&lt;/code&gt;: Content after the header defined in header.html (partial).&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;main&lt;/code&gt;: The main content.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
+      <title>Menu Params</title>
+      <link>https://harrymkt.github.io/hguinav/docs/params/menu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://harrymkt.github.io/hguinav/docs/params/menu/</guid>
+      <description>&lt;h1 id=&#34;menu-params&#34;&gt;Menu Params&lt;/h1&gt;&#xA;&lt;p&gt;You can use the following param parameters to configure your menus. These variables should be put under the &lt;code&gt;params&lt;/code&gt; object of the menu.&lt;/p&gt;&#xA;&lt;h2 id=&#34;attributes&#34;&gt;attributes&lt;/h2&gt;&#xA;&lt;p&gt;Specify the custom attributes you want to add. These attributes will be placed before the &lt;code&gt;href&lt;/code&gt; of the link element (the &lt;code&gt;a&lt;/code&gt; tag).&lt;/p&gt;&#xA;&lt;p&gt;example:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;menus:&#xA;  main:&#xA;    - name: test&#xA;      pageRef: /&#xA;      params:&#xA;        attributes:&#xA;          class: &amp;quot;active&amp;quot;&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
       <title>Author Management Via Taxonomy</title>
       <link>https://harrymkt.github.io/hguinav/docs/author-taxonomy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
