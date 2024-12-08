@@ -61,6 +61,12 @@
         }
         ,
         {
+            "url": "https://harrymkt.github.io/hguinav/docs/search/",
+            "title": "Search",
+            "content": "Search Hguinav has search built-in. This is a quick overview on how to create your search.\nFirst, remember the following:\nsearch.js is the JS script that helps determine the search results and inputs. layouts/_default/search.html is the actual section that will be generated as the search page. layouts/_default/search.json is the JSON file containing the site's pages and content for search. Once you have above notes you can now start creating your search feature.\nStep 1 (setup for search page generation) Create a folder called search in the content directory, and add _index.md with the following content:\n--- title: Search outputs: - html - rss - json --- You can also remove the RSS if you don't want to generate RSS for this section, which is usually not needed for RSS to be generated.\nYou can create the same search for other languages with the _index.languageCode.md prefix.\nStep 2 (generate the site) Build or serve your site, and navigate to /search.\nYou will now see the search input, with results underneeth it.\n"
+        }
+        ,
+        {
             "url": "https://harrymkt.github.io/hguinav/authors/",
             "title": "Authors",
             "content": ""

@@ -35,5 +35,12 @@
       <guid>https://harrymkt.github.io/hguinav/docs/documentation/</guid>
       <description>&lt;h1 id=&#34;documentation-site&#34;&gt;Documentation Site&lt;/h1&gt;&#xA;&lt;p&gt;Hguinav supports built-in documentation template that allows you to create list base documentation pages. Each section, starting at content/, you can create a subsection documentation. You can also look the docs folder of this theme demo.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: documentation uses both Weight and Title sort styles by default. Please note that when using weight, you also need to set for subsections.&lt;/p&gt;&#xA;&lt;h2 id=&#34;setup&#34;&gt;Setup&lt;/h2&gt;&#xA;&lt;p&gt;First, create first documentation section in content folder, and add _index.md to it containing the following frontmadder. For this documentation, we will create docs folder and use YAML for frontmadder.&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>Search</title>
+      <link>https://harrymkt.github.io/hguinav/docs/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://harrymkt.github.io/hguinav/docs/search/</guid>
+      <description>&lt;h1 id=&#34;search&#34;&gt;Search&lt;/h1&gt;&#xA;&lt;p&gt;Hguinav has search built-in. This is a quick overview on how to create your search.&lt;/p&gt;&#xA;&lt;p&gt;First, remember the following:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;search.js is the JS script that helps determine the search results and inputs.&lt;/li&gt;&#xA;&lt;li&gt;layouts/_default/search.html is the actual section that will be generated as the search page.&lt;/li&gt;&#xA;&lt;li&gt;layouts/_default/search.json is the JSON file containing the site&#39;s pages and content for search.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Once you have above notes you can now start creating your search feature.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

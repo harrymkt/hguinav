@@ -117,5 +117,18 @@
                 hreflang="my"
                 href="https://harrymkt.github.io/hguinav/my/blog/"
                 />
+  </url><url>
+    <loc>https://harrymkt.github.io/hguinav/my/search/</loc>
+    <lastmod>2024-12-08T11:35:23+06:30</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://harrymkt.github.io/hguinav/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="my"
+                href="https://harrymkt.github.io/hguinav/my/search/"
+                />
   </url>
 </urlset>

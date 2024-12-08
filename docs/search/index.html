@@ -6,7 +6,7 @@
 <script src="https://harrymkt.github.io/hguinav/scripts/theme.js"></script>
 <link href="https://harrymkt.github.io/hguinav/css/theme.css">
 
-<title>Content Partial – Documentation – HG UI Navigation</title>
+<title>Search – Documentation – HG UI Navigation</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.0.2/lunr.js"></script>
 </head>
 <body>
@@ -33,7 +33,7 @@
 <li><a href="/hguinav/docs/blocks/" >Blocks</a></li>
 <li><a href="/hguinav/docs/author-taxonomy/" >Author Management Via Taxonomy</a></li>
 <li><a href="/hguinav/docs/documentation/" >Documentation Site</a></li>
-<li><a href="/hguinav/docs/search/" >Search</a></li>
+<li><a href="/hguinav/docs/search/" aria-current="page">Search</a></li>
 </ul>
 <h3>Params</h3>
 <p>Control your site or page by these custom variables and frontmadders.</p>
@@ -47,7 +47,7 @@
 <p>Partials live in the layouts/partials and are so called custom functions. To modify any of them you can copy to your layouts/partials directory.</p>
 
 <ul style="list-style-type:none;">
-<li><a href="/hguinav/docs/partials/content/" aria-current="page">Content Partial</a></li>
+<li><a href="/hguinav/docs/partials/content/" >Content Partial</a></li>
 <li><a href="/hguinav/docs/partials/general/" >General Partials</a></li>
 <li><a href="/hguinav/docs/partials/menu/" >Menu Partial</a></li>
 <li><a href="/hguinav/docs/partials/related/" >Related Partial</a></li>
@@ -64,23 +64,38 @@
 </ul>
 </nav>
 <main id="mainc">
-<h1 id="content-partial-contenthtml">Content Partial (content.html)</h1>
-<p>You can use this partial to display content instead of using <code>{{ .Content }}</code> etc. The advantage of using this partial is that it allows you to add content variables. See <a href="/hguinav/docs/writing/">writing</a> to see how variables work.</p>
+<h1 id="search">Search</h1>
+<p>Hguinav has search built-in. This is a quick overview on how to create your search.</p>
+<p>First, remember the following:</p>
 <ul>
-<li><code>value</code>(string) required: The value to display.</li>
-<li><code>page</code>(object) required: The page object where the content partial should retrieve necessary variables to replace.</li>
+<li>search.js is the JS script that helps determine the search results and inputs.</li>
+<li>layouts/_default/search.html is the actual section that will be generated as the search page.</li>
+<li>layouts/_default/search.json is the JSON file containing the site's pages and content for search.</li>
 </ul>
-<h2 id="example">Example</h2>
-<pre><code class="language-go-html-template">{{ (partial &quot;content.html&quot; (dict &quot;value&quot; .Content &quot;page&quot; . )) | safeHTML }}
+<p>Once you have above notes you can now start creating your search feature.</p>
+<h2 id="step-1-setup-for-search-page-generation">Step 1 (setup for search page generation)</h2>
+<p>Create a folder called <code>search</code> in the content directory, and add <code>_index.md</code> with the following content:</p>
+<pre><code class="language-md">---
+title: Search
+outputs:
+- html
+- rss
+- json
+---
 </code></pre>
+<p>You can also remove the RSS if you don't want to generate RSS for this section, which is usually not needed for RSS to be generated.</p>
+<p>You can create the same search for other languages with the <code>_index.languageCode.md</code> prefix.</p>
+<h2 id="step-2-generate-the-site">Step 2 (generate the site)</h2>
+<p>Build or serve your site, and navigate to /search.</p>
+<p>You will now see the search input, with results underneeth it.</p>
 
 <h4>You might also like</h4>
 <ul>
-<li><a href="/hguinav/docs/partials/general/">General Partials</a></li>
+<li><a href="/hguinav/docs/params/frontmadder/">Frontmadder Params</a></li>
 <li><a href="/hguinav/docs/params/menu/">Menu Params</a></li>
-<li><a href="/hguinav/docs/search/">Search</a></li>
-<li><a href="/hguinav/docs/partials/title/">Title Partial</a></li>
-<li><a href="/hguinav/docs/writing/">Writing</a></li>
+<li><a href="/hguinav/docs/partials/sort/">Sort Partial</a></li>
+<li><a href="/hguinav/docs/author-taxonomy/">Author Management Via Taxonomy</a></li>
+<li><a href="/hguinav/docs/params/config/">Config Params</a></li>
 </ul>
 </main>
 <div id="hgfooter">
