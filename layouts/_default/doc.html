@@ -14,11 +14,13 @@
 {{- $docsort := or $docsect.Params.sort_by "" }}
 <nav role="navigation" aria-label="{{ $docsect.Title }}">
 <h2>{{ $docsect.Title }}</h2>
+{{- if $docsect.RegularPages }}
 <ul style="list-style-type:none;">
 {{- range (partial "sort.html" (dict "sorts" $docsect.RegularPages "sort_by" $docsort)) }}
 <li><a href="{{ .RelPermalink }}" {{ if eq .RelPermalink $current.RelPermalink }}aria-current="page"{{ end }}>{{ .Title }}</a></li>
 {{- end }}
 </ul>
+{{- end }}
 {{- if $docsect.Sections }}
 {{- range $subsect := (partial "sort.html" (dict "sorts" $docsect.Sections "sort_by" $docsort)) }}
 {{- $subsort := or $subsect.Params.sort_by "" }}
