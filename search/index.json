@@ -1,0 +1,195 @@
+{
+    "items": [
+        {
+            "url": "https://harrymkt.github.io/hguinav/docs/params/",
+            "title": "Params",
+            "content": "Control your site or page by these custom variables and frontmadders.\n"
+        }
+        ,
+        {
+            "url": "https://harrymkt.github.io/hguinav/docs/partials/",
+            "title": "Partials",
+            "content": "Partials live in the layouts/partials and are so called custom functions. To modify any of them you can copy to your layouts/partials directory.\n"
+        }
+        ,
+        {
+            "url": "https://harrymkt.github.io/hguinav/docs/shortcodes/",
+            "title": "Shortcodes",
+            "content": "Shortcodes live in the layouts/shortcodes and are so called custom functions that you can use in your content file. To modify any of them you can copy to your layouts/partials directory.\n"
+        }
+        ,
+        {
+            "url": "https://harrymkt.github.io/hguinav/docs/params/config/",
+            "title": "Config Params",
+            "content": "Config Params You can use the following param parameters to configure the theme in your site config.\ntitle_sep The title's seperator to use. Default is \u0026quot; – \u0026quot;.\n"
+        }
+        ,
+        {
+            "url": "https://harrymkt.github.io/hguinav/docs/params/frontmadder/",
+            "title": "Frontmadder Params",
+            "content": "Frontmadder Params You can use the following param parameters to configure your pages.\nsort_by A string which controls the sort, even for each section. Sorting is controled by sort partial.\n"
+        }
+        ,
+        {
+            "url": "https://harrymkt.github.io/hguinav/docs/writing/",
+            "title": "Writing",
+            "content": "Writing You can use the following variables to replace with something else. Variables are enclosed by %variable_name% where variable_name is the name of available variables you want. This feature can be used in content files where the content partial is used, such as documentation sections, home page, blog, etc.\nTo display the raw of the variable name itself, prefix with /. For example, %//title%\nFYI, variable processing is done by content partial.\nBe warned that failure to retrieve the variable will render that string directly.\nAvailable variables:\ntitle: The title of the page. date: The published date in the local format, similar to post page. updated: The updated date, similar to above format. description: The description. Example --- title: Test --- This page is titled %/title% "
+        }
+        ,
+        {
+            "url": "https://harrymkt.github.io/hguinav/docs/blocks/",
+            "title": "Blocks",
+            "content": "Blocks Sometimes partial files are not enough. Or will they be cluttered? Blocks come in. You can define blocks to display content in position the block is defined in the base template. Here are available blocks that you can use to customize further:\ntitle: The title block. This should be completely optional anyway. For example you can use this block combined with title partial to ease the management of the page title which asumes the site title should be appended after it. beforeheader: Content before header, or another word, content immediately following the body tag. extraheader: Content after the header defined in header.html (partial). main: The main content. "
+        }
+        ,
+        {
+            "url": "https://harrymkt.github.io/hguinav/docs/params/menu/",
+            "title": "Menu Params",
+            "content": "Menu Params You can use the following param parameters to configure your menus. These variables should be put under the params object of the menu.\nattributes Specify the custom attributes you want to add. These attributes will be placed before the href of the link element (the a tag).\nexample:\nmenus: main: - name: test pageRef: / params: attributes: class: \u0026quot;active\u0026quot; "
+        }
+        ,
+        {
+            "url": "https://harrymkt.github.io/hguinav/docs/author-taxonomy/",
+            "title": "Author Management Via Taxonomy",
+            "content": "%title% You can have taxonomy based author management system. Create each author section in content/authors/author_name/_index.md, and looks like this:\n--- title: \u0026quot;Author name\u0026quot; role: admin --- I'm the maintainer of this site (optional byo) Content processing here - is also done by the content partial which as support for variable replacements.\nPlease note that you do not need to create section for that author if you are not adding custom metadata for them.\nSetting Author Taxonomy In your site configuration:\ntaxonomies: author: authors # Custom taxonomies go here Frontmadder Hguinav provides the following optional frontmadder variables that you can set in your author's page:\nrole(string): The role of this author, eg admin, for informational purposes. website(string: Personal website. "
+        }
+        ,
+        {
+            "url": "https://harrymkt.github.io/hguinav/docs/documentation/",
+            "title": "Documentation Site",
+            "content": "Documentation Site Hguinav supports built-in documentation template that allows you to create list base documentation pages. Each section, starting at content/, you can create a subsection documentation. You can also look the docs folder of this theme demo.\nNote: documentation uses both Weight and Title sort styles by default. Please note that when using weight, you also need to set for subsections.\nSetup First, create first documentation section in content folder, and add _index.md to it containing the following frontmadder. For this documentation, we will create docs folder and use YAML for frontmadder.\n--- title: \u0026quot;Your Documentation Main Section's Title\u0026quot; layout: doc --- Further content for the main documentation section goes here Now, you can create pages with md extention in your documentation folder. Any page within the first section (docs) in this case, is a part of the first section.\nYou can write documentation as you normally would do, for example:\n--- title: \u0026quot;Page1\u0026quot; weight: 1 layout: doc --- Hello! Note that you also need to set layout to doc on every page.\nSections You can also have subsections inside the main one.\nLets create a subfolder name test inside the main documentation section (docs) in this case.\nIn the test folder, we will add _index.md with the following content.\n--- title: \u0026quot;Testing\u0026quot; layout: doc weight: 1 --- We set weight to 1 because we want to display test section first after main documentation section.\nAfter that, you can write a short description related to that subsection. Do not write long texts in this file, because this will display at the top of the list containing pages related to this section.\n--- title: \u0026quot;Testing\u0026quot; layout: doc weight: 1 --- I am a test section, so you know displaying in first. You may then create pages in the test section usually as pages in the main documentation section.\nAll content below the frontmadder are done by the content partial which as support for variable replacements.\n"
+        }
+        ,
+        {
+            "url": "https://harrymkt.github.io/hguinav/authors/",
+            "title": "Authors",
+            "content": ""
+        }
+        ,
+        {
+            "url": "https://harrymkt.github.io/hguinav/categories/",
+            "title": "Categories",
+            "content": ""
+        }
+        ,
+        {
+            "url": "https://harrymkt.github.io/hguinav/categories/news/",
+            "title": "News",
+            "content": ""
+        }
+        ,
+        {
+            "url": "https://harrymkt.github.io/hguinav/blog/test2/",
+            "title": "Test post 2",
+            "content": "Hello\nH1 H6 H3"
+        }
+        ,
+        {
+            "url": "https://harrymkt.github.io/hguinav/blog/test/",
+            "title": "Test post",
+            "content": "Hello\nUpdated on %updated%\nH1 H6 H3"
+        }
+        ,
+        {
+            "url": "https://harrymkt.github.io/hguinav/docs/shortcodes/audio/",
+            "title": "Audio Shortcode",
+            "content": "Audio Shortcode (audio.html) This shortcode allows you to play audio files via URL. This makes it easy without having to add manual HTML audio tag. When using this shortcode, use the \u0026lt; and \u0026gt; signs.\nsource(string) required: The path or URL to the file you want to play. unsupported(string) optional: The text to display if the file cannot be loaded, either do to error or the file does not exist or even the browser does not support playing files. "
+        }
+        ,
+        {
+            "url": "https://harrymkt.github.io/hguinav/blog/",
+            "title": "Blog",
+            "content": "Blog Posts here\n"
+        }
+        ,
+        {
+            "url": "https://harrymkt.github.io/hguinav/lang/",
+            "title": "Change Language",
+            "content": ""
+        }
+        ,
+        {
+            "url": "https://harrymkt.github.io/hguinav/docs/partials/content/",
+            "title": "Content Partial",
+            "content": "Content Partial (content.html) You can use this partial to display content instead of using {{ .Content }} etc. The advantage of using this partial is that it allows you to add content variables. See writing to see how variables work.\nvalue(string) required: The value to display. page(object) required: The page object where the content partial should retrieve necessary variables to replace. Example {{ (partial \u0026quot;content.html\u0026quot; (dict \u0026quot;value\u0026quot; .Content \u0026quot;page\u0026quot; . )) | safeHTML }} "
+        }
+        ,
+        {
+            "url": "https://harrymkt.github.io/hguinav/docs/shortcodes/details/",
+            "title": "Details Shortcode",
+            "content": "Details Shortcode (details.html) This shortcode allows you to add HTML details tag. Always use % signs.\nsummary(string) required: The summary of the detail. open(bool) optional: Should details tag be expanded by default? Example:\n{{% details summary=\u0026quot;Test me\u0026quot; %}} # Test - item1 - item2 {{% /details %}} Output:\nTest me Test item1 item2 "
+        }
+        ,
+        {
+            "url": "https://harrymkt.github.io/hguinav/docs/",
+            "title": "Documentation",
+            "content": "Documentation Please note that these documentations are not localize in every language that this theme provides.\n"
+        }
+        ,
+        {
+            "url": "https://harrymkt.github.io/hguinav/example/",
+            "title": "Example",
+            "content": "Examples Audio shortcode Documentation Your browser does not support the audio element.\nTab Documentation Tab 1 Tab 2 Tab 3\nContent for Tab 1 This is the content for the first tab.\nContent for Tab 2 This is the content for the second tab.\nContent for Tab 3 This is the content for the third tab.\n"
+        }
+        ,
+        {
+            "url": "https://harrymkt.github.io/hguinav/docs/partials/general/",
+            "title": "General Partials",
+            "content": "General Partials The following are partials that do not necessary to document each page.\nextrafoot.html: Extra footer, such as JS scripts to add to the end of but before closing body. extrahead.html: Extra head meta information put before the title block. footer.html: Main footer. head.html: Main head meta immediately following the head tag. Note: title is only used by title block, which allows you to customize the title from within any section / page using title partial. header.html: Header, before navigation. listpost.html: Use to list pages in pagination. Add the partial pagination.html after this partial to add pagination buttons. nav.html: Use to add navigation. This is made to be easy as possible to overwrite since Hugo's templating is restricted. "
+        }
+        ,
+        {
+            "url": "https://harrymkt.github.io/hguinav/authors/harry-min-khant/",
+            "title": "Harry Min Khant",
+            "content": "I'm the maintainer of this site.\n"
+        }
+        ,
+        {
+            "url": "https://harrymkt.github.io/hguinav/",
+            "title": "Home",
+            "content": "The %title% of UI Navigation A theme designed for accessibility rather than visual.\nAll possible code formats and shortcodes are provided as an example in English at Example page.\nGo to search\n"
+        }
+        ,
+        {
+            "url": "https://harrymkt.github.io/hguinav/docs/partials/menu/",
+            "title": "Menu Partial",
+            "content": "Menu Partial (menu.html) Use this partial to display menus.\npage(object) required: The object pointing to the page you want to process, specifically the current page. menuID(string) required: The menu to process. format(string) optional: The format you want to use. Using an invalid format will fail the build. Valid formats are: default: Default format, with heading and navigation tag. noheading: No heading format, only list. This is useful for other menus such as footer. "
+        }
+        ,
+        {
+            "url": "https://harrymkt.github.io/hguinav/docs/partials/related/",
+            "title": "Related Partial",
+            "content": "Related Partial (related.html) Use this partial to display related content.\npage(object) required: The object pointing to the page you want to process, specifically the pages. text(string) optional: The text to display on heading. hlevel(int) optional: The level of the heading, default is 4. "
+        }
+        ,
+        {
+            "url": "https://harrymkt.github.io/hguinav/search/",
+            "title": "Search",
+            "content": ""
+        }
+        ,
+        {
+            "url": "https://harrymkt.github.io/hguinav/docs/partials/sort/",
+            "title": "Sort Partial",
+            "content": "Sort Partial (sort.html) You can use this partial to sort specific sections the way you want. See frontmadder variables.\nsorts(collection) required: The pages collection. sortby(string) optional: Which way would you like to the pages to be sorted? Eg, Title, Weight, Date Example {{- $pages := partial \u0026quot;sort.html\u0026quot; (dict \u0026quot;sorts\u0026quot; .RegularPages \u0026quot;sortby\u0026quot; \u0026quot;Title\u0026quot;) }} "
+        }
+        ,
+        {
+            "url": "https://harrymkt.github.io/hguinav/docs/shortcodes/tab/",
+            "title": "Tab Shortcode",
+            "content": "Tab Shortcode This shortcode allows you to create a tab panel. It is to be used with the tabcontent shortcode.\nTab Shortcode (tab.html) Always use \u0026lt; and \u0026gt; signs for this shortcode.\nname(string) required: The name of the tab. id(string) required: The identifier of the tab. Tab Content Shortcode(tabcontent.html) Always use % sign for this shortcode.\nid(string) required: The identifier of the tab that is previously defined. visible(bool) optional: Toggles whether this tab should display as soon as the tab content is defined. Example {{\u0026lt; tab name=\u0026quot;Tab 1\u0026quot; id=\u0026quot;1\u0026quot; \u0026gt;}} {{\u0026lt; tab name=\u0026quot;Tab 2\u0026quot; id=\u0026quot;2\u0026quot; \u0026gt;}} {{\u0026lt; tab name=\u0026quot;Tab 3\u0026quot; id=\u0026quot;3\u0026quot; \u0026gt;}} {{% tabcontent id=\u0026quot;1\u0026quot; visible=true %}} ## Content for Tab 1 This is the content for the first tab. {{% /tabcontent %}} {{% tabcontent id=\u0026quot;2\u0026quot; %}} ## Content for Tab 2 This is the content for the second tab. {{% /tabcontent %}} {{% tabcontent id=\u0026quot;3\u0026quot; %}} ## Content for Tab 3 This is the content for the third tab. {{% /tabcontent %}} "
+        }
+        ,
+        {
+            "url": "https://harrymkt.github.io/hguinav/tags/",
+            "title": "Tags",
+            "content": ""
+        }
+        ,
+        {
+            "url": "https://harrymkt.github.io/hguinav/docs/partials/title/",
+            "title": "Title Partial",
+            "content": "Title Partial (title.html) You can use this partial to customize the title of any page. The site title will be appended after it. Use the title block to customize.\ntitles(slice): The titles made out of slice. Example {{- define \u0026quot;title\u0026quot; -}} {{ $titles := slice .Title -}} {{- if and .Paginator (gt .Paginator.PageNumber 1) -}} {{- $titles = $titles | append (printf \u0026quot; (page %v)\u0026quot; .Paginator.PageNumber) -}} {{- end -}} {{- partial \u0026quot;title.html\u0026quot; (dict \u0026quot;titles\u0026quot; $titles) -}} {{- end -}} "
+        }
+    ]
+}

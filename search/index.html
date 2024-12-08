@@ -6,7 +6,7 @@
 <script src="https://harrymkt.github.io/hguinav/scripts/theme.js"></script>
 <link href="https://harrymkt.github.io/hguinav/css/theme.css">
 
-<title>News – category – HG UI Navigation</title>
+<title>Search – HG UI Navigation</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.0.2/lunr.js"></script>
 </head>
 <body>
@@ -27,22 +27,14 @@
 </ul>
 </nav>
 <main id="mainc">
-<h1>News</h1>
-
-<h2><a href="/hguinav/blog/test2/">Test post 2</a></h2>
-<p>Last Modified: <script>document.write(ts_to_readable_time(get_timestamp("2024-11-18 20:26:38 +0630 +0630"), false, "", false));</script> ago</p>
-<p><p>Hello</p></p>
-
-<nav aria-label="Pagination">
-<h4>Pagination</h4>
-<ul class="pagination pagination-default" style="list-style-type: none;">
-<li class="page-item"><a href="/hguinav/categories/news/" aria-label="First" class="page-link" role="button"><span aria-hidden="true">&laquo;&laquo;</span></a></li>
-<li class="page-item">
-<a href="/hguinav/categories/news/" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a></li>
-<li class="page-item"><a href="/hguinav/categories/news/" aria-label="Page 1" class="page-link" role="button">1</a></li>
-<li class="page-item active"><a aria-current="page" aria-label="Page 2" class="page-link" role="button">2</a></li>
-</ul>
-</nav>
+<div class="container content">
+<section class="post">
+<h1 class="post-title">Search</h1>
+<input type="text" id="search-input" placeholder="" oninput="showSearchResults()">
+<br />
+<div id="searchres"></div>
+</section>
+</div>
 </main>
 <div id="hgfooter">
 <footer>
