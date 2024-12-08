@@ -21,12 +21,13 @@ This theme is distributed under the terms of the [MIT License](https://github.co
 - Local date display; display dates in user's local timezone, no madder what timezone the date is set.
 - Taxonomies support.
 - Taxonomy based author / user management, provided in demo.
+- Built-in search support.
 - Use blocks to easily modify without having to copy some files to your layouts.
 - Use partials and shortcodes to make your content and/or templates shorten.
 - Comprehensive documentation; Hguinav provides a full Comprehensive documentation including possible layouts, templates, shortcodes, blocks, configurable parameters, and more, everything as it updates.
 
 ## Installation
-Using git:
+Using git clone method:
 ```bash
 cd themes
 git clone https://github.com/harrymkt/hguinav.git
@@ -40,6 +41,9 @@ git submodule update --remote
 ```
 
 Next, set the theme in your config.
+`theme: hguinav`
+or
+`theme = "hguinav"`
 
 ## Configuration
 Please read the [documentation](https://harrymkt.github.io/hguinav) for more information and configuration options.

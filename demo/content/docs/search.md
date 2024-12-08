@@ -11,6 +11,7 @@ First, remember the following:
 - search.js is the JS script that helps determine the search results and inputs.
 - layouts/_default/search.html is the actual section that will be generated as the search page.
 - layouts/_default/search.json is the JSON file containing the site's pages and content for search.
+- Search indexes are generated only the titles. If someone could fix generating a large set of content, then the content can be generated. For now, only titles.
 
 Once you have above notes you can now start creating your search feature.
 

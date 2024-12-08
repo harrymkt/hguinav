@@ -6,8 +6,7 @@
         {{- end }}
         {
             "url": "{{ $page.Permalink }}",
-            "title": "{{ $page.Title }}",
-            "content": {{ $page.Content | plainify | jsonify }}
+            "title": "{{ $page.Title }}"
         }
         {{- end }}
     ]
