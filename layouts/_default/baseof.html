@@ -4,6 +4,7 @@
 {{ partial "head.html" . }}
 {{ partial "extrahead.html" . }}
 <title>{{- block "title" . -}}{{- partial "title.html" (dict "titles" (slice .Title) ) -}}{{- end -}}</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.0.2/lunr.js"></script>
 </head>
 <body>
 {{- block "beforeheader" . }}
@@ -21,5 +22,6 @@
 </div>
 {{ partial "extrafoot.html" . }}
 <script src="{{absURL "scripts/copy.js"}}"></script>
+<script src="{{ absURL "scripts/search.js" }}"></script>
 </body>
 </html>

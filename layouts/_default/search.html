@@ -1,0 +1,10 @@
+{{- define "main" }}
+<div class="container content">
+<section class="post">
+<h1 class="post-title">{{ .Title }}</h1>
+<input type="text" id="search-input" placeholder="" oninput="showSearchResults()">
+<br />
+<div id="searchres"></div>
+</section>
+</div>
+{{- end }}
