@@ -1,7 +1,2 @@
 baseURL: "https://example.org/"
 title: "UI Navigation"
-outputs:
-  home:
-    - html
-    - rss
-    - json
