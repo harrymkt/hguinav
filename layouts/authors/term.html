@@ -13,7 +13,7 @@
 <p>Byo:<span>{{ partial "content.html" (dict "value" .Content "page" . ) | safeHTML}}</span></p>
 {{- end }}
 {{- if .Pages }}
-{{- $paginator := partial "paginate.html" . }}
+{{- $paginator := partial "paginate.html" (dict "page" . "sort_by" "Lastmod" "reverse" true) }}
 <nav aria-label="Posts">
 {{- partial "listpost.html" $paginator }}
 {{ partial "pagination.html" (dict "paginator" $paginator) }}

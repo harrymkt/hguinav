@@ -1,10 +1,13 @@
 {{- $validFormats := slice "default" "terse" }}
 {{- $msg1 := "When passing a map to the internal pagination template, one of the elements must be named 'page', and it must be set to the context of the current page. And, paginator is required" }}
 {{- $msg2 := "The 'format' specified in the map passed to the internal pagination template is invalid. Valid choices are: %s." }}
-{{- $paginator := .paginator }}
+{{- $paginator := . }}
 {{- $format := "default" }}
+{{- if reflect.IsMap . }}
+{{- $paginator = .paginator }}
 {{- with .format }}
 {{- $format = lower . }}
+{{- end }}
 {{- end }}
 {{- if in $validFormats $format }}
 {{- if gt $paginator.TotalPages 1 }}

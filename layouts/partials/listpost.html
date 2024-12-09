@@ -1,4 +1,4 @@
-{{- range $page := .Pages.ByLastmod.Reverse }}
+{{- range $page := .Pages }}
 <h2><a href="{{ $page.RelPermalink }}">{{ $page.LinkTitle }}</a>{{ $page.Description }}</h2>
 {{- $lmd := printf "<script>document.write(ts_to_readable_time(get_timestamp(%q), false, %q, false));</script>" .Lastmod "" }}
 <p>{{ T "lastmod_short" $lmd | safeHTML }}</p>

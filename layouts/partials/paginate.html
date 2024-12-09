@@ -1,11 +1,29 @@
+{{- $page := . }}
+{{- $sortby := "" }}
+{{- $reverse := false }}
+{{- if reflect.IsMap . }}
+{{- $page = .page }}
+{{- with .sort_by }}
+{{- $sortby = . }}
+{{- end }}
+{{- with .reverse }}
+{{- if in (slice true "true") . }}
+{{- $reverse = true }}
+{{- end }}
+{{- end }}
+{{- end }}
 {{- $pagesize := 0 }}
-{{- with .Params.pagesize }}
+{{- with $page.Params.pagesize }}
 {{- $pagesize = . }}
 {{- end }}
 {{- $paginator := "" }}
+{{- $pages := partial "sort.html" (dict "sorts" $page.Pages "sort_by" $sortby) }}
+{{- if (eq $reverse true) }}
+{{- $pages = $pages.Reverse }}
+{{- end }}
 {{- if gt $pagesize 0 }}
-{{- $paginator = .Paginate .Pages $pagesize }}
+{{- $paginator = $page.Paginate $pages $pagesize }}
 {{- else }}
-{{- $paginator = .Paginate .Pages }}
+{{- $paginator = $page.Paginate $pages }}
 {{- end }}
 {{- return $paginator }}
