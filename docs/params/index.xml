@@ -19,7 +19,7 @@
       <link>https://harrymkt.github.io/hguinav/docs/params/frontmadder/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://harrymkt.github.io/hguinav/docs/params/frontmadder/</guid>
-      <description>&lt;h1 id=&#34;frontmadder-params&#34;&gt;Frontmadder Params&lt;/h1&gt;&#xA;&lt;p&gt;You can use the following param parameters to configure your pages.&lt;/p&gt;&#xA;&lt;h2 id=&#34;sort_by&#34;&gt;sort_by&lt;/h2&gt;&#xA;&lt;p&gt;A string which controls the sort, even for each section. Sorting is controled by &lt;a href=&#34;https://harrymkt.github.io/hguinav/hguinav/docs/partials/sort/&#34;&gt;sort partial&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;frontmadder-params&#34;&gt;Frontmadder Params&lt;/h1&gt;&#xA;&lt;p&gt;You can use the following param parameters to configure your pages.&lt;/p&gt;&#xA;&lt;h2 id=&#34;sort_by&#34;&gt;sort_by&lt;/h2&gt;&#xA;&lt;p&gt;A string that controls the sort, even for each section. Sorting is controled by &lt;a href=&#34;https://harrymkt.github.io/hguinav/hguinav/docs/partials/sort/&#34;&gt;sort partial&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;pagesize&#34;&gt;pagesize&lt;/h2&gt;&#xA;&lt;p&gt;A string that controls the pagination size. This is useful in section where the blog templates or content type is used to control per-section pagination size.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Menu Params</title>
