@@ -136,6 +136,16 @@
         }
         ,
         {
+            "url": "https://harrymkt.github.io/hguinav/docs/partials/paginate/",
+            "title": "Paginate Partial"
+        }
+        ,
+        {
+            "url": "https://harrymkt.github.io/hguinav/docs/partials/pagination/",
+            "title": "Pagination Partial"
+        }
+        ,
+        {
             "url": "https://harrymkt.github.io/hguinav/docs/partials/related/",
             "title": "Related Partial"
         }

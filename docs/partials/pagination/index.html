@@ -6,7 +6,7 @@
 <script src="https://harrymkt.github.io/hguinav/scripts/theme.js"></script>
 <link href="https://harrymkt.github.io/hguinav/css/theme.css">
 
-<title>Frontmadder Params – Documentation – HG UI Navigation</title>
+<title>Pagination Partial – Documentation – HG UI Navigation</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.0.2/lunr.js"></script>
 </head>
 <body>
@@ -40,7 +40,7 @@
 
 <ul style="list-style-type:none;">
 <li><a href="/hguinav/docs/params/config/" >Config Params</a></li>
-<li><a href="/hguinav/docs/params/frontmadder/" aria-current="page">Frontmadder Params</a></li>
+<li><a href="/hguinav/docs/params/frontmadder/" >Frontmadder Params</a></li>
 <li><a href="/hguinav/docs/params/menu/" >Menu Params</a></li>
 </ul>
 <h3>Partials</h3>
@@ -51,7 +51,7 @@
 <li><a href="/hguinav/docs/partials/general/" >General Partials</a></li>
 <li><a href="/hguinav/docs/partials/menu/" >Menu Partial</a></li>
 <li><a href="/hguinav/docs/partials/paginate/" >Paginate Partial</a></li>
-<li><a href="/hguinav/docs/partials/pagination/" >Pagination Partial</a></li>
+<li><a href="/hguinav/docs/partials/pagination/" aria-current="page">Pagination Partial</a></li>
 <li><a href="/hguinav/docs/partials/related/" >Related Partial</a></li>
 <li><a href="/hguinav/docs/partials/sort/" >Sort Partial</a></li>
 <li><a href="/hguinav/docs/partials/title/" >Title Partial</a></li>
@@ -66,20 +66,20 @@
 </ul>
 </nav>
 <main id="mainc">
-<h1 id="frontmadder-params">Frontmadder Params</h1>
-<p>You can use the following param parameters to configure your pages.</p>
-<h2 id="sort_by">sort_by</h2>
-<p>A string that controls the sort, even for each section. Sorting is controled by <a href="/hguinav/docs/partials/sort/">sort partial</a>.</p>
-<h2 id="pagesize">pagesize</h2>
-<p>A string that controls the pagination size. This is useful in section where the blog templates or content type is used to control per-section pagination size.</p>
+<h1 id="pagination-partial-paginationhtml">Pagination Partial (pagination.html)</h1>
+<p>Adds the pagination area. If you pass only one value, then it must be the paginator object result of either <code>.Paginator</code> or <code>.Paginate</code> method, or by the <a href="/hguinav/docs/partials/paginate/">paginate partial</a>. You can also pass multiple parameters.</p>
+<p>The following parameters are available:</p>
+<ul>
+<li><code>paginator</code>(pager) required: The pager object.</li>
+</ul>
 
 <h4>You might also like</h4>
 <ul>
-<li><a href="/hguinav/docs/shortcodes/details/">Details Shortcode</a></li>
-<li><a href="/hguinav/docs/search/">Search</a></li>
-<li><a href="/hguinav/docs/params/config/">Config Params</a></li>
-<li><a href="/hguinav/docs/author-taxonomy/">Author Management Via Taxonomy</a></li>
+<li><a href="/hguinav/docs/partials/paginate/">Paginate Partial</a></li>
 <li><a href="/hguinav/docs/blocks/">Blocks</a></li>
+<li><a href="/hguinav/docs/partials/content/">Content Partial</a></li>
+<li><a href="/hguinav/docs/documentation/">Documentation Site</a></li>
+<li><a href="/hguinav/docs/partials/general/">General Partials</a></li>
 </ul>
 </main>
 <div id="hgfooter">

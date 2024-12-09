@@ -50,6 +50,8 @@
 <li><a href="/hguinav/docs/partials/content/" >Content Partial</a></li>
 <li><a href="/hguinav/docs/partials/general/" aria-current="page">General Partials</a></li>
 <li><a href="/hguinav/docs/partials/menu/" >Menu Partial</a></li>
+<li><a href="/hguinav/docs/partials/paginate/" >Paginate Partial</a></li>
+<li><a href="/hguinav/docs/partials/pagination/" >Pagination Partial</a></li>
 <li><a href="/hguinav/docs/partials/related/" >Related Partial</a></li>
 <li><a href="/hguinav/docs/partials/sort/" >Sort Partial</a></li>
 <li><a href="/hguinav/docs/partials/title/" >Title Partial</a></li>
@@ -66,15 +68,27 @@
 <main id="mainc">
 <h1 id="general-partials">General Partials</h1>
 <p>The following are partials that do not necessary to document each page.</p>
+<h2 id="extrafoothtml">extrafoot.html</h2>
+<p>Extra footer, such as JS scripts to add to the end of but before closing body.</p>
+<h2 id="extraheadhtml">extrahead.html</h2>
+<p>Extra head meta information put before the title block.</p>
+<h2 id="footerhtml">footer.html</h2>
+<p>Main footer.</p>
+<h2 id="headhtml">head.html</h2>
+<p>Main head meta immediately following the head tag. Note: title is only used by title block, which allows you to customize the title from within any section / page using <a href="/hguinav/docs/partials/title/">title partial</a>.</p>
+<h2 id="headerhtml">header.html</h2>
+<p>Header, before navigation.</p>
+<h2 id="listposthtml">listpost.html</h2>
+<p>Use to list pages in pagination. Add the partial pagination.html after this partial to add pagination buttons. The pagination.html takes paginator object.</p>
+<h2 id="navhtml">nav.html</h2>
+<p>Use to add navigation. This is made to be easy as possible to overwrite since Hugo's templating is restricted.</p>
+<h2 id="paginatehtml">paginate.html</h2>
+<p>Paginates a given section as context. It can be one value (the page), or you can specify more than one by using <code>dict</code>. The pagination size will be determined by the page you give. See <a href="/hguinav/docs/params/frontmadder/">frontmadder variables</a>.</p>
+<p>The following parameters are available:</p>
 <ul>
-<li>extrafoot.html: Extra footer, such as JS scripts to add to the end of but before closing body.</li>
-<li>extrahead.html: Extra head meta information put before the title block.</li>
-<li>footer.html: Main footer.</li>
-<li>head.html: Main head meta immediately following the head tag. Note: title is only used by title block, which allows you to customize the title from within any section / page using <a href="/hguinav/docs/partials/title/">title partial</a>.</li>
-<li>header.html: Header, before navigation.</li>
-<li>listpost.html: Use to list pages in pagination. Add the partial pagination.html after this partial to add pagination buttons. The pagination.html takes paginator object.</li>
-<li>nav.html: Use to add navigation. This is made to be easy as possible to overwrite since Hugo's templating is restricted.</li>
-<li>paginate.html: Paginates a given section as context.</li>
+<li><code>page</code>(page) required: The page object, usually the current page.</li>
+<li><code>sort_by</code>(string) optional: The sorting method. See <a href="/hguinav/docs/partials/sort/">sort partial</a>. Defaults to none.</li>
+<li><code>reverse</code>(bool) optional: Should the pages be reversed? Useful if you sort by <code>Date</code>, <code>Lastmod</code>, etc. Defaults to <code>false</code>.</li>
 </ul>
 
 <h4>You might also like</h4>
