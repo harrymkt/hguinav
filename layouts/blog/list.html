@@ -1,12 +1,14 @@
 {{- define "title" -}}
 {{ $titles := slice .Title -}}
-{{- if and .Paginator (gt .Paginator.PageNumber 1) -}}
-{{- $titles = $titles | append (printf " (page %v)" .Paginator.PageNumber) -}}
+{{- $paginator := partial "paginate.html" . }}
+{{- if and $paginator (gt $paginator.PageNumber 1) -}}
+{{- $titles = $titles | append (printf " (page %v)" $paginator.PageNumber) -}}
 {{- end -}}
 {{- partial "title.html" (dict "titles" $titles) -}}
 {{- end -}}
 {{- define "main" }}
+{{- $paginator := partial "paginate.html" . }}
 {{ (partial "content.html" (dict "value" .Content "page" . )) | safeHTML }}
-{{- partial "listpost.html" . }}
-{{ partial "pagination.html" . }}
+{{- partial "listpost.html" $paginator }}
+{{ partial "pagination.html" (dict "paginator" $paginator) }}
 {{- end -}}

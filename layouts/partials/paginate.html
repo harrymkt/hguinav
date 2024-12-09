@@ -1,0 +1,11 @@
+{{- $pagesize := 0 }}
+{{- with .Params.pagesize }}
+{{- $pagesize = . }}
+{{- end }}
+{{- $paginator := "" }}
+{{- if gt $pagesize 0 }}
+{{- $paginator = .Paginate .Pages $pagesize }}
+{{- else }}
+{{- $paginator = .Paginate .Pages }}
+{{- end }}
+{{- return $paginator }}

@@ -2,8 +2,9 @@
   {{- partial "title.html" (dict "titles" (slice .Title .Data.Singular) ) -}}
 {{- end -}}
 {{- define "main" }}
+{{- $paginator := partial "paginate.html" . }}
 <h1>{{ .Title }}</h1>
 {{ partial "content.html" (dict "value" .Content "page" . ) }}
-{{- partial "listpost.html" . }}
-{{ partial "pagination.html" . }}
+{{- partial "listpost.html" $paginator }}
+{{ partial "pagination.html" (dict "paginator" $paginator) }}
 {{- end }}

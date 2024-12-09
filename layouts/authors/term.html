@@ -13,9 +13,10 @@
 <p>Byo:<span>{{ partial "content.html" (dict "value" .Content "page" . ) | safeHTML}}</span></p>
 {{- end }}
 {{- if .Pages }}
+{{- $paginator := partial "paginate.html" . }}
 <nav aria-label="Posts">
-{{- partial "listpost.html" . }}
+{{- partial "listpost.html" $paginator }}
+{{ partial "pagination.html" (dict "paginator" $paginator) }}
 </nav>
-{{ partial "pagination.html" . }}
 {{- end }}
 {{- end }}
