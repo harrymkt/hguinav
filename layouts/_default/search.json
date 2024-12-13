@@ -6,6 +6,9 @@
         {{- end }}
         {
             "url": "{{ $page.Permalink }}",
+            {{- if $page.Keywords }}
+            "keywords": "{{ delimit $page.Keywords " " }}",
+            {{- end }}
             "title": "{{ $page.Title }}"
         }
         {{- end }}

@@ -31,6 +31,7 @@ function showSearchResults() {
 	// build lunr index file
 	var index = lunr(function () {
 		this.ref("title")
+		this.field("keywords")
 		this.field("title")
 		posts.forEach(function (doc) {
 			this.add(doc)
