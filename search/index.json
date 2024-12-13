@@ -17,41 +17,49 @@
         ,
         {
             "url": "https://harrymkt.github.io/hguinav/docs/params/config/",
+            "keywords": "doc documentation variable writing partial",
             "title": "Config Params"
         }
         ,
         {
             "url": "https://harrymkt.github.io/hguinav/docs/params/frontmadder/",
+            "keywords": "documentation variable writing partial audio general title",
             "title": "Frontmadder Params"
         }
         ,
         {
             "url": "https://harrymkt.github.io/hguinav/docs/writing/",
+            "keywords": "content variable writing config",
             "title": "Writing"
         }
         ,
         {
             "url": "https://harrymkt.github.io/hguinav/docs/blocks/",
+            "keywords": "documentation title writing shortcode misc blocks",
             "title": "Blocks"
         }
         ,
         {
             "url": "https://harrymkt.github.io/hguinav/docs/params/menu/",
+            "keywords": "menu variable config params frontmadder general partial",
             "title": "Menu Params"
         }
         ,
         {
             "url": "https://harrymkt.github.io/hguinav/docs/author-taxonomy/",
+            "keywords": "documentation content partial author writing",
             "title": "Author Management Via Taxonomy"
         }
         ,
         {
             "url": "https://harrymkt.github.io/hguinav/docs/documentation/",
+            "keywords": "doc params writing content misc title",
             "title": "Documentation Site"
         }
         ,
         {
             "url": "https://harrymkt.github.io/hguinav/docs/search/",
+            "keywords": "search params variable writing partial general audio tab content language",
             "title": "Search"
         }
         ,
@@ -82,6 +90,7 @@
         ,
         {
             "url": "https://harrymkt.github.io/hguinav/docs/shortcodes/audio/",
+            "keywords": "doc content shortcode audio",
             "title": "Audio Shortcode"
         }
         ,
@@ -97,11 +106,13 @@
         ,
         {
             "url": "https://harrymkt.github.io/hguinav/docs/partials/content/",
+            "keywords": "variable config content write params",
             "title": "Content Partial"
         }
         ,
         {
             "url": "https://harrymkt.github.io/hguinav/docs/shortcodes/details/",
+            "keywords": "config documentation misc audio tab partial general search variable",
             "title": "Details Shortcode"
         }
         ,
@@ -117,6 +128,7 @@
         ,
         {
             "url": "https://harrymkt.github.io/hguinav/docs/partials/general/",
+            "keywords": "writing config doc params content base related",
             "title": "General Partials"
         }
         ,
@@ -132,21 +144,25 @@
         ,
         {
             "url": "https://harrymkt.github.io/hguinav/docs/partials/menu/",
+            "keywords": "documentation menu",
             "title": "Menu Partial"
         }
         ,
         {
             "url": "https://harrymkt.github.io/hguinav/docs/partials/paginate/",
+            "keywords": "frontmadder sort blocks params paginate",
             "title": "Paginate Partial"
         }
         ,
         {
             "url": "https://harrymkt.github.io/hguinav/docs/partials/pagination/",
+            "keywords": "sort blocks params paginate paginator",
             "title": "Pagination Partial"
         }
         ,
         {
             "url": "https://harrymkt.github.io/hguinav/docs/partials/related/",
+            "keywords": "documentation config writing partial",
             "title": "Related Partial"
         }
         ,
@@ -157,11 +173,13 @@
         ,
         {
             "url": "https://harrymkt.github.io/hguinav/docs/partials/sort/",
+            "keywords": "config writing partial general content menu doc",
             "title": "Sort Partial"
         }
         ,
         {
             "url": "https://harrymkt.github.io/hguinav/docs/shortcodes/tab/",
+            "keywords": "doc content shortcode tab",
             "title": "Tab Shortcode"
         }
         ,
@@ -172,6 +190,7 @@
         ,
         {
             "url": "https://harrymkt.github.io/hguinav/docs/partials/title/",
+            "keywords": "variable config content writing",
             "title": "Title Partial"
         }
     ]
