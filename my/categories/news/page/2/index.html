@@ -7,12 +7,14 @@
 <link href="https://harrymkt.github.io/hguinav/css/theme.css">
 
 <title>News – category – HG UI Navigation</title>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.0.2/lunr.js"></script>
 </head>
 <body>
 <p><a href="https://harrymkt.github.io/hguinav/lang">ဘာသာစကားပြောင်းပါ။</a></p><p><a href="#mainc" class="skip-link">အဓိကအကြောင်းအရာသို့ ကျော်သွားပါ။</a></p>
 <p><a href="#navigation" class="skip-link">လမ်းညွှန်မှုသို့ ကျော်သွားပါ။</a></p>
 <p><a href="#hgfooter" class="skip-link">အောက်ခြေမှတ်စုသို့ ကျော်သွားပါ။</a></p>
+<link href="https://harrymkt.github.io/hguinav/pagefind/pagefind-ui.css" rel="stylesheet">
+<script src="https://harrymkt.github.io/hguinav/pagefind/pagefind-ui.js"></script>
+<div id="search"></div>
 <nav id="navigation" role="navigation" aria-label="ပုံသေ မီနူး">
 <h2>ပုံသေ မီနူး</h2>
 <ul style="list-style-type:none;">
@@ -26,7 +28,7 @@
 </li>
 </ul>
 </nav>
-<main id="mainc">
+<main id="mainc" data-pagefind-body>
 <h1>News</h1>
 
 <h2><a href="/hguinav/my/blog/test2/">စမ်းတင်ထားတာ 2</a></h2>
@@ -51,6 +53,10 @@
 </div>
 
 <script src="https://harrymkt.github.io/hguinav/scripts/copy.js"></script>
-<script src="https://harrymkt.github.io/hguinav/scripts/search.js"></script>
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    new PagefindUI({ element: "#search", showSubResults: true });
+  });
+</script>
 </body>
 </html>
