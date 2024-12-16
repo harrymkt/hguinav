@@ -4,3 +4,8 @@
 <p><a href="#mainc" class="skip-link">{{ T "acc_skip_main" }}</a></p>
 <p><a href="#navigation" class="skip-link">{{ T "acc_skip_nav" }}</a></p>
 <p><a href="#hgfooter" class="skip-link">{{ T "acc_skip_footer" }}</a></p>
+{{- if (and (eq .Site.Params.search.enable true) (eq .Site.Params.search.format "pagefind")) }}
+<link href="{{ absURL "pagefind/pagefind-ui.css" }}" rel="stylesheet">
+<script src="{{ absURL "pagefind/pagefind-ui.js" }}"></script>
+<div id="search"></div>
+{{- end }}

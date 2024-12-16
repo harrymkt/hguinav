@@ -1,1 +1,4 @@
 title_sep: " – "
+search:
+  enable: true
+  format: pagefind

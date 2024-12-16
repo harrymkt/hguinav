@@ -15,7 +15,24 @@ First, remember the following:
 
 Once you have above notes you can now start creating your search feature.
 
-## Step 1 (setup for search page generation)
+## Configuration
+These configurations apply on `params` object of the config.
+```yaml
+params:
+  search:
+    enable: true
+    format: pagefind
+```
+
+- `enable`(bool): Toggles the search. Defaults to `true`.
+- `format`(string): The format to use. See [search formats](#sformats). Defaults to `pagefind`.
+
+## Search Formats{#sformats}
+### lunr
+This uses JSON file to produce the search content and thus slower and not available for very large content.
+
+{{% details summary="Setup details for lunr format" %}}
+#### Setup for search page generation (only for lunr format)
 Create a folder called `search` in the content directory, and add `_index.md` with the following content:
 ```md
 ---
@@ -30,8 +47,10 @@ outputs:
 You can also remove the RSS if you don't want to generate RSS for this section, which is usually not needed for RSS to be generated.
 
 You can create the same search for other languages with the `_index.languageCode.md` prefix.
+{{% /details %}}
 
-## Step 2 (generate the site)
-Build or serve your site, and navigate to /search.
-
-You will now see the search input, with results underneeth it.
+### pagefind
+This format is default used in this theme, and is best for large content. However, this cannot be used in preview, such as `hugo serve`.
+There is not much you need to do with this format here, but here are a few of them:
+- Make sure to add `html` tag with `lang` attribute set.
+- If you want to search only some part, add `data-pagefind` attribute.

@@ -1,10 +1,17 @@
+{{- $sformats := slice "pagefind" "lunr" }}
+{{- $sformat := .Site.Params.search.format }}
+{{- if not (in $sformats $sformat) }}
+{{- errorf "Invalid search format %s. Valid formats are %s" $sformat (delimit $sformats " ") }}
+{{- end -}}
 <!DOCTYPE html>
 <html lang="{{site.Language.LanguageCode}}">
 <head>
 {{ partial "head.html" . }}
 {{ partial "extrahead.html" . }}
 <title>{{- block "title" . -}}{{- partial "title.html" (dict "titles" (slice .Title) ) -}}{{- end -}}</title>
+{{- if (and (eq .Site.Params.search.enable true) (eq .Site.Params.search.format "default")) }}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.0.2/lunr.js"></script>
+{{- end }}
 </head>
 <body>
 {{- block "beforeheader" . }}
@@ -13,7 +20,7 @@
 {{- partial "nav.html" . }}
 {{- block "extraheader" . }}
 {{- end }}
-<main id="mainc">
+<main id="mainc" data-pagefind-body>
 {{- block "main" . }}
 {{- end }}
 </main>
@@ -22,6 +29,16 @@
 </div>
 {{ partial "extrafoot.html" . }}
 <script src="{{absURL "scripts/copy.js"}}"></script>
-<script src="{{ absURL "scripts/search.js" }}"></script>
+{{- if (and (eq .Site.Params.search.enable true) (eq .Site.Params.search.format "default")) }}
+{{- $searchr := resources.Get "search.js" }}
+{{- $searchr = $searchr | resources.ExecuteAsTemplate "scripts/search.js" . }}
+<script src="{{ $searchr.RelPermalink }}"></script>
+{{- else if (and (eq .Site.Params.search.enable true) (eq .Site.Params.search.format "pagefind")) }}
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    new PagefindUI({ element: "#search", showSubResults: true });
+  });
+</script>
+{{- end }}
 </body>
 </html>
