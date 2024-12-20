@@ -59,7 +59,7 @@
 <li><a href="/hguinav/docs/partials/title/" >Title Partial</a></li>
 </ul>
 <h3>Shortcodes</h3>
-<p>Shortcodes live in the layouts/shortcodes and are so called custom functions that you can use in your content file. To modify any of them you can copy to your layouts/partials directory.</p>
+<p>Shortcodes live in the layouts/shortcodes and are so called custom functions that you can use in your content file. To modify any of them you can copy to your layouts/shortcodes directory.</p>
 
 <ul style="list-style-type:none;">
 <li><a href="/hguinav/docs/shortcodes/audio/" >Audio Shortcode</a></li>
@@ -70,6 +70,14 @@
 <main id="mainc" data-pagefind-body>
 <h1 id="search">Search</h1>
 <p>Hguinav has search built-in. This is a quick overview on how to create your search.</p>
+<h2 id="configuration">Configuration</h2>
+<p>These configurations apply on <code>params</code> object of the config. See <a href="/hguinav/docs/params/config/#search">search configuration</a>.</p>
+<h2 id="sformats">Search Formats</h2>
+<h3 id="lunr">lunr</h3>
+<p>This uses JSON file to produce the search content and thus slower and not available for very large content.</p>
+<details>
+<summary>Setup details for lunr format</summary>
+<h4 id="setup-for-search-page-generation-only-for-lunr-format">Setup for search page generation (only for lunr format)</h4>
 <p>First, remember the following:</p>
 <ul>
 <li>search.js is the JS script that helps determine the search results and inputs.</li>
@@ -77,24 +85,6 @@
 <li>layouts/_default/search.json is the JSON file containing the site's pages and content for search.</li>
 <li>Search indexes are generated only the titles and keywords. If someone could fix generating a large set of content, then the content can be generated.</li>
 </ul>
-<p>Once you have above notes you can now start creating your search feature.</p>
-<h2 id="configuration">Configuration</h2>
-<p>These configurations apply on <code>params</code> object of the config.</p>
-<pre><code class="language-yaml">params:
-  search:
-    enable: true
-    format: pagefind
-</code></pre>
-<ul>
-<li><code>enable</code>(bool): Toggles the search. Defaults to <code>true</code>.</li>
-<li><code>format</code>(string): The format to use. See <a href="/hguinav/docs/search/#sformats">search formats</a>. Defaults to <code>pagefind</code>.</li>
-</ul>
-<h2 id="sformats">Search Formats</h2>
-<h3 id="lunr">lunr</h3>
-<p>This uses JSON file to produce the search content and thus slower and not available for very large content.</p>
-<details>
-<summary>Setup details for lunr format</summary>
-<h4 id="setup-for-search-page-generation-only-for-lunr-format">Setup for search page generation (only for lunr format)</h4>
 <p>Create a folder called <code>search</code> in the content directory, and add <code>_index.md</code> with the following content:</p>
 <pre><code class="language-md">---
 title: Search
@@ -118,10 +108,10 @@ There is not much you need to do with this format here, but here are a few of th
 <h4>You might also like</h4>
 <ul>
 <li><a href="/hguinav/docs/shortcodes/details/">Details Shortcode</a></li>
+<li><a href="/hguinav/docs/author-taxonomy/">Author Management Via Taxonomy</a></li>
 <li><a href="/hguinav/docs/params/frontmadder/">Frontmadder Params</a></li>
 <li><a href="/hguinav/docs/params/menu/">Menu Params</a></li>
 <li><a href="/hguinav/docs/partials/sort/">Sort Partial</a></li>
-<li><a href="/hguinav/docs/author-taxonomy/">Author Management Via Taxonomy</a></li>
 </ul>
 </main>
 <div id="hgfooter">
@@ -132,9 +122,9 @@ There is not much you need to do with this format here, but here are a few of th
 
 <script src="https://harrymkt.github.io/hguinav/scripts/copy.js"></script>
 <script>
-  window.addEventListener('DOMContentLoaded', (event) => {
-    new PagefindUI({ element: "#search", showSubResults: true });
-  });
+window.addEventListener('DOMContentLoaded', (event) => {
+  new PagefindUI({ element: "#search", showSubResults: true });
+});
 </script>
 </body>
 </html>

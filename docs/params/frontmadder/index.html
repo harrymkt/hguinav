@@ -59,7 +59,7 @@
 <li><a href="/hguinav/docs/partials/title/" >Title Partial</a></li>
 </ul>
 <h3>Shortcodes</h3>
-<p>Shortcodes live in the layouts/shortcodes and are so called custom functions that you can use in your content file. To modify any of them you can copy to your layouts/partials directory.</p>
+<p>Shortcodes live in the layouts/shortcodes and are so called custom functions that you can use in your content file. To modify any of them you can copy to your layouts/shortcodes directory.</p>
 
 <ul style="list-style-type:none;">
 <li><a href="/hguinav/docs/shortcodes/audio/" >Audio Shortcode</a></li>
@@ -74,14 +74,16 @@
 <p>A string that controls the sort, even for each section. Sorting is controled by <a href="/hguinav/docs/partials/sort/">sort partial</a>.</p>
 <h2 id="pagesize">pagesize</h2>
 <p>A string that controls the pagination size. This is useful in section where the blog templates or content type is used to control per-section pagination size.</p>
+<h2 id="search">search</h2>
+<p>bool: Toggles search for this specific page. Defaults to what it is set in the search configuration.</p>
 
 <h4>You might also like</h4>
 <ul>
+<li><a href="/hguinav/docs/author-taxonomy/">Author Management Via Taxonomy</a></li>
 <li><a href="/hguinav/docs/shortcodes/details/">Details Shortcode</a></li>
 <li><a href="/hguinav/docs/search/">Search</a></li>
 <li><a href="/hguinav/docs/params/config/">Config Params</a></li>
-<li><a href="/hguinav/docs/author-taxonomy/">Author Management Via Taxonomy</a></li>
-<li><a href="/hguinav/docs/blocks/">Blocks</a></li>
+<li><a href="/hguinav/docs/partials/related/">Related Partial</a></li>
 </ul>
 </main>
 <div id="hgfooter">
@@ -92,9 +94,9 @@
 
 <script src="https://harrymkt.github.io/hguinav/scripts/copy.js"></script>
 <script>
-  window.addEventListener('DOMContentLoaded', (event) => {
-    new PagefindUI({ element: "#search", showSubResults: true });
-  });
+window.addEventListener('DOMContentLoaded', (event) => {
+  new PagefindUI({ element: "#search", showSubResults: true });
+});
 </script>
 </body>
 </html>
