@@ -20,7 +20,7 @@
 {{- partial "nav.html" . }}
 {{- block "extraheader" . }}
 {{- end }}
-<main id="mainc" data-pagefind-body>
+<main id="mainc"{{ if (and (eq $sformat "pagefind") (eq (.Params.search | default .Site.Params.search.enable) true)) }} data-pagefind-body{{ end }}>
 {{- block "main" . }}
 {{- end }}
 </main>
@@ -30,14 +30,13 @@
 {{ partial "extrafoot.html" . }}
 <script src="{{absURL "scripts/copy.js"}}"></script>
 {{- if (and (eq .Site.Params.search.enable true) (eq .Site.Params.search.format "default")) }}
-{{- $searchr := resources.Get "search.js" }}
-{{- $searchr = $searchr | resources.ExecuteAsTemplate "scripts/search.js" . }}
+{{- $searchr := resources.Get "scripts/search.js" }}
 <script src="{{ $searchr.RelPermalink }}"></script>
 {{- else if (and (eq .Site.Params.search.enable true) (eq .Site.Params.search.format "pagefind")) }}
 <script>
-  window.addEventListener('DOMContentLoaded', (event) => {
-    new PagefindUI({ element: "#search", showSubResults: true });
-  });
+window.addEventListener('DOMContentLoaded', (event) => {
+  new PagefindUI({ element: "#search", showSubResults: true });
+});
 </script>
 {{- end }}
 </body>

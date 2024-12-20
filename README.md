@@ -14,18 +14,18 @@ This theme is distributed under the terms of the [MIT License](https://github.co
 - Accessibility; Hguinav is designed to be accessible as possible, especially for blind and visually impaired. This is done by using accessibility tags, such as ARIA, and other possible accessibility features.
 - Multilingual support with i18n; Hugo supports built-in advance multilingual feature, this theme only adds templates for it.
 - Customizable extrahead, extrafooter, head, header, footer, with partials, and extrahead, with blocks.
-- Documentation site; build accessible documentation sites by using built-in template specifically designed for documentation. You set the layout of the section you want to document as well as in each page of that related document.
-- Content variables during build, such as `%title%`. See the demo page for documentation
-- Sort pages by the way you like and for specific sections, which is by default not supported. This uses the sort partial.
+- [Documentation site](https://harrymkt.github.io/hguinav/docs/documentation); build accessible documentation sites by using built-in template specifically designed for documentation. You set the layout of the section you want to document as well as in each page of that related document.
+- [Content variables](https://harrymkt.github.io/hguinav/docs/writing) during build, such as `%title%`.
+- Sort pages by the way you like and for specific sections, which is by default not supported. This uses the [sort](https://harrymkt.github.io/hguinav/docs/partials/sort) partial.
 - Define per-section pagination size.
-- Define menu pages that check for multilingual with the special menu partial.
+- Define menu pages that check for multilingual with the special [menu](https://harrymkt.github.io/hguinav/docs/partials/menu) partial.
 - Built-in blog post templates.
 - Copy code blocks; add code blocks which can then be copied using buttons and display the code language if available, helped by JavaScript.
 - Local date display; display dates in user's local timezone, no madder what timezone the date is set.
 - Taxonomies support.
-- Taxonomy based author / user management, provided in demo.
-- Built-in search support (currently basic).
-- Use blocks to easily modify without having to copy some files to your layouts.
+- Taxonomy based [author/user management](https://harrymkt.github.io/hguinav/docs/author-taxonomy), provided in demo.
+- Built-in [search](https://harrymkt.github.io/hguinav/docs/search) support, with a variety of search formats.
+- Use [blocks](https://harrymkt.github.io/hguinav/docs/blocks) to easily modify without having to copy some files to your layouts.
 - Use a large number of partials and shortcodes to make your content and/or templates shorten.
 - Comprehensive documentation; Hguinav provides a full Comprehensive documentation including possible layouts, templates, shortcodes, blocks, configurable parameters, and more, everything as it updates.
 

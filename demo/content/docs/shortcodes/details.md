@@ -1,5 +1,6 @@
 ---
 title: Details Shortcode
+layout: doc
 keywords: [config,documentation,misc,audio,tab,partial,general,search,variable]
 ---
 # Details Shortcode (details.html)

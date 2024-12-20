@@ -7,25 +7,8 @@ layout: doc
 # Search
 Hguinav has search built-in. This is a quick overview on how to create your search.
 
-First, remember the following:
-- search.js is the JS script that helps determine the search results and inputs.
-- layouts/_default/search.html is the actual section that will be generated as the search page.
-- layouts/_default/search.json is the JSON file containing the site's pages and content for search.
-- Search indexes are generated only the titles and keywords. If someone could fix generating a large set of content, then the content can be generated.
-
-Once you have above notes you can now start creating your search feature.
-
 ## Configuration
-These configurations apply on `params` object of the config.
-```yaml
-params:
-  search:
-    enable: true
-    format: pagefind
-```
-
-- `enable`(bool): Toggles the search. Defaults to `true`.
-- `format`(string): The format to use. See [search formats](#sformats). Defaults to `pagefind`.
+These configurations apply on `params` object of the config. See [search configuration]({{% relref "params/config.md#search" %}}).
 
 ## Search Formats{#sformats}
 ### lunr
@@ -33,6 +16,12 @@ This uses JSON file to produce the search content and thus slower and not availa
 
 {{% details summary="Setup details for lunr format" %}}
 #### Setup for search page generation (only for lunr format)
+First, remember the following:
+- search.js is the JS script that helps determine the search results and inputs.
+- layouts/_default/search.html is the actual section that will be generated as the search page.
+- layouts/_default/search.json is the JSON file containing the site's pages and content for search.
+- Search indexes are generated only the titles and keywords. If someone could fix generating a large set of content, then the content can be generated.
+
 Create a folder called `search` in the content directory, and add `_index.md` with the following content:
 ```md
 ---

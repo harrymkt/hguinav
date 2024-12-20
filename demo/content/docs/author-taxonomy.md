@@ -1,7 +1,7 @@
 ---
 title: "Author Management Via Taxonomy"
 weight: 400
-keywords: [documentation,content,partial,author,writing]
+keywords: [documentation,content,partial,author,writing,variable,misc,general,menu]
 layout: doc
 ---
 # %title%

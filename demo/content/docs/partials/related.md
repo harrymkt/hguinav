@@ -1,7 +1,7 @@
 ---
 title: Related Partial
 layout: doc
-keywords: [documentation,config,writing,partial]
+keywords: [documentation,config,writing,partial,related,general,misc]
 ---
 # Related Partial (related.html)
 Use this partial to display related content.

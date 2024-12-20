@@ -12,3 +12,6 @@ A string that controls the sort, even for each section. Sorting is controled by 
 
 ## pagesize
 A string that controls the pagination size. This is useful in section where the blog templates or content type is used to control per-section pagination size.
+
+## search
+bool: Toggles search for this specific page. Defaults to what it is set in the search configuration.
