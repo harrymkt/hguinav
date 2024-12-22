@@ -39,7 +39,17 @@ You can create the same search for other languages with the `_index.languageCode
 {{% /details %}}
 
 ### pagefind
-This format is default used in this theme, and is best for large content. However, this cannot be used in preview, such as `hugo serve`.
-There is not much you need to do with this format here, but here are a few of them:
-- Make sure to add `html` tag with `lang` attribute set.
-- If you want to search only some part, add `data-pagefind` attribute.
+This format is default used in this theme, and is best for large content. However, this cannot be used in preview, such as `hugo serve`. This format requires to have Python installed, and `pagefind[extended]` package.
+
+{{% details summary="Setup Pagefind" %}}
+#### Setup Pagefind
+Do the following to get up and run Pagefind. We'll asume you have Python installed:
+1. Install Pagefind extended version. You can do this by this command up to the root of this repository. `pip install -r requirements.txt`
+2. Set the search format in the `searching` object.
+3. Build the site. `zola build`
+4. Generate the search index. Make sure to replace outputdir with the directory where your built files live. `python -m pagefind --site outputdir`
+- Make sure to add `html` tag with the `lang` attribute set if you are building multilingual search.
+- If you want to define where to start searching from, add `data-pagefind` to a tag like div.
+
+That's it!
+{{% /details %}}

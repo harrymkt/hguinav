@@ -9,6 +9,8 @@ on:
 
 env:
   HUGO_VERSION: 0.139.4
+  # Build directory where the website will run its build. Use the dot (period) to use current.
+  builddir: demo
   # Output directory where built files will deploy. This also will be used on Pagefind search generation.
   outdir: demo/HTML
 
@@ -31,10 +33,10 @@ jobs:
           wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb          
       - name: Install Python Requirements
-        run: pip install -r requirements.txt
+        run: pip install pagefind[extended]
       - name: Build
         run: |
-          cd demo
+          cd ${{ env.builddir }}
           hugo \
       # Ignore below name if you do not use pagefind.
       - name: Generate Pagefind Search
