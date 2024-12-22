@@ -1,2 +1,6 @@
 baseURL: "https://example.org/"
 title: "UI Navigation"
+module:
+  hugoVersion:
+    extended: true
+    min: "0.139.0"

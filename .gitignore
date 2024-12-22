@@ -2,6 +2,6 @@
 pre/**
 Pre/**
 # Output directory
-**/HTML/**
-**/html/**
+**/HTML
+**/html
 **/public

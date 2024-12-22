@@ -9,8 +9,6 @@ You can use the following variables to replace with something else. Variables ar
 
 To display the raw of the variable name itself, prefix with `/`. For example, %//title%
 
-FYI, variable processing is done by [content partial]({{% relref "partials/content.md" %}}).
-
 Be warned that failure to retrieve the variable will render that string directly.
 
 Available variables:

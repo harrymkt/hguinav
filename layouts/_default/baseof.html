@@ -4,7 +4,7 @@
 {{- errorf "Invalid search format %s. Valid formats are %s" $sformat (delimit $sformats " ") }}
 {{- end -}}
 <!DOCTYPE html>
-<html lang="{{site.Language.LanguageCode}}">
+<html lang="{{ site.Language.LanguageCode }}">
 <head>
 {{ partial "head.html" . }}
 {{ partial "extrahead.html" . }}
