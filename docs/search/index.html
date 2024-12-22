@@ -104,9 +104,9 @@ outputs:
 <h4 id="setup-pagefind">Setup Pagefind</h4>
 <p>Do the following to get up and run Pagefind. We'll asume you have Python installed:</p>
 <ol>
-<li>Install Pagefind extended version. You can do this by this command up to the root of this repository. <code>pip install -r requirements.txt</code></li>
-<li>Set the search format in the <code>searching</code> object.</li>
-<li>Build the site. <code>zola build</code></li>
+<li>Install Pagefind extended version. You can do this by this command. <code>pip install pagefind[extended]</code></li>
+<li>Set the search format in the <code>search</code> object.</li>
+<li>Build the site. <code>zola</code></li>
 <li>Generate the search index. Make sure to replace outputdir with the directory where your built files live. <code>python -m pagefind --site outputdir</code></li>
 </ol>
 <ul>
