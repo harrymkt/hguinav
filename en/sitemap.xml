@@ -44,7 +44,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="https://harrymkt.github.io/hguinav/authors/"
                 />
   </url><url>
@@ -57,7 +57,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="https://harrymkt.github.io/hguinav/categories/"
                 />
   </url><url>
@@ -70,7 +70,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="https://harrymkt.github.io/hguinav/categories/news/"
                 />
   </url><url>
@@ -83,7 +83,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="https://harrymkt.github.io/hguinav/blog/test2/"
                 />
   </url><url>
@@ -96,7 +96,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="https://harrymkt.github.io/hguinav/blog/test/"
                 />
   </url><url>
@@ -112,7 +112,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="https://harrymkt.github.io/hguinav/blog/"
                 />
   </url><url>
@@ -143,7 +143,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="https://harrymkt.github.io/hguinav/authors/harry-min-khant/"
                 />
   </url><url>
@@ -156,7 +156,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="https://harrymkt.github.io/hguinav/"
                 />
   </url><url>
@@ -186,11 +186,11 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="https://harrymkt.github.io/hguinav/tags/"
                 />
   </url><url>
     <loc>https://harrymkt.github.io/hguinav/docs/partials/title/</loc>
-    <lastmod>2024-12-06T19:42:51+06:30</lastmod>
+    <lastmod>2024-12-23T17:53:21+06:30</lastmod>
   </url>
 </urlset>

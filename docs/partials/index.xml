@@ -5,7 +5,7 @@
     <link>https://harrymkt.github.io/hguinav/docs/partials/</link>
     <description>Recent content in Partials on HG UI Navigation</description>
     <generator>Hugo</generator>
-    <language>en-US</language>
+    <language>en</language>
     <atom:link href="https://harrymkt.github.io/hguinav/docs/partials/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Content Partial</title>
@@ -61,7 +61,7 @@
       <link>https://harrymkt.github.io/hguinav/docs/partials/title/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://harrymkt.github.io/hguinav/docs/partials/title/</guid>
-      <description>&lt;h1 id=&#34;title-partial-titlehtml&#34;&gt;Title Partial (title.html)&lt;/h1&gt;&#xA;&lt;p&gt;You can use this partial to customize the title of any page. The site title will be appended after it. Use the &lt;code&gt;title&lt;/code&gt; block to customize.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;titles&lt;/code&gt;(slice): The titles made out of slice.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code class=&#34;language-go-html-template&#34;&gt;{{- define &amp;quot;title&amp;quot; -}}&#xA;{{ $titles := slice .Title -}}&#xA;{{- if and .Paginator (gt .Paginator.PageNumber 1) -}}&#xA;{{- $titles = $titles | append (printf &amp;quot; (page %v)&amp;quot; .Paginator.PageNumber) -}}&#xA;{{- end -}}&#xA;{{- partial &amp;quot;title.html&amp;quot; (dict &amp;quot;titles&amp;quot; $titles) -}}&#xA;{{- end -}}&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+      <description>&lt;h1 id=&#34;title-partial-titlehtml&#34;&gt;Title Partial (title.html)&lt;/h1&gt;&#xA;&lt;p&gt;You can use this partial to customize the title of any page. Use the &lt;code&gt;title&lt;/code&gt; block to customize.&lt;/p&gt;&#xA;&lt;p&gt;You can pass one parameter (a slice of titles) if you only want one parameter. Otherwise, use &lt;code&gt;dict&lt;/code&gt; to provide more parameters.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;titles&lt;/code&gt;(slice): The titles made out of slice.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;sep&lt;/code&gt;(string) optional: The title&#39;s separator. Defaults to what it is set in &lt;code&gt;title_sep&lt;/code&gt; site param.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;overwrite&lt;/code&gt;(bool) optional: &lt;code&gt;false&lt;/code&gt; if the site title should be appended after the titles, or &lt;code&gt;true&lt;/code&gt; otherwise. Defaults to &lt;code&gt;false&lt;/code&gt;.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code class=&#34;language-go-html-template&#34;&gt;{{- define &amp;quot;title&amp;quot; -}}&#xA;{{ $titles := slice .Title -}}&#xA;{{- if and .Paginator (gt .Paginator.PageNumber 1) -}}&#xA;{{- $titles = $titles | append (printf &amp;quot; (page %v)&amp;quot; .Paginator.PageNumber) -}}&#xA;{{- end -}}&#xA;{{- partial &amp;quot;title.html&amp;quot; (dict &amp;quot;titles&amp;quot; $titles) -}}&#xA;{{- end -}}&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,7 @@
 <p><a href="#hgfooter" class="skip-link">Skip to footer</a></p>
 <link href="https://harrymkt.github.io/hguinav/pagefind/pagefind-ui.css" rel="stylesheet">
 <script src="https://harrymkt.github.io/hguinav/pagefind/pagefind-ui.js"></script>
-<div id="search"></div>
+<div id="sitesearch"></div>
 <nav id="navigation" role="navigation" aria-label="Main Menu">
 <h2>Main Menu</h2>
 <ul style="list-style-type:none;">
@@ -69,9 +69,12 @@
 </nav>
 <main id="mainc" data-pagefind-body>
 <h1 id="title-partial-titlehtml">Title Partial (title.html)</h1>
-<p>You can use this partial to customize the title of any page. The site title will be appended after it. Use the <code>title</code> block to customize.</p>
+<p>You can use this partial to customize the title of any page. Use the <code>title</code> block to customize.</p>
+<p>You can pass one parameter (a slice of titles) if you only want one parameter. Otherwise, use <code>dict</code> to provide more parameters.</p>
 <ul>
 <li><code>titles</code>(slice): The titles made out of slice.</li>
+<li><code>sep</code>(string) optional: The title's separator. Defaults to what it is set in <code>title_sep</code> site param.</li>
+<li><code>overwrite</code>(bool) optional: <code>false</code> if the site title should be appended after the titles, or <code>true</code> otherwise. Defaults to <code>false</code>.</li>
 </ul>
 <h2 id="example">Example</h2>
 <pre><code class="language-go-html-template">{{- define &quot;title&quot; -}}
@@ -101,7 +104,7 @@
 <script src="https://harrymkt.github.io/hguinav/scripts/copy.js"></script>
 <script>
 window.addEventListener('DOMContentLoaded', (event) => {
-  new PagefindUI({ element: "#search", showSubResults: true });
+  new PagefindUI({ element: "#sitesearch", showSubResults: true });
 });
 </script>
 </body>
