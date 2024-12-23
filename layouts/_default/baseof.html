@@ -9,7 +9,7 @@
 {{ partial "head.html" . }}
 {{ partial "extrahead.html" . }}
 <title>{{- block "title" . -}}{{- partial "title.html" (dict "titles" (slice .Title) ) -}}{{- end -}}</title>
-{{- if (and (eq .Site.Params.search.enable true) (eq .Site.Params.search.format "default")) }}
+{{- if (and (eq .Site.Params.search.enable true) (eq .Site.Params.search.format "lunr")) }}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.0.2/lunr.js"></script>
 {{- end }}
 </head>
@@ -29,13 +29,13 @@
 </div>
 {{ partial "extrafoot.html" . }}
 <script src="{{absURL "scripts/copy.js"}}"></script>
-{{- if (and (eq .Site.Params.search.enable true) (eq .Site.Params.search.format "default")) }}
+{{- if (and (eq .Site.Params.search.enable true) (eq .Site.Params.search.format "lunr")) }}
 {{- $searchr := resources.Get "scripts/search.js" }}
 <script src="{{ $searchr.RelPermalink }}"></script>
 {{- else if (and (eq .Site.Params.search.enable true) (eq .Site.Params.search.format "pagefind")) }}
 <script>
 window.addEventListener('DOMContentLoaded', (event) => {
-  new PagefindUI({ element: "#search", showSubResults: true });
+  new PagefindUI({ element: "#sitesearch", showSubResults: true });
 });
 </script>
 {{- end }}

@@ -7,12 +7,9 @@ themesDir: ../../
 theme: hguinav
 languages:
   en:
-    disabled: false
-    languageCode: "en-US"
     languageName: English
   my:
-    disabled: false
-    languageCode: my
+    title: Gaja
     languageName: Myanmar
 
 pagination:

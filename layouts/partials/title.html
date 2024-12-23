@@ -1,9 +1,20 @@
 {{- $titlevar := " - " -}}
 {{- with site.Params.title_sep -}}{{ $titlevar = . }}{{ end -}}
-{{- $titles := slice }}
+{{- $titles := . }}
+{{- $overwrite := false }}
+{{- if reflect.IsMap . }}
 {{- with .titles }}
 {{- $titles = . }}
 {{- end }}
+{{- with .sep }}
+{{- $titlevar = . }}
+{{- end }}
+{{- with .overwrite }}
+{{- $overwrite = . }}
+{{- end }}
+{{- end }}
+{{- if eq $overwrite false }}
 {{- $titles = $titles | append site.Title }}
+{{- end }}
 {{- $ftitle := delimit $titles $titlevar }}
 {{- return $ftitle }}

@@ -7,5 +7,5 @@
 {{- if (and (eq .Site.Params.search.enable true) (eq .Site.Params.search.format "pagefind")) }}
 <link href="{{ absURL "pagefind/pagefind-ui.css" }}" rel="stylesheet">
 <script src="{{ absURL "pagefind/pagefind-ui.js" }}"></script>
-<div id="search"></div>
+<div id="sitesearch"></div>
 {{- end }}
