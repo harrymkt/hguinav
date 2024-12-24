@@ -1,5 +1,5 @@
 # UI Navigation
-UI Navigation, or known as hguinav, is a Hugo theme designed for accessibility rather than visual and made as easy as possible. Since I am a blind developer, I'd like to develop with accessibility as possible so visually impaired users can use them.
+UI Navigation, or known as hguinav, is a [Hugo](https://gohugo.io/) theme designed for accessibility rather than visual and made as easy as possible. Since I am a blind developer, I'd like to develop with accessibility as possible so visually impaired users can use them.
 
 This theme is also available for Zola at [Zluinav](https://github.com/harrymkt/zluinav).
 
@@ -55,5 +55,8 @@ Contributions to this theme are welcome, provided that the following requirement
 - Use 2 level space indentation for HTML. Use 1 tab level indentation for CSS and JavaScript. If Markdown files need indentation, use 1 tab.
 - Be the templates accessible for visually impaired and/or blind and prefer readability. Don't worry, I will process in case accessibility issues before pull requests are merged.
 - Photos are not required in this theme. You may design with CSS for visual if you so wish.
+- When creating a pull request it is advised that you:
+	- Use different branch other than main; this avoids issues with updating in case your pull request gets rejected.
+	- Add label if possible.
 
 Thank you!
