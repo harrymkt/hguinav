@@ -13,4 +13,5 @@ The title's seperator to use. Default is " – ".
 ## search
 Search configuration options:
 - `enable`(bool): Toggles search. Defaults to `true`
+- `default_enable`(bool): Default search status. This is useful to turn this off and manually turn on in the frontmadder of the pages you want. Defaults to `true`
 - `format`(string): One of the [search formats]({{% relref "../search.md#sformats" %}}). Defaults to `pagefind`
