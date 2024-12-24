@@ -1,4 +1,5 @@
 title_sep: " – "
 search:
   enable: true
+  default_enable: true
   format: pagefind
