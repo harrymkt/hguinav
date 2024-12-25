@@ -10,3 +10,4 @@ Sometimes partial files are not enough. Or will they be cluttered? Blocks come i
 - `beforeheader`: Content before header, or another word, content immediately following the body tag.
 - `extraheader`: Content after the header defined in header.html (partial).
 - `main`: The main content.
+- `extrafooter`: Content close to body end. Usually empty.
