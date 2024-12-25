@@ -38,7 +38,7 @@ git clone https://github.com/harrymkt/hguinav.git
 ```
 Or [download manually](https://github.com/harrymkt/hguinav/archive/refs/heads/main.zip) and paste in the themes directory.
 
-Or, add to the Git submodule
+Or, add to the Git submodule (recommended):
 ```bash
 git submodule add --name hguinav https://github.com/harrymkt/hguinav.git themes/hguinav
 git submodule update --remote
