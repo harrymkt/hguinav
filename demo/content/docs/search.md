@@ -46,7 +46,7 @@ This format is default used in this theme, and is best for large content. Howeve
 Do the following to get up and run Pagefind. We'll asume you have Python installed:
 1. Install Pagefind extended version. You can do this by this command. `pip install pagefind[extended]`
 2. Set the search format in the `search` object.
-3. Build the site. `zola`
+3. Build the site. `hugo`
 4. Generate the search index. Make sure to replace outputdir with the directory where your built files live. `python -m pagefind --site outputdir`
 - Make sure to add `html` tag with the `lang` attribute set if you are building multilingual search.
 - If you want to define where to start searching from, add `data-pagefind` to a tag like div.

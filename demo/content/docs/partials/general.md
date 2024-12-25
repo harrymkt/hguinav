@@ -22,7 +22,7 @@ Main head meta immediately following the head tag. Note: title is only used by t
 Header, before navigation.
 
 ## listpost.html
-Use to list pages in pagination. Add the partial pagination.html after this partial to add pagination buttons. The pagination.html takes paginator object.
+Use to list pages in pagination. Add the partial [pagination]({{% relref "pagination.md" %}}) after this partial to add pagination buttons. The pagination.html takes paginator object.
 
 ## nav.html
 Use to add navigation. This is made to be easy as possible to overwrite since Hugo's templating is restricted.
