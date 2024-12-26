@@ -5,8 +5,12 @@
 {{- errorf "Sort partial requires the sorts parameter" }}
 {{- end }}
 {{- $sortby := or .sort_by "" }}
+{{- $reverse := .reverse | default false }}
 {{- $pages := $sorts }}
 {{- if $sortby }}
 {{- $pages = sort $sorts $sortby }}
+{{- end }}
+{{- if $reverse }}
+{{- $pages = $pages | collections.Reverse }}
 {{- end }}
 {{- return $pages }}
