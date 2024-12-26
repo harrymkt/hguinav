@@ -17,10 +17,7 @@
 {{- $pagesize = . }}
 {{- end }}
 {{- $paginator := "" }}
-{{- $pages := partial "sort.html" (dict "sorts" $page.Pages "sort_by" $sortby) }}
-{{- if (eq $reverse true) }}
-{{- $pages = $pages.Reverse }}
-{{- end }}
+{{- $pages := partial "sort.html" (dict "sorts" $page.Pages "sort_by" $sortby "reverse" $reverse) }}
 {{- if gt $pagesize 0 }}
 {{- $paginator = $page.Paginate $pages $pagesize }}
 {{- else }}
