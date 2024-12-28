@@ -4,11 +4,15 @@ Render related content.
 page page the object pointing streight to a page.
 hlevel int the heading level (optional)
 text string the text for the heading (optional)
+count int the number of elements to retrieve, default 5.
 
+You can also pass one value, the page, or the dot.
 */ -}}
 {{- $text := "You might also like" }}
 {{- $hlevel := 4 }}
-{{- $page := "" }}
+{{- $page := . }}
+{{- $count := 5 }}
+{{- if reflect.IsMap . }}
 {{- with .page }}
 {{- $page = . }}
 {{- else }}
@@ -20,10 +24,14 @@ text string the text for the heading (optional)
 {{- with .hlevel }}
 {{- $hlevel = . }}
 {{- end }}
+{{- with .count }}
+{{- $count = . }}
+{{- end }}
+{{- end }}
 {{- if or (lt $hlevel 1) (gt $hlevel 6) }}
 {{- errorf "Heading level must be in range of 1 - 6, got %v" $hlevel }}
 {{- end }}
-{{- $related := $page.Site.RegularPages.Related $page | first 5 }}
+{{- $related := $page.Site.RegularPages.Related $page | first $count }}
 {{- with $related }}
 <h{{ $hlevel }}>{{ $text }}</h{{ $hlevel }}>
 <ul>
