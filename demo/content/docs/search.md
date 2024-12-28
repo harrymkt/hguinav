@@ -8,7 +8,7 @@ layout: doc
 Hguinav has search built-in. This is a quick overview on how to create your search.
 
 ## Configuration
-These configurations apply on `params` object of the config. See [search configuration]({{% relref "params/config.md#search" %}}).
+These configurations apply on `params` object of the config. See [search configuration]({{% relref "params/config.md#search" %}}) for more information and supported configuration options.
 
 ## Search Formats{#sformats}
 ### lunr
