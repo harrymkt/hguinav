@@ -74,7 +74,7 @@
 <ul>
 <li><code>sorts</code>(collection) required: The pages collection.</li>
 <li><code>sortby</code>(string) optional: Which way would you like the pages to be sorted? Eg, <code>Title</code>, <code>Weight</code>, <code>Date</code>.</li>
-<li><code>reverse</code>(bool) optional: Should the pages be reversed? Defaults to <code>false</code>.</li>
+<li><code>reverse</code>(bool) optional: Should the pages be reversed after sorting? Defaults to <code>false</code>. Useful if you are sorting by <code>date</code>, <code>lastmod</code> etc.</li>
 </ul>
 <h2 id="example">Example</h2>
 <pre><code class="language-go-html-template">{{- $pages := partial &quot;sort.html&quot; (dict &quot;sorts&quot; .RegularPages &quot;sortby&quot; &quot;Title&quot;) }}

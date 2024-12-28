@@ -70,11 +70,12 @@
 </nav>
 <main id="mainc" data-pagefind-body>
 <h1 id="related-partial-relatedhtml">Related Partial (related.html)</h1>
-<p>Use this partial to display related content.</p>
+<p>Use this partial to display related content. You can pass one value (the current page (the dot)), or you can use <code>dict</code> to provide one or more values.</p>
 <ul>
 <li><code>page</code>(object) required: The object pointing to the page you want to process, specifically the pages.</li>
 <li><code>text</code>(string) optional: The text to display on heading.</li>
 <li><code>hlevel</code>(int) optional: The level of the heading, default is 4.</li>
+<li><code>count</code>(int) optional: The number of elements to retrieve. Defaults to <code>5</code>.</li>
 </ul>
 
 <h4>You might also like</h4>
