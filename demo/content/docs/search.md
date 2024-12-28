@@ -26,6 +26,7 @@ Create a folder called `search` in the content directory, and add `_index.md` wi
 ```md
 ---
 title: Search
+placeholder: Search across the site
 outputs:
 - html
 - rss

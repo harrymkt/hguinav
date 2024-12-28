@@ -24,7 +24,3 @@ totalwords:
 totaltime:
   one: "{{ . }} minute read"
   other: "{{ . }} minutes read"
-search_r:
-  zero: "No results found"
-  one: "{{ . }} result"
-  other: "{{ . }} results"
