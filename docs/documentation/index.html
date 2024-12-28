@@ -71,9 +71,9 @@
 <main id="mainc" data-pagefind-body>
 <h1 id="documentation-site">Documentation Site</h1>
 <p>Hguinav supports built-in documentation template that allows you to create list base documentation pages. Each section, starting at content/, you can create a subsection documentation. You can also look the docs folder of this theme demo.</p>
-<p><strong>Note</strong>: documentation uses both Weight and Title sort styles by default. Please note that when using weight, you also need to set for subsections.</p>
+<p><strong>Note</strong>: documentation uses both Weight and Title sort styles by default. Please note that when using weight, you also need to set for subsections. Remember that Hugo does not support sorting for specific section. As such, a custom <a href="/hguinav/docs/partials/sort/">sort partial</a> is the actual work implemented in Hguinav.</p>
 <h2 id="setup">Setup</h2>
-<p>First, create first documentation section in content folder, and add _index.md to it containing the following frontmadder. For this documentation, we will create docs folder and use YAML for frontmadder.</p>
+<p>First, create the documentation section in content folder, and add _index.md to it containing the following frontmadder. For this documentation, we will create docs folder and use YAML for frontmadder as this theme is YAML based.</p>
 <pre><code class="language-yaml">---
 title: &quot;Your Documentation Main Section's Title&quot;
 layout: doc
