@@ -9,7 +9,6 @@ languages:
   en:
     languageName: English
   my:
-    title: Gaja
     languageName: Myanmar
 
 pagination:
