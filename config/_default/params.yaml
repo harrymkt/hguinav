@@ -3,3 +3,4 @@ search:
   enable: true
   default_enable: true
   format: pagefind
+no_js: false

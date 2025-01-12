@@ -18,3 +18,6 @@ bool: Toggles search for this specific page. Defaults to what it is set in the s
 
 ## no_js
 Toggles whether JavaScript is disabled for this page. Fall back to config if not set, thus it's usually `false`.
+
+## hid
+The heading ID. This is only for documentation pages. Defaults to the page's link title. This value will be anchorized before using.

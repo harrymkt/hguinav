@@ -9,7 +9,7 @@
             {{- if $page.Keywords }}
             "keywords": "{{ delimit $page.Keywords " " }}",
             {{- end }}
-            "title": "{{ $page.Title }}"
+            "title": "{{ $page.LinkTitle }}"
         }
         {{- end }}
     ]

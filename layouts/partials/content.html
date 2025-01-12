@@ -1,10 +1,19 @@
 {{- $value := .value }}
 {{- $page := .page }}
+{{- $nojs := $page.Site.Params.no_js | default false }}
+{{- with $page.Params.no_js }}
+{{- $nojs = . }}
+{{- end }}
 {{- $value = replace $value "%title%" $page.Title }}
 {{- $value = replace $value "%description%" $page.Description }}
+{{- if eq $nojs false }}
 {{- $pd := slice "<script>document.write(local_datetime_string(\"" $page.Date "\"));</script>" }}
 {{- $value = replace $value "%date%" (delimit $pd "" ) }}
 {{- $pd = slice "<script>document.write(local_datetime_string(\"" $page.Lastmod "\"));</script>" }}
 {{- $value = replace $value "%updated%" (delimit $pd "" ) }}
+{{- else }}
+{{- $value = replace $value "%date%" $page.Date }}
+{{- $value = replace $value "%updated%" $page.Lastmod }}
+{{- end }}
 {{- $value = replace $value "%/" "%" }}
 {{- return $value }}

@@ -4,12 +4,10 @@
 {{ define "main" }}
 <h1>{{ .Title }}</h1>
 {{- partial "terms.html" (dict "taxonomy" "authors" "page" .) }}
-{{- $upd := printf "<script>document.write(local_datetime_string(%q));</script>" .Lastmod }}
 {{- if ne .Lastmod .Date }}
-<p>{{ T "lastmod" $upd | safeHTML }}</p>
-{{- end -}}
-{{- $pon := T "published_on" (printf "<script>document.write(local_datetime_string(%q));</script>" .Date) }}
-<p>{{ $pon | safeHTML }}</p>
+<p>{{ T "lastmod" (partial "content.html" (dict "page" . "value" "%updated%")) | safeHTML }}</p>
+{{- end }}
+<p>{{ T "published_on" (partial "content.html" (dict "page" . "value" "%date%")) | safeHTML }}</p>
 {{- partial "terms.html" (dict "taxonomy" "categories" "page" .) }}
 <p>{{ T "totalwords" .WordCount }}</p>
 <p>{{ T "totaltime" .ReadingTime }}</p>

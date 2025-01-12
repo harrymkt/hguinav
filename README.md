@@ -15,7 +15,7 @@ This theme is distributed under the terms of the [MIT License](https://github.co
 - Multilingual support with i18n; Hugo supports built-in advance multilingual feature, this theme only adds templates for it.
 - YAML based.
 - Customizable extrahead, extrafooter, head, header, footer, with partials, and extrahead, with blocks.
-- Documentation Site; build accessible [documentation sites](https://harrymkt.github.io/hguinav/docs/documentation) by using built-in template specifically designed for documentation. You set the layout of the section you want to document as well as in each page of that related document.
+- Customizable Documentation Site; build accessible [documentation sites](https://harrymkt.github.io/hguinav/docs/documentation) by using built-in template specifically designed for documentation. You set the layout of the section you want to document as well as in each page of that related document.
 - [Content variables](https://harrymkt.github.io/hguinav/docs/writing) during build, such as `%title%`.
 - Sort pages by the way you like and for specific sections, which is by default not supported. This uses the [sort](https://harrymkt.github.io/hguinav/docs/partials/sort) partial.
 - Define per-section pagination size.
@@ -28,6 +28,7 @@ This theme is distributed under the terms of the [MIT License](https://github.co
 - Built-in [search](https://harrymkt.github.io/hguinav/docs/search) support, with a variety of search formats.
 - Use [blocks](https://harrymkt.github.io/hguinav/docs/blocks) to easily modify without having to copy some files to your layouts.
 - Use a large number of partials and shortcodes to make your content and/or templates shorten.
+- Ability to toggle the use of JavaScript for both config and per-page frontmadder.
 - Comprehensive documentation; Hguinav provides a full Comprehensive documentation including possible layouts, partials, shortcodes, blocks, configurable parameters, and more, everything as it updates.
 
 ## Installation

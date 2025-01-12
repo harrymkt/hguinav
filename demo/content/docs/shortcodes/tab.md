@@ -5,6 +5,8 @@ keywords: [doc,content,shortcode,tab]
 ---
 # Tab Shortcode
 This shortcode allows you to create a tab panel. It is to be used with the `tabcontent` shortcode.
+These shortcodes require the JavaScript usage to be enabled.
+
 ## Tab Shortcode (tab.html)
 Always use `<` and `>` signs for this shortcode.
 - `name`(string) required: The name of the tab.
