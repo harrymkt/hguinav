@@ -10,6 +10,9 @@ You can use the following param parameters to configure the theme in your site c
 ## title_sep
 The title's seperator to use. Default is " – ".
 
+## no_js
+Toggles whether JavaScript is disabled. Defaults to `false`.
+
 ## search
 Search configuration options:
 - `enable`(bool): Toggles search. Defaults to `true`

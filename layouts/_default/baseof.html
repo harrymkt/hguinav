@@ -6,6 +6,10 @@
 {{- $searchon := false }}
 {{- if and .Site.Params.search.enable (.Params.search | default .Site.Params.search.default_enable) }}
 {{- $searchon = true }}
+{{- end }}
+{{- $nojs := .Site.Params.no_js | default false }}
+{{- with .Params.no_js }}
+{{- $nojs = . }}
 {{- end -}}
 <!DOCTYPE html>
 <html lang="{{ site.Language.LanguageCode }}">
@@ -13,7 +17,7 @@
 {{ partial "head.html" . }}
 {{ partial "extrahead.html" . }}
 <title>{{- block "title" . -}}{{- partial "title.html" (dict "titles" (slice .Title) ) -}}{{- end -}}</title>
-{{- if (and (eq $searchon true) (eq .Site.Params.search.format "lunr")) }}
+{{- if (and (eq $searchon true) (eq .Site.Params.search.format "lunr") (eq $nojs false)) }}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.0.2/lunr.js"></script>
 {{- end }}
 </head>
@@ -32,6 +36,7 @@
 {{ partial "footer.html" .}}
 </div>
 {{ partial "extrafoot.html" . }}
+{{- if (eq $nojs false) }}
 <script src="{{absURL "scripts/copy.js"}}"></script>
 {{- if (and (eq $searchon true) (eq .Site.Params.search.format "lunr")) }}
 {{- $searchr := resources.Get "scripts/search.js" }}
@@ -42,6 +47,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
   new PagefindUI({ element: "#sitesearch", showSubResults: true });
 });
 </script>
+{{- end }}
 {{- end }}
 {{- block "extrafooter" . }}
 {{- end }}

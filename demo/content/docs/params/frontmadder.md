@@ -15,3 +15,6 @@ A string that controls the pagination size. This is useful in section where the 
 
 ## search
 bool: Toggles search for this specific page. Defaults to what it is set in the search configuration.
+
+## no_js
+Toggles whether JavaScript is disabled for this page. Fall back to config if not set, thus it's usually `false`.

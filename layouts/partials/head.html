@@ -3,5 +3,11 @@
 {{- with .Description }}
 <meta name="description" content="{{ . }}">
 {{- end }}
+{{- $nojs := .Site.Params.no_js | default false }}
+{{- with .Params.no_js }}
+{{- $nojs = . }}
+{{- end -}}
+{{- if eq $nojs false }}
 <script src="{{absURL "scripts/theme.js"}}"></script>
+{{- end }}
 <link href="{{ absURL "css/theme.css" }}">
