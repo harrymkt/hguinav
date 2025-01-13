@@ -1,8 +1,13 @@
 {{- range $page := .Pages }}
+<div class="post">
+{{- if .Params.img }}
+<img src="{{.Params.img | safeURL }}"{{ if .Params.alt }} alt="{{ .Params.alt }}"{{ end }}></img>
+{{- end }}
 <h2><a href="{{ $page.RelPermalink }}">{{ $page.LinkTitle }}</a>{{ $page.Description }}</h2>
 {{- $lmd := printf "<script>document.write(ts_to_readable_time(get_timestamp(%q), false, %q, false));</script>" .Lastmod "" }}
 <p>{{ T "lastmod_short" $lmd | safeHTML }}</p>
 {{- with $page.Summary }}
 <p>{{ . }}</p>
 {{- end }}
+</div>
 {{- end }}

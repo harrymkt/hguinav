@@ -3,3 +3,5 @@
 - Upgrades Hugo workflow version up to v0.140.2.
 - `.LinkTitle` is now used instead of `.Title` for display not in title tag, in case the link title is modified.
 - Added ability to add heading ID to documentation pages frontmadder.
+- Added SEO HTML tags.
+- Added the ability to set image or logo for a specific page that uses listpost partial. See frontmadder configuration variables section.

@@ -1,8 +1,5 @@
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-{{- with .Description }}
-<meta name="description" content="{{ . }}">
-{{- end }}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 {{- $nojs := .Site.Params.no_js | default false }}
 {{- with .Params.no_js }}
 {{- $nojs = . }}
@@ -10,4 +7,28 @@
 {{- if eq $nojs false }}
 <script src="{{absURL "scripts/theme.js"}}"></script>
 {{- end }}
-<link href="{{ absURL "css/theme.css" }}">
+<link rel="stylesheet" href="{{ absURL "css/theme.css" }}">
+{{- if not (eq .Kind "404") }}
+<meta name="robots" content="index, follow">
+{{- else }}
+<meta name="robots" content="noindex, nofollow">
+{{- end }}
+<meta property="og:title" content="{{ .Title }}">
+{{- with .Description }}
+<meta property="og:description" content="{{ . }}">
+{{- end }}
+<meta property="og:url" content="{{ .Permalink | safeURL }}">
+{{- with .Params.img }}
+<meta property="og:image" content="{{ . | safeURL }}">
+{{- end }}
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="{{ .Description | default "" | safeURL }}">
+<meta name="twitter:title" content="{{ .Title }}">
+{{- with .Description }}
+<meta name="twitter:description" content="{{ . }}">
+{{- end }}
+{{- with .Params.img }}
+<meta name="twitter:image" content="{{ . | safeURL }}">
+{{- end }}
+<link rel="canonical" href="{{ .Permalink | safeURL }}">
+<link rel="icon" href="{{ absURL "favicon.ico" | safeURL }}" type="image/x-icon">

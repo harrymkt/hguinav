@@ -12,6 +12,7 @@ This theme is distributed under the terms of the [MIT License](https://github.co
 
 ## Features
 - Accessibility; Hguinav is designed to be accessible as possible, especially for blind and visually impaired. This is done by using accessibility tags, such as ARIA, and other possible accessibility features.
+- SEO friendly.
 - Multilingual support with i18n; Hugo supports built-in advance multilingual feature, this theme only adds templates for it.
 - YAML based.
 - Customizable extrahead, extrafooter, head, header, footer, with partials, and extrahead, with blocks.
