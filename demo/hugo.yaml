@@ -1,5 +1,5 @@
 baseURL: https://harrymkt.github.io/hguinav
-title: HG UI Navigation
+title: "UI Navigation"
 cleanDestinationDir: true
 publishDir: HTML
 enableGitInfo: true

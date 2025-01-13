@@ -7,7 +7,7 @@
 {{- $nojs = . }}
 {{- end }}
 {{- if eq $nojs true }}
-{{- errorf "The shortcode name %s cannot be used when JavaScript usage is disabled. %s" .Name .Position }}
+{{- erroridf "nojs" "The shortcode name %s cannot be used when JavaScript usage is disabled. %s" .Name .Position }}
 {{- end -}}
 <div class="tab-content" id="tab-content-{{ .Get "id" }}" style="display: none;">
 
