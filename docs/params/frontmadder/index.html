@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://harrymkt.github.io/hguinav/scripts/theme.js"></script>
-<link href="https://harrymkt.github.io/hguinav/css/theme.css">
+<link rel="stylesheet" href="https://harrymkt.github.io/hguinav/css/theme.css">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Frontmadder Params">
+<meta property="og:url" content="https://harrymkt.github.io/hguinav/docs/params/frontmadder/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="">
+<meta name="twitter:title" content="Frontmadder Params">
+<link rel="canonical" href="https://harrymkt.github.io/hguinav/docs/params/frontmadder/">
+<link rel="icon" href="https://harrymkt.github.io/hguinav/favicon.ico" type="image/x-icon">
 
 <title>Frontmadder Params – Documentation – UI Navigation</title>
 </head>
@@ -70,7 +78,14 @@
 </nav>
 <main id="mainc" data-pagefind-body>
 <h1 id="frontmadder-params">Frontmadder Params</h1>
-<p>You can use the following param parameters to configure your pages.</p>
+<p>You can use the following param parameters to configure your pages.
+Use heading level 2, and if it contains no spaces, then it means they are variables. Otherwise, they are texts splitted.</p>
+<h2 id="featured-image-display">Featured Image Display</h2>
+<p>You can display an image as the post's logo. These variables are available for the pages using listpost partial.</p>
+<ul>
+<li><code>img</code>(string) optional: the image / image URL. Note that to display an image, this variable must be set. other image variables are optional.</li>
+<li><code>alt</code>(string) optional: the alt text of the featured image. Requires the <code>img</code> variable to be set.</li>
+</ul>
 <h2 id="sort_by">sort_by</h2>
 <p>A string that controls the sort, even for each section. Sorting is controled by <a href="/hguinav/docs/partials/sort/">sort partial</a>.</p>
 <h2 id="pagesize">pagesize</h2>
