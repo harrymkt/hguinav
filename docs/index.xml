@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Documentation on HG UI Navigation</title>
+    <title>Documentation on UI Navigation</title>
     <link>https://harrymkt.github.io/hguinav/docs/</link>
-    <description>Recent content in Documentation on HG UI Navigation</description>
+    <description>Recent content in Documentation on UI Navigation</description>
     <generator>Hugo</generator>
     <language>en</language>
     <atom:link href="https://harrymkt.github.io/hguinav/docs/index.xml" rel="self" type="application/rss+xml" />
