@@ -6,15 +6,15 @@
 <script src="https://harrymkt.github.io/hguinav/scripts/theme.js"></script>
 <link rel="stylesheet" href="https://harrymkt.github.io/hguinav/css/theme.css">
 <meta name="robots" content="index, follow">
-<meta property="og:title" content="Frontmadder Params">
-<meta property="og:url" content="https://harrymkt.github.io/hguinav/docs/params/frontmadder/">
+<meta property="og:title" content="Ignore Logs">
+<meta property="og:url" content="https://harrymkt.github.io/hguinav/docs/ignore-logs/">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="">
-<meta name="twitter:title" content="Frontmadder Params">
-<link rel="canonical" href="https://harrymkt.github.io/hguinav/docs/params/frontmadder/">
+<meta name="twitter:title" content="Ignore Logs">
+<link rel="canonical" href="https://harrymkt.github.io/hguinav/docs/ignore-logs/">
 <link rel="icon" href="https://harrymkt.github.io/hguinav/favicon.ico" type="image/x-icon">
 
-<title>Frontmadder Params – Documentation – UI Navigation</title>
+<title>Ignore Logs – Documentation – UI Navigation</title>
 </head>
 <body>
 <p><a href="https://harrymkt.github.io/hguinav/lang">Change Language</a></p>
@@ -45,14 +45,14 @@
 <li><a href="/hguinav/docs/author-taxonomy/" >Author Management Via Taxonomy</a></li>
 <li><a href="/hguinav/docs/documentation/" >Documentation Site</a></li>
 <li><a href="/hguinav/docs/search/" >Search</a></li>
-<li><a href="/hguinav/docs/ignore-logs/" >Ignore Logs</a></li>
+<li><a href="/hguinav/docs/ignore-logs/" aria-current="page">Ignore Logs</a></li>
 </ul>
 <h3 id="params">Params</h3>
 <p>Control your site or page by these custom variables and frontmadders.</p>
 
 <ul style="list-style-type:none;">
 <li><a href="/hguinav/docs/params/config/" >Config Params</a></li>
-<li><a href="/hguinav/docs/params/frontmadder/" aria-current="page">Frontmadder Params</a></li>
+<li><a href="/hguinav/docs/params/frontmadder/" >Frontmadder Params</a></li>
 <li><a href="/hguinav/docs/params/menu/" >Menu Params</a></li>
 </ul>
 <h3 id="partials">Partials</h3>
@@ -78,33 +78,19 @@
 </ul>
 </nav>
 <main id="mainc" data-pagefind-body>
-<h1 id="frontmadder-params">Frontmadder Params</h1>
-<p>You can use the following param parameters to configure your pages.
-Use heading level 2, and if it contains no spaces, then it means they are variables. Otherwise, they are texts splitted.</p>
-<h2 id="featured-image-display">Featured Image Display</h2>
-<p>You can display an image as the post's logo. These variables are available for the pages using listpost partial.</p>
+<h1 id="ignore-logs">Ignore Logs</h1>
+<p>This is a list of possible values to set on the <code>ignoreLogs</code> variable to ignore the errors/warnings:</p>
 <ul>
-<li><code>img</code>(string) optional: the image / image URL. Note that to display an image, this variable must be set. other image variables are optional.</li>
-<li><code>alt</code>(string) optional: the alt text of the featured image. Requires the <code>img</code> variable to be set.</li>
+<li><code>nojs</code>: JavaScript is disabled Error.</li>
 </ul>
-<h2 id="sort_by">sort_by</h2>
-<p>A string that controls the sort, even for each section. Sorting is controled by <a href="/hguinav/docs/partials/sort/">sort partial</a>.</p>
-<h2 id="pagesize">pagesize</h2>
-<p>A string that controls the pagination size. This is useful in section where the blog templates or content type is used to control per-section pagination size.</p>
-<h2 id="search">search</h2>
-<p>bool: Toggles search for this specific page. Defaults to what it is set in the search configuration.</p>
-<h2 id="no_js">no_js</h2>
-<p>Toggles whether JavaScript is disabled for this page. Fall back to config if not set, thus it's usually <code>false</code>.</p>
-<h2 id="hid">hid</h2>
-<p>The heading ID. This is only for documentation pages. Defaults to the page's link title. This value will be anchorized before using.</p>
 
 <h4>You might also like</h4>
 <ul>
-<li><a href="/hguinav/docs/author-taxonomy/">Author Management Via Taxonomy</a></li>
-<li><a href="/hguinav/docs/shortcodes/details/">Details Shortcode</a></li>
-<li><a href="/hguinav/docs/search/">Search</a></li>
-<li><a href="/hguinav/docs/params/config/">Config Params</a></li>
-<li><a href="/hguinav/docs/partials/related/">Related Partial</a></li>
+<li><a href="/hguinav/docs/shortcodes/audio/">Audio Shortcode</a></li>
+<li><a href="/hguinav/docs/documentation/">Documentation Site</a></li>
+<li><a href="/hguinav/docs/partials/general/">General Partials</a></li>
+<li><a href="/hguinav/docs/shortcodes/tab/">Tab Shortcode</a></li>
+<li><a href="/hguinav/docs/blocks/">Blocks</a></li>
 </ul>
 </main>
 <div id="hgfooter">
