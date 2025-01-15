@@ -11,11 +11,12 @@ To display the raw of the variable name itself, prefix with `/`. For example, %/
 
 Be warned that failure to retrieve the variable will render that string directly.
 
-Available variables:
+## Supported variables:
 - `title`: The title of the page.
 - `date`: The published date in the local format, similar to post page.
 - `updated`: The updated date, similar to above format.
 - `description`: The description.
+- `linktitle`: The friendly title of the page (`linkTitle` frontmadder). Falls back to title if not set.
 
 ## Example
 ```markdown

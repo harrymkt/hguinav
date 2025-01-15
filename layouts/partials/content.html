@@ -5,6 +5,7 @@
 {{- $nojs = . }}
 {{- end }}
 {{- $value = replace $value "%title%" $page.Title }}
+{{- $value = replace $value "%linktitle%" $page.LinkTitle }}
 {{- $value = replace $value "%description%" $page.Description }}
 {{- if eq $nojs false }}
 {{- $pd := slice "<script>document.write(local_datetime_string(\"" $page.Date "\"));</script>" }}

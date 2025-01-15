@@ -5,6 +5,9 @@ date: 2024-11-11T12:00:00+06:30
 categories: ["News"]
 description: "ဒါက စမ်းသပ်ပို့စ်ပါ။"
 authors: [Harry Min Khant]
+params:
+  alt: "Test Logo"
+  img: "https://example.com/image.jpg"
 ---
 မင်္ဂလာပါ
 <!--more-->

@@ -22,7 +22,7 @@
 <meta property="og:image" content="{{ . | safeURL }}">
 {{- end }}
 <meta property="og:type" content="website">
-<meta name="twitter:card" content="{{ .Description | default "" | safeURL }}">
+<meta name="twitter:card" content="{{ .Description | default "" | safeHTML }}">
 <meta name="twitter:title" content="{{ .Title }}">
 {{- with .Description }}
 <meta name="twitter:description" content="{{ . }}">

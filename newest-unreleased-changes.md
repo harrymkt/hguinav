@@ -5,3 +5,4 @@
 - Added ability to add heading ID to documentation pages frontmadder.
 - Added SEO HTML tags.
 - Added the ability to set image or logo for a specific page that uses listpost partial. See frontmadder configuration variables section.
+- Added `linktitle` content variable.
