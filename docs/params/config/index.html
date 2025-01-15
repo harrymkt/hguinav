@@ -84,6 +84,8 @@
 <p>The title's seperator to use. Default is &quot; – &quot;.</p>
 <h2 id="no_js">no_js</h2>
 <p>Toggles whether JavaScript is disabled. Defaults to <code>false</code>.</p>
+<h2 id="display_site_lastmod">display_site_lastmod</h2>
+<p>Toggles whether the entire site last updated date should display. Defaults to <code>false</code>.</p>
 <h2 id="search">search</h2>
 <p>Search configuration options:</p>
 <ul>
@@ -113,5 +115,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
   new PagefindUI({ element: "#sitesearch", showSubResults: true });
 });
 </script>
+<p>This site is last updated <script>document.write(ts_to_readable_time(get_timestamp("2025-01-15 19:33:54 +0630 +0630"), false, "", false));</script> ago</p>
 </body>
 </html>
