@@ -36,3 +36,6 @@ menus:
       pageRef: "/authors"
       identifier: menu_main_author
       weight: 40
+
+params:
+  display_site_lastmod: true

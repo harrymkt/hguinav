@@ -13,6 +13,8 @@ The title's seperator to use. Default is " – ".
 ## no_js
 Toggles whether JavaScript is disabled. Defaults to `false`.
 
+## display_site_lastmod
+Toggles whether the entire site last updated date should display. Defaults to `false`.
 ## search
 Search configuration options:
 - `enable`(bool): Toggles search. Defaults to `true`

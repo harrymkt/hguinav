@@ -5,6 +5,7 @@ mainmenu: "ပုံသေ မီနူး"
 published_on: "တွင်ထုတ်ဝေခဲ့သည်။ {{ . }}"
 lastmod: "အပ်ဒိတ်လုပ်ထားသည် {{ . }}"
 lastmod_short: "နောက်ဆုံးပြင်ဆင်ထားသည်: {{ . }} လွန်ခဲ့သော"
+site_lastmod: "ဤဆိုက်ကို နောက်ဆုံးမွမ်းမံထားသည် {{ . }} ပြီးခဲ့သော"
 menu_main_home: ပင်မစာမျက်နှာ
 menu_main_blog: စာတိုက်
 menu_main_doc: "Documentation"
