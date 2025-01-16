@@ -13,22 +13,6 @@
 {{- else }}
 <meta name="robots" content="noindex, nofollow">
 {{- end }}
-<meta property="og:title" content="{{ .Title }}">
-{{- with .Description }}
-<meta property="og:description" content="{{ . }}">
-{{- end }}
-<meta property="og:url" content="{{ .Permalink | safeURL }}">
-{{- with .Params.img }}
-<meta property="og:image" content="{{ . | safeURL }}">
-{{- end }}
-<meta property="og:type" content="website">
-<meta name="twitter:card" content="{{ .Description | default "" | safeHTML }}">
-<meta name="twitter:title" content="{{ .Title }}">
-{{- with .Description }}
-<meta name="twitter:description" content="{{ . }}">
-{{- end }}
-{{- with .Params.img }}
-<meta name="twitter:image" content="{{ . | safeURL }}">
-{{- end }}
+{{- partial "seo.html" . }}
 <link rel="canonical" href="{{ .Permalink | safeURL }}">
 <link rel="icon" href="{{ absURL "favicon.ico" | safeURL }}" type="image/x-icon">

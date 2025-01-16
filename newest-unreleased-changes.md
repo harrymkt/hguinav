@@ -7,3 +7,4 @@
 - Added the ability to set image or logo for a specific page that uses listpost partial. See frontmadder configuration variables section.
 - Added `linktitle` content variable.
 - You can now display last updated time for the entire site. Default is off, and you can turn it on via `display_site_lastmod`. See configuration parameters. On demo page it is turned on.
+- Removed details shortcode as it is now built-in.

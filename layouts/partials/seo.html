@@ -1,0 +1,17 @@
+{{- $page := . }}
+{{- $fm := slice
+  "opengraph"
+  "schema"
+}}
+{{- if reflect.IsMap . }}
+{{- $page = .page }}
+{{- with .formats }}
+{{- $fm = . }}
+{{- end }}
+{{- end }}
+{{- range $fm }}
+{{- $ppath := printf "seos/%s.html" . }}
+{{- if templates.Exists (printf "partials/%s" $ppath) }}
+{{- partial $ppath $page }}
+{{- end }}
+{{- end }}
