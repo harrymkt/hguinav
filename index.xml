@@ -106,13 +106,6 @@
       <description>&lt;h1 id=&#34;content-partial-contenthtml&#34;&gt;Content Partial (content.html)&lt;/h1&gt;&#xA;&lt;p&gt;You can use this partial to display content instead of using &lt;code&gt;{{ .Content }}&lt;/code&gt; etc. The advantage of using this partial is that it allows you to add content variables. See &lt;a href=&#34;https://harrymkt.github.io/hguinav/hguinav/docs/writing/&#34;&gt;writing&lt;/a&gt; to see how variables work.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;value&lt;/code&gt;(string) required: The value to display.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;page&lt;/code&gt;(object) required: The page object where the content partial should retrieve necessary variables to replace.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code class=&#34;language-go-html-template&#34;&gt;{{ (partial &amp;quot;content.html&amp;quot; (dict &amp;quot;value&amp;quot; .Content &amp;quot;page&amp;quot; . )) | safeHTML }}&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
-      <title>Details Shortcode</title>
-      <link>https://harrymkt.github.io/hguinav/docs/shortcodes/details/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://harrymkt.github.io/hguinav/docs/shortcodes/details/</guid>
-      <description>&lt;h1 id=&#34;details-shortcode-detailshtml&#34;&gt;Details Shortcode (details.html)&lt;/h1&gt;&#xA;&lt;p&gt;This shortcode allows you to add HTML details tag. Always use % signs.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;summary&lt;/code&gt;(string) required: The summary of the detail.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;open&lt;/code&gt;(bool) optional: Should details tag be expanded by default?&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Example:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;{{% details summary=&amp;quot;Test me&amp;quot; %}}&#xA;# Test&#xA;- item1&#xA;- item2&#xA;{{% /details %}}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;Output:&lt;/p&gt;&#xA;&lt;details&gt;&#xA;  &lt;summary&gt;Test me&lt;/summary&gt;&#xA;  &lt;h1 id=&#34;test&#34;&gt;Test&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;item1&lt;/li&gt;&#xA;&lt;li&gt;item2&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/details&gt;</description>
-    </item>
-    <item>
       <title>Example</title>
       <link>https://harrymkt.github.io/hguinav/example/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -153,6 +146,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://harrymkt.github.io/hguinav/docs/partials/related/</guid>
       <description>&lt;h1 id=&#34;related-partial-relatedhtml&#34;&gt;Related Partial (related.html)&lt;/h1&gt;&#xA;&lt;p&gt;Use this partial to display related content. You can pass one value (the current page (the dot)), or you can use &lt;code&gt;dict&lt;/code&gt; to provide one or more values.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;page&lt;/code&gt;(object) required: The object pointing to the page you want to process, specifically the pages.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;text&lt;/code&gt;(string) optional: The text to display on heading.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;hlevel&lt;/code&gt;(int) optional: The level of the heading, default is 4.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;count&lt;/code&gt;(int) optional: The number of elements to retrieve. Defaults to &lt;code&gt;5&lt;/code&gt;.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>SEO Partial</title>
+      <link>https://harrymkt.github.io/hguinav/docs/partials/seo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://harrymkt.github.io/hguinav/docs/partials/seo/</guid>
+      <description>&lt;h1 id=&#34;seo-partial-seohtml&#34;&gt;SEO Partial (seo.html)&lt;/h1&gt;&#xA;&lt;p&gt;Use this partial to generate SEO tags specified by its format. If you only pass one value, use the dot(&lt;code&gt;.&lt;/code&gt;) to pass the current page.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;page&lt;/code&gt;(page) required: The current page.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;formats&lt;/code&gt;(slice/string): A slice or a string specifying the &lt;a href=&#34;https://harrymkt.github.io/hguinav/hguinav/docs/partials/seo/#formats&#34;&gt;formats&lt;/a&gt; you wish to generate for. If not set, all formats will be generated.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;formats&#34;&gt;Available formats&lt;/h2&gt;&#xA;&lt;p&gt;These are located in seos directory.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;opengraph&lt;/code&gt;: Open Graph.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;schema&lt;/code&gt;: Schema.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Sort Partial</title>
