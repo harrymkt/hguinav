@@ -1,14 +1,14 @@
 name: Deploy
 on:
   push:
-    paths: ["archetypes/**", "data/**", "demo/**", "i18n/**", "layouts/**", "static/**", "hugo.yaml"]
+    paths: ["archetypes/**", "assets/**", "content/**", "data/**", "demo/**", "i18n/**", "layouts/**", "static/**", "themes/**", "hugo.yaml"]
     branches: [main]
   pull_request:
-    paths: ["archetypes/**", "data/**", "demo/**", "i18n/**", "layouts/**", "static/**", "hugo.yaml"]
+    paths: ["archetypes/**", "assets/**", "content/**", "data/**", "demo/**", "i18n/**", "layouts/**", "static/**", "themes/**", "hugo.yaml"]
   workflow_dispatch:
 
 env:
-  HUGO_VERSION: 0.140.2
+  HUGO_VERSION: 0.143.1
   # Build directory where the website will run its build. Use the dot (period) to use current.
   builddir: demo
   # Output directory where built files will deploy. This also will be used on Pagefind search generation.

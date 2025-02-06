@@ -1,7 +1,7 @@
 # Auto detect text files and perform LF normalization
 * text=auto
-*.bat linguist-detectable linguist-vendored=false linguist-generated=false linguist-documentation=false
-*.toml linguist-detectable linguist-vendored=false linguist-generated=false linguist-documentation=false
-*.yaml linguist-detectable linguist-vendored=false linguist-generated=false linguist-documentation=false
-*.yml linguist-detectable linguist-vendored=false linguist-generated=false linguist-documentation=false
-*.md linguist-detectable linguist-vendored=false linguist-generated=false linguist-documentation=false
+*.bat linguist-detectable
+*.toml linguist-detectable
+*.yaml linguist-detectable
+*.yml linguist-detectable
+*.md linguist-detectable
