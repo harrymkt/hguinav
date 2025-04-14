@@ -1,5 +1,5 @@
 # UI Navigation
-UI Navigation, or known as hguinav, is a [Hugo](https://gohugo.io/) theme designed for accessibility rather than visual and made as easy as possible. Since I am a blind developer, I'd like to develop with accessibility as possible so visually impaired users can use them.
+UI Navigation, or known as hguinav, is a [Hugo](https://gohugo.io/) theme designed for accessibility rather than visual and made as easy as possible. Since I am a blind developer, I would like to develop with accessibility as possible so visually impaired users can use them.
 
 This theme is also available for Zola at [Zluinav](https://github.com/harrymkt/zluinav).
 
