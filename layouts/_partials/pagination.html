@@ -14,7 +14,7 @@
 <nav aria-label="{{ T "pagination_title" }}">
 <h4>{{ T "pagination_title" }}</h4>
 <ul class="pagination pagination-{{ $format }}" style="list-style-type: none;">
-{{- partial (printf "partials/inline/pagination/%s" $format) $paginator }}
+{{- partial (printf "inline/pagination/%s" $format) $paginator }}
 </ul>
 </nav>
 {{- end }}
@@ -22,7 +22,7 @@
 {{- errorf $msg2 (delimit $validFormats ", ") }}
 {{- end -}}
 {{- /* Format: default */ -}}
-{{- define "partials/inline/pagination/default" }}
+{{- define "_partials/inline/pagination/default" }}
 {{- $paginator := . }}
 {{- with $paginator }}
 {{- $currentPageNumber := .PageNumber }}
@@ -66,7 +66,7 @@
 
 {{/* Format: terse
 {{/* --------------------------------------------------------------------- */}}
-{{- define "partials/inline/pagination/terse" }}
+{{- define "_partials/inline/pagination/terse" }}
 {{- $paginator = . }}
 {{- with $paginator }}
 {{- $currentPageNumber := .PageNumber }}

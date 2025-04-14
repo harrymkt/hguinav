@@ -18,9 +18,9 @@ Renders a menu for the given menu ID.
 {{- $page := .page }}
 {{- $menuID := .menuID }}
 {{- with index site.Menus $menuID }}
-{{- partial (printf "partials/inline/menu/format/%s" $format) (dict "page" $page "menuEntries" .) }}
+{{- partial (printf "inline/menu/format/%s" $format) (dict "page" $page "menuEntries" .) }}
 {{- end }}
-{{- define "partials/inline/menu/format/default" }}
+{{- define "_partials/inline/menu/format/default" }}
 {{- $page := .page }}
 <nav id="navigation" role="navigation" aria-label="{{ T "mainmenu" }}">
 <h2>{{ T "mainmenu" }}</h2>
@@ -30,14 +30,14 @@ Renders a menu for the given menu ID.
 </nav>
 {{- end }}
 
-{{- define "partials/inline/menu/format/noheading" }}
+{{- define "_partials/inline/menu/format/noheading" }}
 {{- $page := .page }}
 <ul style="list-style-type:none;">
 {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .menuEntries) }}
 </ul>
 {{- end }}
 
-{{- define "partials/inline/menu/walk.html" }}
+{{- define "_partials/inline/menu/walk.html" }}
 {{- $page := .page }}
 {{- range .menuEntries }}
 {{- $fpage := .Page }}

@@ -3,4 +3,4 @@ title: "UI Navigation"
 module:
   hugoVersion:
     extended: true
-    min: "0.139.0"
+    min: "0.146.2"

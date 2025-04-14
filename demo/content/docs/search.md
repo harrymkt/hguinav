@@ -34,7 +34,7 @@ outputs:
 ---
 ```
 
-You can also remove the RSS if you don't want to generate RSS for this section, which is usually not needed for RSS to be generated.
+You can also remove the RSS if you do not want to generate RSS for this section, which is usually not needed for RSS to be generated.
 
 You can create the same search for other languages with the `_index.languageCode.md` prefix.
 {{% /details %}}

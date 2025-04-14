@@ -23,7 +23,7 @@ This theme is distributed under the terms of the [MIT License](https://github.co
 - Define menu pages that check for multilingual with the special [menu](https://harrymkt.github.io/hguinav/docs/partials/menu) partial.
 - Built-in blog post templates.
 - Copy code blocks; add code blocks which can then be copied using buttons and display the code language if available, helped by JavaScript.
-- Local date display; display dates in user's local timezone, no madder what timezone the date is set.
+- Local date display; display dates in user's local timezone, no matter what timezone the date is set.
 - Taxonomies support.
 - Taxonomy based [author/user management](https://harrymkt.github.io/hguinav/docs/author-taxonomy), provided in demo.
 - Built-in [search](https://harrymkt.github.io/hguinav/docs/search) support, with a variety of search formats.
@@ -59,6 +59,5 @@ Contributions to this theme are welcome, provided that the following requirement
 - Photos are not required in this theme. You may design with CSS for visual if you so wish.
 - When creating a pull request it is advised that you:
 	- Use different branch other than main; this avoids issues with updating in case your pull request gets rejected.
-	- Add label if possible.
 
 Thank you!
