@@ -1,5 +1,5 @@
 {{- define "main" }}
-<h1 class="post-title">{{ .Title }}</h1>
+<h1 class="search-title">{{ .Title }}</h1>
 <input type="text" id="search-input" placeholder="{{ .Params.placeholder | default "Search this site" }}" oninput="showSearchResults()">
 <br>
 <nav aria-label="search results">

@@ -1,7 +1,8 @@
 /*
 This style file is included in Hguinav theme which is distributed under the terms of the MIT License.
 */
-//Skip link to be invisible for sighted visitors
+
+/* Skip link to be invisible for sighted visitors */
 .skip-link {
 	position: absolute;
 	left: -9999px;
@@ -11,7 +12,8 @@ This style file is included in Hguinav theme which is distributed under the term
 	overflow: hidden;
 	z-index: -1;
 }
-//When skip link is focused, make visible again.
+
+/* When skip link is focused, make visible again. */
 .skip-link:focus {
 	position: static;
 	width: auto;
@@ -19,6 +21,7 @@ This style file is included in Hguinav theme which is distributed under the term
 	overflow: visible;
 	z-index: 1;
 }
+
 .tab {
 	padding: 10px 20px;
 	background-color: #f0f0f0;
@@ -41,4 +44,9 @@ This style file is included in Hguinav theme which is distributed under the term
 	border: 1px solid #ccc;
 	border-top: none;
 	display: none;
+}
+
+/* Enable horizontal scrolling on pre elements if content overflows */
+pre {
+	overflow: auto;       
 }
