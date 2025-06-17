@@ -1,6 +1,6 @@
----
-title: "Example"
----
++++
+title = 'Example'
++++
 # Examples
 ## Audio shortcode
 [Documentation]({{% relref "docs/shortcodes/audio.md" %}})

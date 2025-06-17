@@ -1,8 +1,8 @@
----
-title: Tab Shortcode
-layout: doc
-keywords: [doc,content,shortcode,tab]
----
++++
+keywords = ['doc', 'content', 'shortcode', 'tab']
+layout = 'doc'
+title = 'Tab Shortcode'
++++
 # Tab Shortcode
 This shortcode allows you to create a tab panel. It is to be used with the `tabcontent` shortcode.
 These shortcodes require the JavaScript usage to be enabled.

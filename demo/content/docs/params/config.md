@@ -1,9 +1,9 @@
----
-title: Config Params
-layout: doc
-weight: 100
-keywords: [doc,documentation,variable,writing,partial]
----
++++
+keywords = ['doc', 'documentation', 'variable', 'writing', 'partial']
+layout = 'doc'
+title = 'Config Params'
+weight = 100
++++
 # Config Params
 You can use the following param parameters to configure the theme in your site config.
 

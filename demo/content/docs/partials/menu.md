@@ -1,8 +1,8 @@
----
-title: Menu Partial
-layout: doc
-keywords: [documentation,menu]
----
++++
+keywords = ['documentation', 'menu']
+layout = 'doc'
+title = 'Menu Partial'
++++
 # Menu Partial (menu.html)
 Use this partial to display menus.
 - `page`(object) required: The object pointing to the page you want to process, specifically the current page.

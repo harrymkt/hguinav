@@ -1,0 +1,8 @@
+[goldmark]
+	[goldmark.extensions]
+		[goldmark.extensions.typographer]
+			disable = true
+	[goldmark.renderer]
+		unsafe = true
+[highlight]
+	codeFences = false

@@ -1,9 +1,9 @@
----
-title: Menu Params
-layout: doc
-weight: 300
-keywords: [menu,variable,config,params,frontmadder,general,partial]
----
++++
+keywords = ['menu', 'variable', 'config', 'params', 'frontmadder', 'general', 'partial']
+layout = 'doc'
+title = 'Menu Params'
+weight = 300
++++
 # Menu Params
 You can use the following param parameters to configure your menus. These variables should be put under the `params` object of the menu.
 

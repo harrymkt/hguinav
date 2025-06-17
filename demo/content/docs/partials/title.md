@@ -1,8 +1,8 @@
----
-title: Title Partial
-layout: doc
-keywords: [variable,config,content,writing]
----
++++
+keywords = ['variable', 'config', 'content', 'writing']
+layout = 'doc'
+title = 'Title Partial'
++++
 # Title Partial (title.html)
 You can use this partial to customize the title of any page. Use the `title` block to customize.
 

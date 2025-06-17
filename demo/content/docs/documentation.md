@@ -1,16 +1,16 @@
----
-title: "Documentation Site"
-weight: 1000
-keywords: [doc, params, writing, content, misc, title]
-layout: doc
----
++++
+keywords = ['doc', 'params', 'writing', 'content', 'misc', 'title']
+layout = 'doc'
+title = 'Documentation Site'
+weight = 1000
++++
 # Documentation Site
 Hguinav supports built-in documentation template that allows you to create list base documentation pages. Each section, starting at content/, you can create a subsection documentation. You can also look the docs folder of this theme demo.
 
-**Note**: documentation uses both Weight and Title sort styles by default. Please note that when using weight, you also need to set for subsections. Remember that Hugo does not support sorting for specific section. As such, a custom [sort partial]({{% relref "partials/sort.md" %}}) is the actual work implemented in Hguinav to bypass this.
+**Note**: documentation uses both Weight and Title sort styles by default. Please note that when using weight, you also need to set for subsections. Remember that Hugo does not support sorting for specific section? As such, a custom [sort partial]({{% relref "partials/sort.md" %}}) is the actual work implemented in Hguinav to bypass this.
 
 ## Setup
-First, create the documentation section in content folder, and add _index.md to it containing the following frontmadder. For this documentation, we will create docs folder and use YAML for frontmadder as this theme is YAML based.
+First, create the documentation section in content folder, and add _index.md to it containing the following frontmatter. For this documentation, we will create docs folder and use YAML for frontmatter as this theme is YAML based.
 ```yaml
 ---
 title: "Your Documentation Main Section's Title"
@@ -61,4 +61,4 @@ I am a test section, so you know displaying in first.
 
 You may then create pages in the test section usually as pages in the main documentation section.
 
-All content below the frontmadder are done by the [content partial]({{% relref "partials/content.md" %}}) which as support for [variable replacements]({{% relref "writing.md" %}}).
+All content below the frontmatter are done by the [content partial]({{% relref "partials/content.md" %}}) which as support for [variable replacements]({{% relref "writing.md" %}}).

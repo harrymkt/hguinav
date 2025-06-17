@@ -1,8 +1,8 @@
----
-title: General Partials
-layout: doc
-keywords: [writing, config, doc, params, content,base,related]
----
++++
+keywords = ['writing', 'config', 'doc', 'params', 'content', 'base', 'related']
+layout = 'doc'
+title = 'General Partials'
++++
 # General Partials
 The following are partials that do not necessary to document each page.
 

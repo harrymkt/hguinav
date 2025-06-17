@@ -1,8 +1,8 @@
----
-title: Content Partial
-layout: doc
-keywords: [variable,config,content,write,params]
----
++++
+keywords = ['variable', 'config', 'content', 'write', 'params']
+layout = 'doc'
+title = 'Content Partial'
++++
 # Content Partial (content.html)
 You can use this partial to display content instead of using `{{ .Content }}` etc. The advantage of using this partial is that it allows you to add content variables. See [writing]({{% relref "/docs/writing" %}}) to see how variables work.
 - `value`(string) required: The value to display.

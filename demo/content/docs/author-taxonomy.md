@@ -1,9 +1,9 @@
----
-title: "Author Management Via Taxonomy"
-weight: 400
-keywords: [documentation,content,partial,author,writing,variable,misc,general,menu]
-layout: doc
----
++++
+keywords = ['documentation', 'content', 'partial', 'author', 'writing', 'variable', 'misc', 'general', 'menu']
+layout = 'doc'
+title = 'Author Management Via Taxonomy'
+weight = 400
++++
 # %title%
 You can have taxonomy based author management system. Create each author section in `content/authors/author_name/_index.md`, and looks like this:
 ```yaml

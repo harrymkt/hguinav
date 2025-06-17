@@ -1,8 +1,8 @@
----
-title: Related Partial
-layout: doc
-keywords: [documentation,config,writing,partial,related,general,misc]
----
++++
+keywords = ['documentation', 'config', 'writing', 'partial', 'related', 'general', 'misc']
+layout = 'doc'
+title = 'Related Partial'
++++
 # Related Partial (related.html)
 Use this partial to display related content. You can pass one value (the current page (the dot)), or you can use `dict` to provide one or more values.
 - `page`(object) required: The object pointing to the page you want to process, specifically the pages.

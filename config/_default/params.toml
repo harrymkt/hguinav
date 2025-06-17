@@ -1,0 +1,7 @@
+title_sep = " – "
+no_js = false
+display_site_lastmod = false
+[search]
+	enable = true
+	default_enable = true
+	format = "pagefind"

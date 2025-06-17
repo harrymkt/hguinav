@@ -1,8 +1,0 @@
-goldmark:
-  extensions:
-    typographer:
-      disable: true
-  renderer:
-    unsafe: true
-highlight:
-  codeFences: false
