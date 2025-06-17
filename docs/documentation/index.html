@@ -14,7 +14,7 @@
 <body>
 <p><a href="https://harrymkt.github.io/hguinav/lang">Change Language</a></p>
 <p><a href="#mainc" class="skip-link">Skip to main content</a></p>
-<p><a href="#navigation" class="skip-link">Skip to navigation</a></p>
+<p><a href="#navigation" class="skip-link">Skip to navigation menu</a></p>
 <p><a href="#hgfooter" class="skip-link">Skip to footer</a></p>
 <link href="https://harrymkt.github.io/hguinav/pagefind/pagefind-ui.css" rel="stylesheet">
 <script src="https://harrymkt.github.io/hguinav/pagefind/pagefind-ui.js"></script>
@@ -43,11 +43,11 @@
 <li><a href="/hguinav/docs/ignore-logs/" >Ignore Logs</a></li>
 </ul>
 <h3 id="params">Params</h3>
-<p>Control your site or page by these custom variables and frontmadders.</p>
+<p>Control your site or page by these custom variables and frontmatters.</p>
 
 <ul style="list-style-type:none;">
 <li><a href="/hguinav/docs/params/config/" >Config Params</a></li>
-<li><a href="/hguinav/docs/params/frontmadder/" >Frontmadder Params</a></li>
+<li><a href="/hguinav/docs/params/frontmatter/" >Frontmatter Params</a></li>
 <li><a href="/hguinav/docs/params/menu/" >Menu Params</a></li>
 </ul>
 <h3 id="partials">Partials</h3>
@@ -75,9 +75,9 @@
 <main id="mainc" data-pagefind-body>
 <h1 id="documentation-site">Documentation Site</h1>
 <p>Hguinav supports built-in documentation template that allows you to create list base documentation pages. Each section, starting at content/, you can create a subsection documentation. You can also look the docs folder of this theme demo.</p>
-<p><strong>Note</strong>: documentation uses both Weight and Title sort styles by default. Please note that when using weight, you also need to set for subsections. Remember that Hugo does not support sorting for specific section. As such, a custom <a href="/hguinav/docs/partials/sort/">sort partial</a> is the actual work implemented in Hguinav to bypass this.</p>
+<p><strong>Note</strong>: documentation uses both Weight and Title sort styles by default. Please note that when using weight, you also need to set for subsections. Remember that Hugo does not support sorting for specific section? As such, a custom <a href="/hguinav/docs/partials/sort/">sort partial</a> is the actual work implemented in Hguinav to bypass this.</p>
 <h2 id="setup">Setup</h2>
-<p>First, create the documentation section in content folder, and add _index.md to it containing the following frontmadder. For this documentation, we will create docs folder and use YAML for frontmadder as this theme is YAML based.</p>
+<p>First, create the documentation section in content folder, and add _index.md to it containing the following frontmatter. For this documentation, we will create docs folder and use YAML for frontmatter as this theme is YAML based.</p>
 <pre><code class="language-yaml">---
 title: &quot;Your Documentation Main Section's Title&quot;
 layout: doc
@@ -114,7 +114,7 @@ weight: 1
 I am a test section, so you know displaying in first.
 </code></pre>
 <p>You may then create pages in the test section usually as pages in the main documentation section.</p>
-<p>All content below the frontmadder are done by the <a href="/hguinav/docs/partials/content/">content partial</a> which as support for <a href="/hguinav/docs/writing/">variable replacements</a>.</p>
+<p>All content below the frontmatter are done by the <a href="/hguinav/docs/partials/content/">content partial</a> which as support for <a href="/hguinav/docs/writing/">variable replacements</a>.</p>
 
 <h4>You might also like</h4>
 <ul>
@@ -137,6 +137,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
   new PagefindUI({ element: "#sitesearch", showSubResults: true });
 });
 </script>
-<p>This site is last updated <script>document.write(ts_to_readable_time(get_timestamp("2025-04-14 16:10:29 +0630 +0630"), false, "", false));</script> ago</p>
+<p>This site is last updated <script>document.write(ts_to_readable_time(get_timestamp("2025-06-17 20:14:54 +0630 +0630"), false, "", false));</script> ago</p>
 </body>
 </html>

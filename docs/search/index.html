@@ -14,7 +14,7 @@
 <body>
 <p><a href="https://harrymkt.github.io/hguinav/lang">Change Language</a></p>
 <p><a href="#mainc" class="skip-link">Skip to main content</a></p>
-<p><a href="#navigation" class="skip-link">Skip to navigation</a></p>
+<p><a href="#navigation" class="skip-link">Skip to navigation menu</a></p>
 <p><a href="#hgfooter" class="skip-link">Skip to footer</a></p>
 <link href="https://harrymkt.github.io/hguinav/pagefind/pagefind-ui.css" rel="stylesheet">
 <script src="https://harrymkt.github.io/hguinav/pagefind/pagefind-ui.js"></script>
@@ -43,11 +43,11 @@
 <li><a href="/hguinav/docs/ignore-logs/" >Ignore Logs</a></li>
 </ul>
 <h3 id="params">Params</h3>
-<p>Control your site or page by these custom variables and frontmadders.</p>
+<p>Control your site or page by these custom variables and frontmatters.</p>
 
 <ul style="list-style-type:none;">
 <li><a href="/hguinav/docs/params/config/" >Config Params</a></li>
-<li><a href="/hguinav/docs/params/frontmadder/" >Frontmadder Params</a></li>
+<li><a href="/hguinav/docs/params/frontmatter/" >Frontmatter Params</a></li>
 <li><a href="/hguinav/docs/params/menu/" >Menu Params</a></li>
 </ul>
 <h3 id="partials">Partials</h3>
@@ -86,8 +86,8 @@
 <p>First, remember the following:</p>
 <ul>
 <li>search.js is the JS script that helps determine the search results and inputs.</li>
-<li>layouts/_default/search.html is the actual section that will be generated as the search page.</li>
-<li>layouts/_default/search.json is the JSON file containing the site's pages and content for search.</li>
+<li>layouts/search.html is the actual section that will be generated as the search page.</li>
+<li>layouts/search.json is the JSON file containing the site's pages and content for search.</li>
 <li>Search indexes are generated only the titles and keywords. If someone could fix generating a large set of content, then the content can be generated.</li>
 </ul>
 <p>Create a folder called <code>search</code> in the content directory, and add <code>_index.md</code> with the following content:</p>
@@ -104,7 +104,7 @@ outputs:
 <p>You can create the same search for other languages with the <code>_index.languageCode.md</code> prefix.</p>
 </details>
 <h3 id="pagefind">pagefind</h3>
-<p>This format is default used in this theme, and is best for large content. However, this cannot be used in preview, such as <code>hugo serve</code>. This format requires to have Python installed, and <code>pagefind[extended]</code> package.</p>
+<p>This format is default used in this theme and is best for large content. However, this cannot be used in preview, such as <code>hugo serve</code>. This format requires to have Python installed, and <code>pagefind[extended]</code> package.</p>
 <details>
   <summary>Setup Pagefind</summary>
   <h4 id="setup-pagefind">Setup Pagefind</h4>
@@ -125,7 +125,7 @@ outputs:
 <h4>You might also like</h4>
 <ul>
 <li><a href="/hguinav/docs/author-taxonomy/">Author Management Via Taxonomy</a></li>
-<li><a href="/hguinav/docs/params/frontmadder/">Frontmadder Params</a></li>
+<li><a href="/hguinav/docs/params/frontmatter/">Frontmatter Params</a></li>
 <li><a href="/hguinav/docs/params/menu/">Menu Params</a></li>
 <li><a href="/hguinav/docs/partials/sort/">Sort Partial</a></li>
 <li><a href="/hguinav/docs/params/config/">Config Params</a></li>
@@ -143,6 +143,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
   new PagefindUI({ element: "#sitesearch", showSubResults: true });
 });
 </script>
-<p>This site is last updated <script>document.write(ts_to_readable_time(get_timestamp("2025-04-14 16:10:29 +0630 +0630"), false, "", false));</script> ago</p>
+<p>This site is last updated <script>document.write(ts_to_readable_time(get_timestamp("2025-06-17 20:14:54 +0630 +0630"), false, "", false));</script> ago</p>
 </body>
 </html>
