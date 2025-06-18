@@ -1,7 +1,7 @@
 +++
-keywords = ['doc', 'params', 'writing', 'content', 'misc', 'title']
-layout = 'doc'
-title = 'Documentation Site'
+keywords = ["doc", "params", "writing", "content", "misc", "title"]
+layout = "doc"
+title = "Documentation Site"
 weight = 1000
 +++
 # Documentation Site
@@ -10,24 +10,24 @@ Hguinav supports built-in documentation template that allows you to create list 
 **Note**: documentation uses both Weight and Title sort styles by default. Please note that when using weight, you also need to set for subsections. Remember that Hugo does not support sorting for specific section? As such, a custom [sort partial]({{% relref "partials/sort.md" %}}) is the actual work implemented in Hguinav to bypass this.
 
 ## Setup
-First, create the documentation section in content folder, and add _index.md to it containing the following frontmatter. For this documentation, we will create docs folder and use YAML for frontmatter as this theme is YAML based.
-```yaml
----
-title: "Your Documentation Main Section's Title"
-layout: doc
----
+First, create the documentation section in content folder, and add _index.md to it containing the following frontmatter. For this documentation, we will create docs folder and use TOML for frontmatter as this theme is TOML based.
+```toml
++++
+title = "Your Documentation Main Section's Title"
+layout = "doc"
++++
 Further content for the main documentation section goes here
 ```
 
 Now, you can create pages with md extention in your documentation folder. Any page within the first section (docs) in this case, is a part of the first section.
 
 You can write documentation as you normally would do, for example:
-```yaml
----
-title: "Page1"
-weight: 1
-layout: doc
----
+```toml
++++
+title = "Page1"
+weight = 1
+layout = "doc"
++++
 Hello!
 ```
 
@@ -39,23 +39,23 @@ You can also have subsections inside the main one.
 Lets create a subfolder name test inside the main documentation section (docs) in this case.
 
 In the test folder, we will add _index.md with the following content.
-```yaml
----
-title: "Testing"
-layout: doc
-weight: 1
----
+```toml
++++
+title = "Testing"
+layout = "doc"
+weight = 1
++++
 ```
 
 We set weight to 1 because we want to display test section first after main documentation section.
 
 After that, you can write a short description related to that subsection. Do not write long texts in this file, because this will display at the top of the list containing pages related to this section.
-```yaml
+```toml
 ---
-title: "Testing"
-layout: doc
-weight: 1
----
+title = "Testing"
+layout = "doc"
+weight = 1
++++
 I am a test section, so you know displaying in first.
 ```
 

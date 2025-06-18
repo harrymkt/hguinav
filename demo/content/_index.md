@@ -1,5 +1,5 @@
 +++
-title = 'Home'
+title = "Home"
 +++
 # The %title% of UI Navigation
 A theme designed for accessibility rather than visual.

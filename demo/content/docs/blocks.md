@@ -1,7 +1,7 @@
 +++
-keywords = ['documentation', 'title', 'writing', 'shortcode', 'misc', 'blocks']
-layout = 'doc'
-title = 'Blocks'
+keywords = ["documentation", "title", "writing", "shortcode", "misc", "blocks"]
+layout = "doc"
+title = "Blocks"
 weight = 300
 +++
 # Blocks

@@ -1,7 +1,7 @@
 +++
-keywords = ['search', 'params', 'variable', 'writing', 'partial', 'general', 'audio', 'tab', 'content', 'language']
-layout = 'doc'
-title = 'Search'
+keywords = ["search", "params", "variable", "writing", "partial", "general", "audio", "tab", "content", "language"]
+layout = "doc"
+title = "Search"
 weight = 2000
 +++
 # Search
@@ -24,14 +24,11 @@ First, remember the following:
 
 Create a folder called `search` in the content directory, and add `_index.md` with the following content:
 ```md
----
-title: Search
-placeholder: Search across the site
-outputs:
-- html
-- rss
-- json
----
++++
+title = "Search"
+placeholder = "Search across the site"
+outputs = ["html", "rss", "json"]
++++
 ```
 
 You can also remove the RSS if you do not want to generate RSS for this section, which is usually not needed for RSS to be generated.

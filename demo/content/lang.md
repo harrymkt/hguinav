@@ -1,5 +1,5 @@
 +++
-layout = 'lang'
+layout = "lang"
 search = false
-title = 'Change Language'
+title = "Change Language"
 +++

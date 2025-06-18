@@ -1,7 +1,7 @@
 +++
-keywords = ['params', 'doc', 'ignore', 'error', 'shortcode']
-layout = 'doc'
-title = 'Ignore Logs'
+keywords = ["params", "doc", "ignore", "error", "shortcode"]
+layout = "doc"
+title = "Ignore Logs"
 weight = 3000
 +++
 # Ignore Logs

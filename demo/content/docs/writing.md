@@ -20,8 +20,8 @@ Be warned that failure to retrieve the variable will render that string directly
 
 ## Example
 ```markdown
----
-title: Test
----
++++
+title = "Test"
++++
 This page is titled %/title%
 ```
