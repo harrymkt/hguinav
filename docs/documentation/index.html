@@ -77,20 +77,20 @@
 <p>Hguinav supports built-in documentation template that allows you to create list base documentation pages. Each section, starting at content/, you can create a subsection documentation. You can also look the docs folder of this theme demo.</p>
 <p><strong>Note</strong>: documentation uses both Weight and Title sort styles by default. Please note that when using weight, you also need to set for subsections. Remember that Hugo does not support sorting for specific section? As such, a custom <a href="/hguinav/docs/partials/sort/">sort partial</a> is the actual work implemented in Hguinav to bypass this.</p>
 <h2 id="setup">Setup</h2>
-<p>First, create the documentation section in content folder, and add _index.md to it containing the following frontmatter. For this documentation, we will create docs folder and use YAML for frontmatter as this theme is YAML based.</p>
-<pre><code class="language-yaml">---
-title: &quot;Your Documentation Main Section's Title&quot;
-layout: doc
----
+<p>First, create the documentation section in content folder, and add _index.md to it containing the following frontmatter. For this documentation, we will create docs folder and use TOML for frontmatter as this theme is TOML based.</p>
+<pre><code class="language-toml">+++
+title = &quot;Your Documentation Main Section's Title&quot;
+layout = &quot;doc&quot;
++++
 Further content for the main documentation section goes here
 </code></pre>
 <p>Now, you can create pages with md extention in your documentation folder. Any page within the first section (docs) in this case, is a part of the first section.</p>
 <p>You can write documentation as you normally would do, for example:</p>
-<pre><code class="language-yaml">---
-title: &quot;Page1&quot;
-weight: 1
-layout: doc
----
+<pre><code class="language-toml">+++
+title = &quot;Page1&quot;
+weight = 1
+layout = &quot;doc&quot;
++++
 Hello!
 </code></pre>
 <p>Note that you also need to set <code>layout</code> to <code>doc</code> on every page.</p>
@@ -98,19 +98,19 @@ Hello!
 <p>You can also have subsections inside the main one.</p>
 <p>Lets create a subfolder name test inside the main documentation section (docs) in this case.</p>
 <p>In the test folder, we will add _index.md with the following content.</p>
-<pre><code class="language-yaml">---
-title: &quot;Testing&quot;
-layout: doc
-weight: 1
----
+<pre><code class="language-toml">+++
+title = &quot;Testing&quot;
+layout = &quot;doc&quot;
+weight = 1
++++
 </code></pre>
 <p>We set weight to 1 because we want to display test section first after main documentation section.</p>
 <p>After that, you can write a short description related to that subsection. Do not write long texts in this file, because this will display at the top of the list containing pages related to this section.</p>
-<pre><code class="language-yaml">---
-title: &quot;Testing&quot;
-layout: doc
-weight: 1
----
+<pre><code class="language-toml">---
+title = &quot;Testing&quot;
+layout = &quot;doc&quot;
+weight = 1
++++
 I am a test section, so you know displaying in first.
 </code></pre>
 <p>You may then create pages in the test section usually as pages in the main documentation section.</p>
@@ -137,6 +137,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
   new PagefindUI({ element: "#sitesearch", showSubResults: true });
 });
 </script>
-<p>This site is last updated <script>document.write(ts_to_readable_time(get_timestamp("2025-06-17 20:14:54 +0630 +0630"), false, "", false));</script> ago</p>
+<p>This site is last updated <script>document.write(ts_to_readable_time(get_timestamp("2025-06-18 16:38:56 +0630 +0630"), false, "", false));</script> ago</p>
 </body>
 </html>

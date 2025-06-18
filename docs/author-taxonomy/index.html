@@ -75,22 +75,22 @@
 <main id="mainc" data-pagefind-body>
 <h1 id="title">Author Management Via Taxonomy</h1>
 <p>You can have taxonomy based author management system. Create each author section in <code>content/authors/author_name/_index.md</code>, and looks like this:</p>
-<pre><code class="language-yaml">---
-title: &quot;Author name&quot;
-role: admin
----
+<pre><code class="language-toml">+++
+title = &quot;Author name&quot;
+role = &quot;admin&quot;
++++
 I'm the maintainer of this site (optional byo)
 </code></pre>
 <p>Content processing here - is also done by the <a href="/hguinav/docs/partials/content/">content partial</a> which as support for <a href="/hguinav/docs/writing/">variable replacements</a>.</p>
 <p>Please note that you do not need to create section for that author if you are not adding custom metadata for them.</p>
 <h2 id="setting-author-taxonomy">Setting Author Taxonomy</h2>
 <p>In your site configuration:</p>
-<pre><code class="language-yaml">taxonomies:
-  author: authors
-  # Custom taxonomies go here
+<pre><code class="language-toml">[taxonomies]
+	author = &quot;authors&quot;
+	# Custom taxonomies go here
 </code></pre>
-<h2 id="frontmadder">Frontmadder</h2>
-<p>Hguinav provides the following optional frontmadder variables that you can set in your author's page:</p>
+<h2 id="frontmatter">Frontmatter</h2>
+<p>Hguinav provides the following optional frontmatter variables that you can set in your author's page:</p>
 <ul>
 <li><code>role</code>(string): The role of this author, eg admin, for informational purposes.</li>
 <li><code>website</code>(string: Personal website.</li>
@@ -117,6 +117,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
   new PagefindUI({ element: "#sitesearch", showSubResults: true });
 });
 </script>
-<p>This site is last updated <script>document.write(ts_to_readable_time(get_timestamp("2025-06-17 20:14:54 +0630 +0630"), false, "", false));</script> ago</p>
+<p>This site is last updated <script>document.write(ts_to_readable_time(get_timestamp("2025-06-18 16:38:56 +0630 +0630"), false, "", false));</script> ago</p>
 </body>
 </html>
