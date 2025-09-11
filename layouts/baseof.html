@@ -54,7 +54,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 {{- $dsud := .Site.Params.display_site_lastmod | default false }}
 {{- if $dsud }}
 {{- if not $nojs }}
-{{- $slmd := printf "<script>document.write(ts_to_readable_time(get_timestamp(%q), false, %q, false));</script>" .Site.Lastmod "" }}
+{{- $slmd := printf "<script>document.write(ts_to_readable_time(get_timestamp(%q), false, %q, false));</script>" (partial "tformat.html" .Site.Lastmod) "" }}
 <p>{{ T "site_lastmod" $slmd | safeHTML }}</p>
 {{- else }}
 <p>{{ partial "content.html" (dict "page" .Site "value" "%updated%") }}</p>
