@@ -7,5 +7,5 @@ demosite = "https://harrymkt.github.io/hguinav"
 tags = ["blog", "documentation", "multilingual", "accessible", "blind", "responsive", "SEO"]
 features = ["Multilingual", "Documentation", "Variables", "Custom Sorting", "Local Date Display", "More"]
 [author]
-  name = "Harry Min Khant"
-  homepage = "https://harrymkt.github.io"
+	name = "Harry Min Khant"
+	homepage = "https://harrymkt.github.io"

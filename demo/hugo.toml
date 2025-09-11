@@ -11,10 +11,6 @@ theme = "hguinav"
 	[languages.my]
 		languageName = "Myanmar"
 
-[pagination]
-	disableAliases = false
-	pagerSize = 1
-
 [taxonomies]
 	category = "categories"
 	tag = "tags"

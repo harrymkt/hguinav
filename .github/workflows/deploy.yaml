@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 env:
-  HUGO_VERSION: 0.149.1
+  HUGO_VERSION: 0.150.0
   # Build directory where the website will run its build. Use the dot (period) to use current.
   builddir: demo
   # Output directory where built files will deploy. This also will be used on Pagefind search generation.
