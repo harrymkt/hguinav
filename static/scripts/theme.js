@@ -79,7 +79,6 @@ function normalize_iso_datetime(dateString) {
 }
 function local_datetime_string(date_input) {
 	var r = new Date(date_input);
-	if (!r) r = new Date(normalize_iso_datetime(date_input));
 	const options = {
 		weekday: "long", 
 		month: "long", 
@@ -97,10 +96,8 @@ function local_datetime_string(date_input) {
 	return final;
 }
 function get_timestamp(dateString) {
-	// Convert date string into a valid ISO format (inserting colon in the timezone)
-	const valid_dateString = normalize_iso_datetime(dateString);
-	// Create a new Date object from the valid date string
-	const date = new Date(valid_dateString);
+	// Create a new Date object
+	const date = new Date(dateString);
 	// Return the timestamp (milliseconds since epoch)
 	return date.getTime();
 }
