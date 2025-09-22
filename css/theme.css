@@ -12,7 +12,6 @@ This style file is included in Hguinav theme which is distributed under the term
 	overflow: hidden;
 	z-index: -1;
 }
-
 /* When skip link is focused, make visible again. */
 .skip-link:focus {
 	position: static;
@@ -21,7 +20,6 @@ This style file is included in Hguinav theme which is distributed under the term
 	overflow: visible;
 	z-index: 1;
 }
-
 .tab {
 	padding: 10px 20px;
 	background-color: #f0f0f0;
@@ -30,22 +28,18 @@ This style file is included in Hguinav theme which is distributed under the term
 	cursor: pointer;
 	transition: background-color 0.3s;
 }
-
 .tab:hover {
 	background-color: #ddd;
 }
-
 .tab.active {
 	background-color: #ccc;
 }
-
 .tab-content {
 	padding: 20px;
 	border: 1px solid #ccc;
 	border-top: none;
 	display: none;
 }
-
 /* Enable horizontal scrolling on pre elements if content overflows */
 pre {
 	overflow: auto;       

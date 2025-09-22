@@ -78,13 +78,13 @@
 <h2 id="attributes">attributes</h2>
 <p>Specify the custom attributes you want to add. These attributes will be placed before the <code>href</code> of the link element (the <code>a</code> tag).</p>
 <p>example:</p>
-<pre><code class="language-yaml">menus:
-  main:
-    - name: test
-      pageRef: /
-      params:
-        attributes:
-          class: &quot;active&quot;
+<pre><code class="language-toml">[menus]
+  [[menus.main]]
+  name = &quot;test&quot;
+  pageRef = &quot;/&quot;
+  [menus.main.params]
+    [menus.main.params.attributes]
+      class = &quot;active&quot;
 </code></pre>
 
 <h4>You might also like</h4>
@@ -108,6 +108,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
   new PagefindUI({ element: "#sitesearch", showSubResults: true });
 });
 </script>
-<p>This site is last updated <script>document.write(ts_to_readable_time(get_timestamp("2025-09-11T09:18:59+06:30"), false, "", false));</script> ago</p>
+<p>This site is last updated <script>document.write(ts_to_readable_time(get_timestamp("2025-09-22T17:41:09+06:30"), false, "", false));</script> ago</p>
 </body>
 </html>
