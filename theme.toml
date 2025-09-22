@@ -1,7 +1,7 @@
 name = "UI Navigation"
 license = "MIT"
 licenselink = "https://github.com/harrymkt/hguinav/blob/main/LICENSE.md"
-description = "A multilingual theme designed for accessibility rather than visual."
+description = "A modern multilingual theme designed for accessibility rather than visual."
 homepage = "https://github.com/harrymkt/hguinav"
 demosite = "https://harrymkt.github.io/hguinav"
 tags = ["blog", "documentation", "multilingual", "accessible", "blind", "responsive", "SEO"]

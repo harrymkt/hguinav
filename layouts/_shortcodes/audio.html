@@ -1,12 +1,12 @@
 {{- $unsupported := "Your browser does not support the audio element." }}
 {{- with .Get "unsupported" }}
-{{- $unsupported = . }}
+  {{- $unsupported = . }}
 {{- end }}
 {{- $source := "" }}
 {{- with .Get "source" }}
-{{- $source = . }}
+  {{- $source = . }}
 {{- else }}
-{{- errorf "%q shortcode requires the source argument. %s" .Name .Position }}
+  {{- errorf "%q shortcode requires the source argument. %s" .Name .Position }}
 {{- end -}}
 <div>
 <audio controls="controls">

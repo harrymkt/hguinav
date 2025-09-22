@@ -1,16 +1,16 @@
 {
-    "items": [
-        {{- range $index, $page := $.Site.Pages -}}
-        {{- if $index }}
-        ,
-        {{- end }}
-        {
-            "url": "{{ $page.Permalink }}",
-            {{- if $page.Keywords }}
-            "keywords": "{{ delimit $page.Keywords " " }}",
-            {{- end }}
-            "title": "{{ $page.LinkTitle }}"
-        }
-        {{- end }}
-    ]
+  "items": [
+    {{- range $index, $page := $.Site.Pages -}}
+    {{- if $index }}
+    ,
+    {{- end }}
+    {
+      "url": "{{ $page.Permalink }}",
+      {{- if $page.Keywords }}
+      "keywords": "{{ delimit $page.Keywords " " }}",
+      {{- end }}
+      "title": "{{ $page.LinkTitle }}"
+    }
+    {{- end }}
+  ]
 }

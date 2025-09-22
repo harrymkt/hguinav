@@ -51,7 +51,7 @@ We set weight to 1 because we want to display test section first after main docu
 
 After that, you can write a short description related to that subsection. Do not write long texts in this file, because this will display at the top of the list containing pages related to this section.
 ```toml
----
++++
 title = "Testing"
 layout = "doc"
 weight = 1

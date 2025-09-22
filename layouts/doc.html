@@ -1,11 +1,11 @@
 {{- define "title" -}}
-{{- $docsect := .FirstSection -}}
-{{- $current := . -}}
-{{- $titles := slice $current.Title -}}
-{{- if and $docsect (not ($docsect.Eq $current) ) -}}
-{{- $titles = $titles | append $docsect.Title -}}
-{{- end -}}
-{{- partial "title.html" (dict "titles" $titles) -}}
+  {{- $docsect := .FirstSection -}}
+  {{- $current := . -}}
+  {{- $titles := slice $current.Title -}}
+  {{- if and $docsect (not ($docsect.Eq $current) ) -}}
+    {{- $titles = $titles | append $docsect.Title -}}
+  {{- end -}}
+  {{- partial "title.html" (dict "titles" $titles) -}}
 {{- end -}}
 {{- define "extraheader" }}
 {{- $docsect := .FirstSection -}}

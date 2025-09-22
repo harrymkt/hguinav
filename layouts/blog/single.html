@@ -1,5 +1,5 @@
-{{- define "title" -}}
-{{- partial "title.html" (dict "titles" (slice .Title .FirstSection.Title) ) -}}
+{{- define "title" }}
+  {{- partial "title.html" (dict "titles" (slice .Title .FirstSection.Title) ) -}}
 {{- end -}}
 {{ define "main" }}
 <h1>{{ .Title }}</h1>

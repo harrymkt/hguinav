@@ -11,12 +11,12 @@ You can use the following param parameters to configure your menus. These variab
 Specify the custom attributes you want to add. These attributes will be placed before the `href` of the link element (the `a` tag).
 
 example:
-```yaml
-menus:
-  main:
-    - name: test
-      pageRef: /
-      params:
-        attributes:
-          class: "active"
+```toml
+[menus]
+  [[menus.main]]
+  name = "test"
+  pageRef = "/"
+  [menus.main.params]
+    [menus.main.params.attributes]
+      class = "active"
 ```

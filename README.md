@@ -32,18 +32,18 @@ This theme is distributed under the terms of the [MIT License](https://github.co
 - Comprehensive documentation; Hguinav provides a full Comprehensive documentation including possible layouts, partials, shortcodes, blocks, configurable parameters, and more, everything as it updates.
 
 ## Installation
-Using git clone method:
+Add to the Git submodule (recommended):
+```bash
+git submodule add --name hguinav https://github.com/harrymkt/hguinav.git themes/hguinav
+git submodule update --remote
+```
+
+Or using git clone method:
 ```bash
 cd themes
 git clone https://github.com/harrymkt/hguinav.git
 ```
 Or [download manually](https://github.com/harrymkt/hguinav/archive/refs/heads/main.zip) and paste in the themes directory.
-
-Or, add to the Git submodule (recommended):
-```bash
-git submodule add --name hguinav https://github.com/harrymkt/hguinav.git themes/hguinav
-git submodule update --remote
-```
 
 Next, set the theme in your config.
 `theme = "hguinav"`

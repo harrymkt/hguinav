@@ -1,15 +1,15 @@
 {{- $sformats := slice "pagefind" "lunr" }}
 {{- $sformat := .Site.Params.search.format }}
 {{- if not (in $sformats $sformat) }}
-{{- errorf "Invalid search format %s. Valid formats are %s" $sformat (delimit $sformats " ") }}
+  {{- errorf "Invalid search format %s. Valid formats are %s" $sformat (delimit $sformats " ") }}
 {{- end -}}
 {{- $searchon := false }}
 {{- if and .Site.Params.search.enable (.Params.search | default .Site.Params.search.default_enable) }}
-{{- $searchon = true }}
+  {{- $searchon = true }}
 {{- end }}
 {{- $nojs := .Site.Params.no_js | default false }}
 {{- with .Params.no_js }}
-{{- $nojs = . }}
+  {{- $nojs = . }}
 {{- end -}}
 <!DOCTYPE html>
 <html lang="{{ site.Language.LanguageCode }}">
