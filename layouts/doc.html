@@ -28,11 +28,14 @@
 {{- if $subsect.Content }}
 {{ (partial "content.html" (dict "value" $subsect.Content "page" $subsect )) | safeHTML }}
 {{- end }}
+<details name="docsect" {{- if (eq $current.RelPermalink $subsect.RelPermalink) }}open{{ end }}>
+<summary>{{ $subsect.LinkTitle }}</summary>
 <ul style="list-style-type:none;">
 {{- range (partial "sort.html" (dict "sorts" $subsect.RegularPages "sort_by" $subsort)) }}
 <li><a href="{{ .RelPermalink }}" {{ if eq .RelPermalink $current.RelPermalink }}aria-current="page"{{ end }}>{{ .LinkTitle }}</a></li>
 {{- end }}
 </ul>
+</details>
 {{- end }}
 {{- end }}
 </nav>

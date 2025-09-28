@@ -9,21 +9,26 @@ Renders a menu for the given menu ID.
 */ -}}
 {{- $formats := slice "default" "noheading" }}
 {{- $format := "default" }}
+{{- $label := T "mainmenu" }}
 {{- with .format }}
 {{- $format = lower . }}
 {{- end }}
 {{- if not (in $formats $format) }}
 {{- errorf "Invalid menu format %s. Valid formats are %s" $format (delimit $formats ", ") }}
 {{- end }}
+{{- with .label }}
+{{- $label = . }}
+{{- end }}
 {{- $page := .page }}
 {{- $menuID := .menuID }}
 {{- with index site.Menus $menuID }}
-{{- partial (printf "inline/menu/format/%s" $format) (dict "page" $page "menuEntries" .) }}
+{{- partial (printf "inline/menu/format/%s" $format) (dict "page" $page "menuEntries" . "label" $label) }}
 {{- end }}
 {{- define "_partials/inline/menu/format/default" }}
 {{- $page := .page }}
-<nav id="navigation" role="navigation" aria-label="{{ T "mainmenu" }}">
-<h2>{{ T "mainmenu" }}</h2>
+{{- $label := .label }}
+<nav id="navigation" role="navigation" aria-label="{{ $label }}">
+<h2>{{ $label }}</h2>
 <ul style="list-style-type:none;">
 {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .menuEntries) }}
 </ul>
