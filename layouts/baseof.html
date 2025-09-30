@@ -28,6 +28,8 @@
 {{- partial "nav.html" . }}
 {{- block "extraheader" . }}
 {{- end }}
+{{- block "cextraheader" . }}
+{{- end }}
 <main id="mainc"{{ if (and (eq $sformat "pagefind") (eq $searchon true)) }} data-pagefind-body{{ end }}>
 {{- block "main" . }}
 {{- end }}
