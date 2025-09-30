@@ -62,3 +62,11 @@ I am a test section, so you know displaying in first.
 You may then create pages in the test section usually as pages in the main documentation section.
 
 All content below the frontmatter are done by the [content partial]({{% relref "partials/content.md" %}}) which as support for [variable replacements]({{% relref "writing.md" %}}).
+
+## Frontmatter
+The following is a list of params parameters that you can set to documentation section. These parameters are only to be set at the very first section (docs) in this case.
+
+### `label`
+An object of labels, i.e. `label.var`.
+- `pages`: The label of the pages, default is "Pages".
+- `sections`: The label of the sections, default is "Sections".
