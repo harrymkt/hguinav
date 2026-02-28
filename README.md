@@ -1,11 +1,11 @@
 # UI Navigation
-UI Navigation, or known as hguinav, is a modern multilingual [Hugo](https://gohugo.io/) theme designed for accessibility rather than visual and made as easy as possible. Since I am a blind developer, I would like to develop with accessibility as possible so visually impaired users can use them.
+UI Navigation, or known as hguinav, is a modern multilingual [Hugo](https://gohugo.io) theme designed for accessibility rather than visual and made as easy as possible. Since I am a blind developer, I would like to develop with accessibility as possible so visually impaired users can use them.
 
 This theme is also available for Zola at [Zluinav](https://github.com/harrymkt/zluinav).
 
 This theme uses blocks as possible because as far as I know Hugo does not allow extend and super functions like other static site generators.
 
-[Theme demo](https://harrymkt.github.io/hguinav)
+[Theme demo Site](https://harrymkt.github.io/hguinav)
 
 ## License
 This theme is distributed under the terms of the [MIT License](https://github.com/harrymkt/hguinav/blob/main/LICENSE.md).
@@ -16,7 +16,7 @@ This theme is distributed under the terms of the [MIT License](https://github.co
 - Multilingual support with i18n; Hugo supports built-in advance multilingual feature, this theme only adds templates for it.
 - Customizable extrahead, extrafooter, head, header, footer, with partials, and extrahead, with blocks.
 - Customizable Documentation Site; build accessible [documentation sites](https://harrymkt.github.io/hguinav/docs/documentation) by using built-in template specifically designed for documentation. You set the layout of the section you want to document as well as in each page of that related document.
-- [Content variables](https://harrymkt.github.io/hguinav/docs/writing) during build, such as `%title%`.
+- [Content variables](https://harrymkt.github.io/hguinav/docs/writing), such as `%title%`.
 - Sort pages by the way you like and for specific sections, which is by default not supported. This uses the [sort](https://harrymkt.github.io/hguinav/docs/partials/sort) partial.
 - Define per-section pagination size.
 - Define menu pages that check for multilingual with the special [menu](https://harrymkt.github.io/hguinav/docs/partials/menu) partial.

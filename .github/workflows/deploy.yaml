@@ -6,19 +6,16 @@ on:
   pull_request:
     paths: ["archetypes/**", "assets/**", "content/**", "data/**", "demo/**", "i18n/**", "layouts/**", "static/**", "themes/**", "hugo.toml"]
   workflow_dispatch:
-
 env:
-  HUGO_VERSION: 0.154.5
-  # Build directory where the website will run its build. Use the dot (period) to use current.
+  HUGO_VERSION: 0.157.0
+  # Build directory where the website will run its build. Use the dot (period) to use the current directory.
   builddir: demo
   # Output directory where built files will deploy. This also will be used on Pagefind search generation.
   outdir: demo/HTML
-
 # Default to bash
 defaults:
   run:
     shell: bash
-
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -28,7 +25,7 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
-      - name: Install
+      - name: Install Hugo
         run: |
           wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb          
