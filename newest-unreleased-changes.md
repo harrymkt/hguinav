@@ -1,6 +1,3 @@
-## 0.11.4
-- Added `label` string in menu partial, documented.
-- Documentation system redesigned.
-- Removed the `hid` params parameter of the frontmatter.
-- Added `cextraheader` block for content.
-- HGUINav has been translated into Vietnamese!
+## 0.11.5 unreleased
+- Hugo 0.150.0 is now the minimum supported version, we do not verify earlier versions anymore.
+- All links now use absolute URL.

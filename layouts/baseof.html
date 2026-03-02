@@ -42,7 +42,7 @@
 <script src="{{absURL "scripts/copy.js"}}"></script>
 {{- if (and (eq $searchon true) (eq .Site.Params.search.format "lunr")) }}
 {{- $searchr := resources.Get "scripts/search.js" }}
-<script src="{{ $searchr.RelPermalink }}"></script>
+<script src="{{ $searchr.Permalink }}"></script>
 {{- else if (and (eq $searchon true) (eq .Site.Params.search.format "pagefind")) }}
 <script>
 window.addEventListener('DOMContentLoaded', (event) => {

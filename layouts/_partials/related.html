@@ -36,7 +36,7 @@ You can also pass one value, the page, or the dot.
 <h{{ $hlevel }}>{{ $text }}</h{{ $hlevel }}>
 <ul>
 {{- range . }}
-<li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+<li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
 {{- end }}
 </ul>
 {{- end }}

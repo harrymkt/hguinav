@@ -15,7 +15,7 @@ You can display an image as the post's logo. These variables are available for t
 - `alt`(string) optional: the alt text of the featured image. Requires the `img` variable to be set.
 
 ## sort_by
-A string that controls the sort, even for each section. Sorting is controled by [sort partial]({{% relref "../partials/sort.md" %}}).
+A string that controls the sort, even for each section. Sorting is controled by [sort partial]({{% ref "../partials/sort.md" %}}).
 
 ## pagesize
 An int that controls the pagination size. This is useful in section where the blog templates or content type is used to control per-section pagination size.

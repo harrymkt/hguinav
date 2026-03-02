@@ -1,9 +1,9 @@
 # UI Navigation
-UI Navigation, or known as hguinav, is a modern multilingual [Hugo](https://gohugo.io) theme designed for accessibility rather than visual and made as easy as possible. Since I am a blind developer, I would like to develop with accessibility as possible so visually impaired users can use them.
+UI Navigation, or known as hguinav, is a modern multilingual [Hugo](https://gohugo.io) theme designed for accessibility over visual and made as easy as possible. As I am a blind developer, I would like to develop tools with accessibility so visually impaired users can use them.
 
 This theme is also available for Zola at [Zluinav](https://github.com/harrymkt/zluinav).
 
-This theme uses blocks as possible because as far as I know Hugo does not allow extend and super functions like other static site generators.
+This theme uses blocks as possible,  as Hugo does not allow extend and super functions like other static site generators.
 
 [Theme demo Site](https://harrymkt.github.io/hguinav)
 
@@ -11,11 +11,11 @@ This theme uses blocks as possible because as far as I know Hugo does not allow 
 This theme is distributed under the terms of the [MIT License](https://github.com/harrymkt/hguinav/blob/main/LICENSE.md).
 
 ## Features
-- Accessibility; Hguinav is designed to be accessible as possible, especially for blind and visually impaired. This is done by using accessibility tags, such as ARIA, and other possible accessibility features.
+- Accessibility; HGUINav is designed to be accessible as possible, especially for blind and visually impaired. This is done by using accessibility tags, such as ARIA, and other possible accessibility features.
 - SEO friendly.
-- Multilingual support with i18n; Hugo supports built-in advance multilingual feature, this theme only adds templates for it.
+- Multilingual support with i18n; Hugo supports built-in advance multilingual feature, this theme only implements templates for it.
 - Customizable extrahead, extrafooter, head, header, footer, with partials, and extrahead, with blocks.
-- Customizable Documentation Site; build accessible [documentation sites](https://harrymkt.github.io/hguinav/docs/documentation) by using built-in template specifically designed for documentation. You set the layout of the section you want to document as well as in each page of that related document.
+- Customizable Documentation Site; build accessible [documentation sites](https://harrymkt.github.io/hguinav/docs/documentation) by using built-in template specifically designed for documentation. You set the layout of the section you want to document as well as in each page of that related document, or cascade just once in the main documentation page.
 - [Content variables](https://harrymkt.github.io/hguinav/docs/writing), such as `%title%`.
 - Sort pages by the way you like and for specific sections, which is by default not supported. This uses the [sort](https://harrymkt.github.io/hguinav/docs/partials/sort) partial.
 - Define per-section pagination size.
@@ -29,7 +29,7 @@ This theme is distributed under the terms of the [MIT License](https://github.co
 - Use [blocks](https://harrymkt.github.io/hguinav/docs/blocks) to easily modify without having to copy some files to your layouts.
 - Use a large number of partials and shortcodes to make your content and/or templates shorten.
 - Ability to toggle the use of JavaScript for both config and per-page frontmadder.
-- Comprehensive documentation; Hguinav provides a full Comprehensive documentation including possible layouts, partials, shortcodes, blocks, configurable parameters, and more, everything as it updates.
+- Comprehensive documentation; HGUINav provides a full Comprehensive documentation including possible layouts, partials, shortcodes, blocks, configurable parameters, and more, everything as it updates.
 
 ## Installation
 Add to the Git submodule (recommended):

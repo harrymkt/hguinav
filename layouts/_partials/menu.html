@@ -53,7 +53,7 @@ Renders a menu for the given menu ID.
 {{- end }}
 {{- $url := .URL }}
 {{- with $fpage }}
-{{- $url = .RelPermalink }}
+{{- $url = .Permalink }}
 {{- end }}
 {{- $attrs := dict }}
 {{- if .Params.attributes }}

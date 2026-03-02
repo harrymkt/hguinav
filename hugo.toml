@@ -2,4 +2,4 @@ baseURL = "https://example.org/"
 title = "UI Navigation"
 [module.hugoVersion]
 	extended = true
-	min = "0.146.2"
+	min = "0.150.0"

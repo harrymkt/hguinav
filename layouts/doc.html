@@ -21,7 +21,7 @@
 <h3>{{ $pagest }}</h3>
 <ul style="list-style-type:none;">
 {{- range (partial "sort.html" (dict "sorts" $section.RegularPages "sort_by" $sort)) }}
-<li><a href="{{ .RelPermalink }}" {{ if eq .RelPermalink $current.RelPermalink }}aria-current="page"{{ end }}>{{ .LinkTitle }}</a></li>
+<li><a href="{{ .Permalink }}" {{ if eq .RelPermalink $current.RelPermalink }}aria-current="page"{{ end }}>{{ .LinkTitle }}</a></li>
 {{- end }}
 </ul>
 {{- end }}
@@ -29,7 +29,7 @@
 <h3>{{ $sectionst }}</h3>
 <ul style="list-style-type:none;">
 {{- range $sub := (partial "sort.html" (dict "sorts" $section.Sections "sort_by" $sort)) }}
-<li><a href="{{ .RelPermalink }}" {{ if eq .RelPermalink $current.RelPermalink }}aria-current="page"{{ end }}>{{ .LinkTitle }}</a></li>
+<li><a href="{{ .Permalink }}" {{ if eq .RelPermalink $current.RelPermalink }}aria-current="page"{{ end }}>{{ .LinkTitle }}</a></li>
 {{- end }}
 </ul>
 {{- end }}

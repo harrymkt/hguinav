@@ -6,3 +6,5 @@ root = true
 [*.{yaml,yml,json,html}]
 	indent_style = space
 	indent_size = 2
+[*.html]
+	insert_final_newline = false
