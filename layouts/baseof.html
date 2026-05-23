@@ -12,7 +12,7 @@
   {{- $nojs = . }}
 {{- end -}}
 <!DOCTYPE html>
-<html lang="{{ site.Language.LanguageCode }}">
+<html lang="{{ site.Language.Locale }}">
 <head>
 {{ partial "head.html" . }}
 {{ partial "extrahead.html" . }}
@@ -55,12 +55,12 @@ window.addEventListener('DOMContentLoaded', (event) => {
 {{- end }}
 {{- $dsud := .Site.Params.display_site_lastmod | default false }}
 {{- if $dsud }}
-{{- if not $nojs }}
-{{- $slmd := printf "<script>document.write(ts_to_readable_time(get_timestamp(%q), false, %q, false));</script>" (partial "tformat.html" .Site.Lastmod) "" }}
+  {{- if not $nojs }}
+    {{- $slmd := printf "<script>document.write(ts_to_readable_time(get_timestamp(%q), false, %q, false));</script>" (partial "tformat.html" .Site.Lastmod) "" }}
 <p>{{ T "site_lastmod" $slmd | safeHTML }}</p>
-{{- else }}
+  {{- else }}
 <p>{{ partial "content.html" (dict "page" .Site "value" "%updated%") }}</p>
-{{- end }}
+  {{- end }}
 {{- end }}
 </body>
 </html>

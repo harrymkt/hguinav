@@ -7,9 +7,9 @@ themesDir = "../../"
 theme = "hguinav"
 [languages]
 	[languages.en]
-		languageName = "English"
+		label = "English"
 	[languages.my]
-		languageName = "Myanmar"
+		label = "Myanmar"
 
 [taxonomies]
 	category = "categories"

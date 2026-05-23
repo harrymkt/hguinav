@@ -3,7 +3,7 @@
 <nav aria-label="Language Selector">
 <ul style="list-style-type:none;">
 {{- range .Site.Home.AllTranslations }}
-<li><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
+<li><a href="{{ .Permalink }}">{{ .Language.Label }}</a></li>
 {{- end }}
 </ul>
 </nav>
