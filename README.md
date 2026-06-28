@@ -32,13 +32,13 @@ This theme is distributed under the terms of the [MIT License](https://github.co
 - Comprehensive Documentation: HGUINav provides a full Comprehensive documentation including possible layouts, partials, shortcodes, blocks, configurable parameters, and more, everything as it updates.
 
 ## Installation
-Add to the Git submodule (recommended):
+Add as a Git submodule (recommended):
 ```bash
 git submodule add --name hguinav https://github.com/harrymkt/hguinav.git themes/hguinav
 git submodule update --remote
 ```
 
-Or using git clone method:
+Or using git clone:
 ```bash
 cd themes
 git clone https://github.com/harrymkt/hguinav.git
