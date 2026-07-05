@@ -6,18 +6,33 @@ on:
   pull_request:
     paths: ["archetypes/**", "assets/**", "content/**", "data/**", "demo/**", "i18n/**", "layouts/**", "static/**", "themes/**", "hugo.toml"]
   workflow_dispatch:
+
 env:
   HUGO_VERSION: 0.163.3
   # Build directory where the website will run its build. Use the dot (period) to use the current directory.
   builddir: demo
   # Output directory where built files will deploy. This also will be used on Pagefind search generation.
   outdir: demo/HTML
+
 # Default to bash
 defaults:
   run:
     shell: bash
+
+# Permissions required for deployments
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -34,13 +49,22 @@ jobs:
       - name: Build
         run: |
           cd ${{ env.builddir }}
-          hugo \
-      # Ignore below name if you do not use pagefind.
+          hugo          
       - name: Generate Pagefind Search
         run: python -m pagefind --site ${{ env.outdir }}
-      - name: Deploy Site
-        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ${{ env.outdir }}
+          path: ${{ env.outdir }}
+  
+  deploy:
+    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps:deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
