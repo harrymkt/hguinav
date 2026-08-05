@@ -1,5 +1,5 @@
 /*
-JS functions for hguinav theme which is distributed under the terms of the MIT License
+theme.js, JS functions for HGUINav theme which is distributed under the terms of the MIT License
 */
 function ts_to_readable_time(timestamp, showsecond = false, ltext = '', show_full=true) {
 	var seconds = Math.floor(Date.now() / 1000) - Math.floor(timestamp / 1000);

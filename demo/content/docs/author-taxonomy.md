@@ -28,5 +28,6 @@ In your site configuration:
 
 ## Frontmatter
 Hguinav provides the following optional frontmatter variables that you can set in your author's page:
+
 - `role`(string): The role of this author, eg admin, for informational purposes.
 - `website`(string: Personal website.

@@ -1,5 +1,5 @@
 /*
-Js script that allows you to have the ability to copy code blocks.
+copy.js, a Js script that allows you to have the ability to copy code blocks.
 */
 document.querySelectorAll("pre").forEach(pre => {
 	const code_block = pre.querySelector("code"); // Check if <code> exists inside <pre>

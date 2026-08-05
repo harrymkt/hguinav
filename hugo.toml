@@ -1,4 +1,4 @@
-baseURL = "https://example.org/"
+baseURL = "https://example.com"
 title = "UI Navigation"
 [module.hugoVersion]
 	extended = true

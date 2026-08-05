@@ -6,4 +6,5 @@ weight = 3000
 +++
 # Ignore Logs
 This is a list of possible values to set on the `ignoreLogs` variable to ignore the errors/warnings:
+
 - `nojs`: JavaScript is disabled Error.

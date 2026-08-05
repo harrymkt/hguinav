@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 env:
-  HUGO_VERSION: 0.163.3
+  HUGO_VERSION: 0.164.0
   # Build directory where the website will run its build. Use the dot (period) to use the current directory.
   builddir: demo
   # Output directory where built files will deploy. This also will be used on Pagefind search generation.
@@ -25,8 +25,7 @@ permissions:
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued. However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
   group: "pages"
   cancel-in-progress: false
@@ -35,8 +34,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v7
+      - uses: actions/checkout@v7
         with:
           submodules: recursive
           fetch-depth: 0

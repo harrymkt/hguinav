@@ -4,10 +4,12 @@ title = "Example"
 # Examples
 ## Audio shortcode
 [Documentation]({{% ref "docs/shortcodes/audio.md" %}})
+
 {{< audio source="https://www.kozco.com/tech/piano2.wav" >}}
 
 ## Tab
 [Documentation]({{% ref "docs/shortcodes/tab.md" %}})
+
 {{< tab name="Tab 1" id="1" >}}
 {{< tab name="Tab 2" id="2" >}}
 {{< tab name="Tab 3" id="3" >}}

@@ -1,9 +1,8 @@
 +++
-keywords = ['documentation', 'variable', 'writing', 'partial', 'audio', 'general', 'title']
+keywords = ["documentation", "variable", "writing", "partial", "audio", "general", "title", "frontmatter"]
 layout = 'doc'
 title = 'Frontmatter Params'
 weight = 200
-aliases = ["frontmatter"]
 +++
 # Frontmatter Params
 You can use the following param parameters to configure your pages.
@@ -11,6 +10,7 @@ Use heading level 2, and if it contains no spaces, then it means they are variab
 
 ## Featured Image Display
 You can display an image as the post's logo. These variables are available for the pages using listpost partial.
+
 - `img`(string) optional: the image / image URL. Note that to display an image, this variable must be set. other image variables are optional.
 - `alt`(string) optional: the alt text of the featured image. Requires the `img` variable to be set.
 

@@ -1,5 +1,5 @@
 +++
-keywords = ["doc", "params", "writing", "content", "misc", "title"]
+keywords = ["doc", "params", "writing", "content", "misc", "title", "sort", "frontmatter"]
 layout = "doc"
 title = "Documentation Site"
 weight = 1000
@@ -68,5 +68,6 @@ The following is a list of params parameters that you can set to documentation s
 
 ### `label`
 An object of labels, i.e. `label.var`.
+
 - `pages`: The label of the pages, default is "Pages".
 - `sections`: The label of the sections, default is "Sections".

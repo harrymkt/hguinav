@@ -1,5 +1,5 @@
 +++
-keywords = ['content', 'variable', 'writing', 'config']
+keywords = ["content", "variable", "writing", "config", "documentation", "search"]
 layout = 'doc'
 title = 'Writing'
 weight = 200

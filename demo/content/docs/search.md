@@ -1,5 +1,5 @@
 +++
-keywords = ["search", "params", "variable", "writing", "partial", "general", "audio", "tab", "content", "language"]
+keywords = ["search", "params", "variable", "writing", "partial", "general", "audio", "tab", "content", "language", "pagefind", "config"]
 layout = "doc"
 title = "Search"
 weight = 2000
@@ -14,9 +14,10 @@ These configurations apply on `params` object of the config. See [search configu
 ### lunr
 This uses JSON file to produce the search content and thus slower and not available for very large content.
 
-{{% details summary="Setup details for lunr format" %}}
+{{% details summary="Setup details for lunr format" name="sf" %}}
 #### Setup for search page generation (only for lunr format)
 First, remember the following:
+
 - search.js is the JS script that helps determine the search results and inputs.
 - layouts/search.html is the actual section that will be generated as the search page.
 - layouts/search.json is the JSON file containing the site's pages and content for search.
@@ -39,13 +40,15 @@ You can create the same search for other languages with the `_index.languageCode
 ### pagefind
 This format is default used in this theme and is best for large content. However, this cannot be used in preview, such as `hugo serve`. This format requires to have Python installed, and `pagefind[extended]` package.
 
-{{% details summary="Setup Pagefind" %}}
+{{% details summary="Setup Pagefind" name="sf" %}}
 #### Setup Pagefind
 Do the following to get up and run Pagefind. We'll asume you have Python installed:
+
 1. Install Pagefind extended version. You can do this by this command. `pip install pagefind[extended]`
 2. Set the search format in the `search` object.
 3. Build the site. `hugo`
 4. Generate the search index. Make sure to replace outputdir with the directory where your built files live. `python -m pagefind --site outputdir`
+
 - Make sure to add `html` tag with the `lang` attribute set if you are building multilingual search.
 - If you want to define where to start searching from, add `data-pagefind` to a tag like div.
 

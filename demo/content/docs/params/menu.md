@@ -1,5 +1,5 @@
 +++
-keywords = ['menu', 'variable', 'config', 'params', 'frontmadder', 'general', 'partial']
+keywords = ["menu", "variable", "config", "params", "frontmatter", "general", "partial"]
 layout = 'doc'
 title = 'Menu Params'
 weight = 300
