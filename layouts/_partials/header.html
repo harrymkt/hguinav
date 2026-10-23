@@ -1,10 +1,10 @@
 {{- $searchon := false }}
 {{- if and .Site.Params.search.enable (.Params.search | default .Site.Params.search.default_enable) }}
-{{- $searchon = true }}
+  {{- $searchon = true }}
 {{- end -}}
 {{- $nojs := .Site.Params.no_js | default false }}
 {{- with .Params.no_js }}
-{{- $nojs = . }}
+  {{- $nojs = . }}
 {{- end -}}
 {{- if hugo.IsMultilingual }}
 <p><a href="{{ absURL "lang" }}">{{T "lchange" }}</a></p>

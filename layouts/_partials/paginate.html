@@ -2,25 +2,25 @@
 {{- $sortby := "" }}
 {{- $reverse := false }}
 {{- if reflect.IsMap . }}
-{{- $page = .page }}
-{{- with .sort_by }}
-{{- $sortby = . }}
-{{- end }}
-{{- with .reverse }}
-{{- if in (slice true "true") . }}
-{{- $reverse = true }}
-{{- end }}
-{{- end }}
+  {{- $page = .page }}
+  {{- with .sort_by }}
+    {{- $sortby = . }}
+  {{- end }}
+  {{- with .reverse }}
+    {{- if in (slice true "true") . }}
+      {{- $reverse = true }}
+    {{- end }}
+  {{- end }}
 {{- end }}
 {{- $pagesize := 0 }}
 {{- with $page.Params.pagesize }}
-{{- $pagesize = . }}
+  {{- $pagesize = . }}
 {{- end }}
 {{- $paginator := "" }}
 {{- $pages := partial "sort.html" (dict "sorts" $page.Pages "sort_by" $sortby "reverse" $reverse) }}
 {{- if gt $pagesize 0 }}
-{{- $paginator = $page.Paginate $pages $pagesize }}
+  {{- $paginator = $page.Paginate $pages $pagesize }}
 {{- else }}
-{{- $paginator = $page.Paginate $pages }}
+  {{- $paginator = $page.Paginate $pages }}
 {{- end }}
 {{- return $paginator }}

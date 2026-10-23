@@ -1,6 +1,7 @@
 {{- define "main" }}
 <h1>404</h1>
-{{- if gt (.Site.Menus.main | len) 0 }}
+<p>The page you are looking for could not be found.</p>
+{{- if (and .Site.Menus.main (gt (.Site.Menus.main | len) 0)) }}
 <p>Use navigation menu to navigate.</p>
 {{- end }}
 {{- end }}

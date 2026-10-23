@@ -1,6 +1,5 @@
 baseURL = "https://harrymkt.github.io/hguinav"
 title = "UI Navigation"
-cleanDestinationDir = true
 publishDir = "HTML"
 enableGitInfo = true
 themesDir = "../../"
@@ -40,3 +39,7 @@ theme = "hguinav"
 
 [params]
 	display_site_lastmod = true
+
+[build]
+	[build.cleanDestinationDir]
+		enable = true

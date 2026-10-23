@@ -13,23 +13,23 @@ You can also pass one value, the page, or the dot.
 {{- $page := . }}
 {{- $count := 5 }}
 {{- if reflect.IsMap . }}
-{{- with .page }}
-{{- $page = . }}
-{{- else }}
-{{- errorf "Missing page argument" }}
-{{- end }}
-{{- with .text }}
-{{- $text = . }}
-{{- end }}
-{{- with .hlevel }}
-{{- $hlevel = . }}
-{{- end }}
-{{- with .count }}
-{{- $count = . }}
-{{- end }}
+  {{- with .page }}
+    {{- $page = . }}
+  {{- else }}
+    {{- errorf "Missing page argument" }}
+  {{- end }}
+  {{- with .text }}
+    {{- $text = . }}
+  {{- end }}
+  {{- with .hlevel }}
+    {{- $hlevel = . }}
+  {{- end }}
+  {{- with .count }}
+    {{- $count = . }}
+  {{- end }}
 {{- end }}
 {{- if or (lt $hlevel 1) (gt $hlevel 6) }}
-{{- errorf "Heading level must be in range of 1 - 6, got %v" $hlevel }}
+  {{- errorf "Heading level must be in range of 1 - 6, got %v" $hlevel }}
 {{- end }}
 {{- $related := $page.Site.RegularPages.Related $page | first $count }}
 {{- with $related }}

@@ -4,10 +4,10 @@
 {{- $paginator := . }}
 {{- $format := "default" }}
 {{- if reflect.IsMap . }}
-{{- $paginator = .paginator }}
-{{- with .format }}
-{{- $format = lower . }}
-{{- end }}
+  {{- $paginator = .paginator }}
+  {{- with .format }}
+    {{- $format = lower . }}
+  {{- end }}
 {{- end }}
 {{- if in $validFormats $format }}
 {{- if gt $paginator.TotalPages 1 }}
@@ -19,7 +19,7 @@
 </nav>
 {{- end }}
 {{- else }}
-{{- errorf $msg2 (delimit $validFormats ", ") }}
+  {{- errorf $msg2 (delimit $validFormats ", ") }}
 {{- end -}}
 {{- /* Format: default */ -}}
 {{- define "_partials/inline/pagination/default" }}

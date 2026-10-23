@@ -11,18 +11,18 @@ Renders a menu for the given menu ID.
 {{- $format := "default" }}
 {{- $label := T "mainmenu" }}
 {{- with .format }}
-{{- $format = lower . }}
+  {{- $format = lower . }}
 {{- end }}
 {{- if not (in $formats $format) }}
-{{- errorf "Invalid menu format %s. Valid formats are %s" $format (delimit $formats ", ") }}
+  {{- errorf "Invalid menu format %s. Valid formats are %s" $format (delimit $formats ", ") }}
 {{- end }}
 {{- with .label }}
-{{- $label = . }}
+  {{- $label = . }}
 {{- end }}
 {{- $page := .page }}
 {{- $menuID := .menuID }}
 {{- with index site.Menus $menuID }}
-{{- partial (printf "inline/menu/format/%s" $format) (dict "page" $page "menuEntries" . "label" $label) }}
+  {{- partial (printf "inline/menu/format/%s" $format) (dict "page" $page "menuEntries" . "label" $label) }}
 {{- end }}
 {{- define "_partials/inline/menu/format/default" }}
 {{- $page := .page }}

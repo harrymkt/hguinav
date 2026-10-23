@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {{- $nojs := .Site.Params.no_js | default false }}
 {{- with .Params.no_js }}
-{{- $nojs = . }}
+  {{- $nojs = . }}
 {{- end -}}
 {{- if eq $nojs false }}
 <script src="{{absURL "scripts/theme.js"}}"></script>
