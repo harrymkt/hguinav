@@ -8,7 +8,7 @@
 {{- with or .Description site.Params.description | plainify | htmlUnescape }}
 <meta property="og:description" content="{{ trim . "\n\r\t " }}">
 {{- end }}
-{{- with or .Params.locale site.Language.LanguageCode }}
+{{- with or .Params.locale site.Language.Locale }}
 <meta property="og:locale" content="{{ replace . `-` `_` }}">
 {{- end }}
 {{- if .IsPage }}
