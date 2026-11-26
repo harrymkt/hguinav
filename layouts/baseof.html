@@ -39,7 +39,7 @@
 </div>
 {{ partial "extrafoot.html" . }}
 {{- if (eq $nojs false) }}
-<script src="{{absURL "scripts/copy.js"}}"></script>
+<script src="{{ absURL "scripts/copy.js" }}"></script>
 {{- if (and (eq $searchon true) (eq .Site.Params.search.format "lunr")) }}
 {{- $searchr := resources.Get "scripts/search.js" }}
 <script src="{{ $searchr.Permalink }}"></script>
